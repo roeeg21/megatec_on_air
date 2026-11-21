@@ -1,0 +1,469 @@
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 00:28:56
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 00:28:55 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_electrical.html - 80 - 66.249.79.70 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - www.megatec.co.il 304 0 0 165 365 140
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 00:45:11
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 00:45:11 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 100.43.85.120 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - www.megatec.co.il 200 0 0 269 200 156
+2018-01-28 00:45:11 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 100.43.91.113 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 19517 278 515
+2018-01-28 00:45:15 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 84.201.133.27 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - www.megatec.co.il 200 0 0 4797 282 140
+2018-01-28 00:45:29 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 193.15.16.4 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/58.0.3029.110+Safari/537.36 http://blondesex.twiclub.in megatec.co.il 200 0 0 19536 289 406
+2018-01-28 00:45:50 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 193.15.16.4 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/58.0.3029.110+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 336 791 20077
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 01:13:00
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 01:13:00 W3SVC1760 VIOLET 143.95.252.51 GET /he/cad_main.html - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 13378 230 609
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 02:19:12
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 02:19:11 W3SVC1760 VIOLET 143.95.252.51 GET /design_services/menu.asp - 80 - 66.249.79.70 Mozilla/5.0+(Linux;+Android+6.0.1;+Nexus+5X+Build/MMB29P)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.96+Mobile+Safari/537.36+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - www.megatec.co.il 404 0 2 1405 444 156
+2018-01-28 02:22:28 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.199 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 269 224 62
+2018-01-28 02:30:58 W3SVC1760 VIOLET 143.95.252.51 HEAD / - 80 - 74.115.214.136 Mozilla/5.0+(compatible;+Uptimebot/1.0;++http://www.uptime.com/uptimebot) http://uptime-us.net/megatec.co.il megatec.co.il 200 0 0 268 191 249
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 03:14:43
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 03:14:43 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.199 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - megatec.co.il 200 0 0 269 220 124
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 03:46:23
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 03:46:23 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 66.249.79.70 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - www.megatec.co.il 200 0 0 269 231 140
+2018-01-28 03:48:47 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/project_management/aero1.jpg 1516752000035 80 - 66.249.79.70 Googlebot-Image/1.0 - www.megatec.co.il 200 0 0 241001 237 312
+2018-01-28 03:50:44 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 91.237.41.157 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/62.0.3202.94+Safari/537.36 - www.megatec.co.il 200 0 0 19541 272 640
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 04:11:17
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 04:11:16 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_it.html - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 https://www.google.com/ www.megatec.co.il 200 0 0 14688 482 93
+2018-01-28 04:11:16 W3SVC1760 VIOLET 143.95.252.51 GET /css/prettyPhoto.css - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 20306 417 46
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /css/camera.css - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 5126 412 31
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /css/bootstrap-responsive.css - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 16419 426 93
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /css/site.css - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 30503 410 203
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.min.js - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 93696 399 281
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.easing.1.3.js - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 8357 406 46
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.mobile.customized.min.js - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 17814 417 46
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /js/camera.js - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 70832 395 156
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /css/bootstrap.css - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 129722 415 843
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /js/bootstrap.js - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 58561 398 109
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /js/htweet.js - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 7262 395 46
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /js/superfish.js - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 4048 398 93
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /js/custom.js - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 7343 395 46
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /images/line.jpg - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/css/site.css www.megatec.co.il 200 0 0 1021 418 31
+2018-01-28 04:11:17 W3SVC1760 VIOLET 143.95.252.51 GET /images/top_socials.png - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/css/site.css www.megatec.co.il 200 0 0 2139 425 31
+2018-01-28 04:11:18 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.prettyPhoto.js - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 25545 407 171
+2018-01-28 04:11:18 W3SVC1760 VIOLET 143.95.252.51 GET /images/megatec-logo.jpg - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 129366 431 328
+2018-01-28 04:11:18 W3SVC1760 VIOLET 143.95.252.51 GET /images/caption_bg.png - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/css/camera.css www.megatec.co.il 200 0 0 354 426 46
+2018-01-28 04:11:19 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/project_management/tech2.jpg 1517112679299 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 225393 464 453
+2018-01-28 04:11:20 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/project_management/tech4.jpg 1517112681025 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 200 0 0 172847 464 374
+2018-01-28 04:11:24 W3SVC1760 VIOLET 143.95.252.51 GET /favicon.ico - 80 - 70.180.109.103 Mozilla/5.0+(Linux;+Android+7.1.1;+SAMSUNG+SM-J700T1+Build/NMF26X)+AppleWebKit/537.36+(KHTML,+like+Gecko)+SamsungBrowser/6.2+Chrome/56.0.2924.87+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_it.html www.megatec.co.il 404 0 2 1405 419 46
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 04:32:27
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 04:32:26 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 176.214.152.81 Mozilla/5.0+(Windows+NT+7.1;+WOW64;+rv:42.0)+Gecko/20100101+Firefox/42.0 http://megatec.co.il/ megatec.co.il 200 0 0 19536 241 687
+2018-01-28 04:32:46 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 176.214.152.81 Mozilla/5.0+(Windows+NT+7.1;+WOW64;+rv:42.0)+Gecko/20100101+Firefox/42.0 http://megatec.co.il/ megatec.co.il 200 0 0 336 7381 18983
+2018-01-28 04:36:43 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 157.55.39.12 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - megatec.co.il 200 0 0 269 246 46
+2018-01-28 04:36:55 W3SVC1760 VIOLET 143.95.252.51 GET /images/featured_solutions/2.jpg - 80 - 207.46.13.35 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - megatec.co.il 200 0 0 61755 299 218
+2018-01-28 04:37:30 W3SVC1760 VIOLET 143.95.252.51 GET /he/index.html - 80 - 40.77.167.25 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - megatec.co.il 200 0 0 20140 281 109
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 05:19:28
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 05:19:28 W3SVC1760 VIOLET 143.95.252.51 GET /css/prettyPhoto.css - 80 - 199.30.25.216 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 20306 260 234
+2018-01-28 05:19:29 W3SVC1760 VIOLET 143.95.252.51 GET /css/camera.css - 80 - 199.30.24.127 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 5126 255 93
+2018-01-28 05:19:30 W3SVC1760 VIOLET 143.95.252.51 GET /css/bootstrap.css - 80 - 199.30.25.181 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 129722 258 328
+2018-01-28 05:19:30 W3SVC1760 VIOLET 143.95.252.51 GET /css/site.css - 80 - 65.55.210.147 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 30503 253 156
+2018-01-28 05:19:30 W3SVC1760 VIOLET 143.95.252.51 GET /css/bootstrap-responsive.css - 80 - 199.30.24.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 16419 269 124
+2018-01-28 05:19:33 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.min.js - 80 - 199.30.24.203 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 93696 257 281
+2018-01-28 05:19:34 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.easing.1.3.js - 80 - 199.30.24.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 8357 264 69
+2018-01-28 05:19:35 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.mobile.customized.min.js - 80 - 199.30.24.127 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 17814 275 109
+2018-01-28 05:19:35 W3SVC1760 VIOLET 143.95.252.51 GET /js/camera.js - 80 - 199.30.24.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 70832 253 156
+2018-01-28 05:19:36 W3SVC1760 VIOLET 143.95.252.51 GET /js/bootstrap.js - 80 - 199.30.24.55 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 58561 256 281
+2018-01-28 05:19:37 W3SVC1760 VIOLET 143.95.252.51 GET /js/superfish.js - 80 - 65.55.210.78 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 4048 256 46
+2018-01-28 05:19:41 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.prettyPhoto.js - 80 - 199.30.24.174 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 25545 265 171
+2018-01-28 05:19:44 W3SVC1760 VIOLET 143.95.252.51 GET /js/htweet.js - 80 - 199.30.24.5 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 7262 253 109
+2018-01-28 05:19:44 W3SVC1760 VIOLET 143.95.252.51 GET /js/custom.js - 80 - 199.30.24.5 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - megatec.co.il 200 0 0 7343 253 62
+2018-01-28 05:20:32 W3SVC1760 VIOLET 143.95.252.51 GET /contacts.html - 80 - 176.31.64.186 Mozilla/5.0+(Windows+NT+6.1;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 11912 249 234
+2018-01-28 05:20:49 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 81.171.81.81 Mozilla/5.0+(Windows+NT+6.1;+Trident/7.0;+rv:11.0)+like+Gecko http://www.megatec.co.il/contacts.html www.megatec.co.il 200 0 0 317 1007 16780
+2018-01-28 05:25:51 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.199 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 269 224 46
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 06:03:44
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 06:03:43 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 40.77.167.37 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - megatec.co.il 200 0 0 269 246 203
+2018-01-28 06:03:44 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 40.77.167.37 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - megatec.co.il 200 0 0 269 246 78
+2018-01-28 06:12:25 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 19517 333 234
+2018-01-28 06:12:27 W3SVC1760 VIOLET 143.95.252.51 GET /js/camera.js - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 70832 130 171
+2018-01-28 06:12:27 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.min.js - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 93696 134 203
+2018-01-28 06:12:27 W3SVC1760 VIOLET 143.95.252.51 GET /css/camera.css - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 5126 132 41
+2018-01-28 06:12:27 W3SVC1760 VIOLET 143.95.252.51 GET /js/superfish.js - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 4048 133 41
+2018-01-28 06:12:27 W3SVC1760 VIOLET 143.95.252.51 GET /css/bootstrap-responsive.css - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 16419 146 78
+2018-01-28 06:12:27 W3SVC1760 VIOLET 143.95.252.51 GET /js/custom.js - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 7343 130 88
+2018-01-28 06:12:27 W3SVC1760 VIOLET 143.95.252.51 GET /js/htweet.js - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 7262 130 88
+2018-01-28 06:12:29 W3SVC1760 VIOLET 143.95.252.51 GET /css/prettyPhoto.css - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 20306 137 119
+2018-01-28 06:12:29 W3SVC1760 VIOLET 143.95.252.51 GET /css/site.css - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 30503 130 119
+2018-01-28 06:12:29 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.mobile.customized.min.js - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 17814 152 135
+2018-01-28 06:12:29 W3SVC1760 VIOLET 143.95.252.51 GET /js/bootstrap.js - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 58561 133 166
+2018-01-28 06:12:29 W3SVC1760 VIOLET 143.95.252.51 GET /css/bootstrap.css - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 129722 135 234
+2018-01-28 06:12:29 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.easing.1.3.js - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 8357 141 93
+2018-01-28 06:12:29 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.prettyPhoto.js - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) - www.megatec.co.il 200 0 0 25545 142 124
+2018-01-28 06:12:43 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 159.203.96.37 Mozilla/5.0+(Windows+NT+6.3;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/34.0.1847.131+Safari/537.36 - www.megatec.co.il 200 0 0 269 405 31
+2018-01-28 06:12:54 W3SVC1760 VIOLET 143.95.252.51 GET /index.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 19517 343 125
+2018-01-28 06:12:54 W3SVC1760 VIOLET 143.95.252.51 GET /about.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 13403 343 78
+2018-01-28 06:12:56 W3SVC1760 VIOLET 143.95.252.51 GET /cad_main.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 11992 346 78
+2018-01-28 06:12:56 W3SVC1760 VIOLET 143.95.252.51 GET /eb_instrumentation.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 14063 356 78
+2018-01-28 06:12:56 W3SVC1760 VIOLET 143.95.252.51 GET /cr8000.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 13822 344 93
+2018-01-28 06:12:56 W3SVC1760 VIOLET 143.95.252.51 GET /eb_electrical.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 14815 351 93
+2018-01-28 06:12:56 W3SVC1760 VIOLET 143.95.252.51 GET /eb_cable.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 14503 346 93
+2018-01-28 06:12:57 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_main.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 13551 352 93
+2018-01-28 06:12:57 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_it.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 14688 350 78
+2018-01-28 06:12:58 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_construction.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 14574 360 93
+2018-01-28 06:12:58 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_hitech.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 14077 354 93
+2018-01-28 06:12:58 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_aero.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 14023 352 78
+2018-01-28 06:12:59 W3SVC1760 VIOLET 143.95.252.51 GET /contacts.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 11912 346 78
+2018-01-28 06:12:59 W3SVC1760 VIOLET 143.95.252.51 GET /trainings.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 11203 347 93
+2018-01-28 06:12:59 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_oil.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 14323 351 93
+2018-01-28 06:12:59 W3SVC1760 VIOLET 143.95.252.51 GET /he/index.html - 80 - 159.203.96.37 Mozilla/5.0+(compatible;+DnyzBot/1.0) http://www.megatec.co.il www.megatec.co.il 200 0 0 20140 346 124
+2018-01-28 06:25:14 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 93.158.161.140 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 269 196 156
+2018-01-28 06:25:18 W3SVC1760 VIOLET 143.95.252.51 GET /he/index.html - 80 - 77.88.5.5 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 20140 230 437
+2018-01-28 06:25:18 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.199 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 269 224 62
+2018-01-28 06:27:15 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 5.164.251.58 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/58.0.3029.81+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19536 283 500
+2018-01-28 06:27:34 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 5.164.251.58 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/58.0.3029.81+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 336 940 16999
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 07:25:48
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 07:25:48 W3SVC1760 VIOLET 143.95.252.51 GET /pcb/electromechanical/electro.asp - 80 - 157.55.39.11 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - www.megatec.co.il 404 0 2 1405 305 124
+2018-01-28 07:39:19 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 173.212.240.226 Mozilla/5.0+(compatible;+MJ12bot/v1.4.8;+http://mj12bot.com/) - megatec.co.il 200 0 0 269 161 125
+2018-01-28 07:39:43 W3SVC1760 VIOLET 143.95.252.51 GET /eb_basic.html - 80 - 173.212.240.226 Mozilla/5.0+(compatible;+MJ12bot/v1.4.8;+http://mj12bot.com/) - megatec.co.il 200 0 0 12150 351 281
+2018-01-28 07:40:08 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_electrical.html - 80 - 173.212.240.226 Mozilla/5.0+(compatible;+MJ12bot/v1.4.8;+http://mj12bot.com/) - megatec.co.il 200 0 0 16910 382 156
+2018-01-28 07:41:39 W3SVC1760 VIOLET 143.95.252.51 GET /he/index.html - 80 - 173.212.240.226 Mozilla/5.0+(compatible;+MJ12bot/v1.4.8;+http://mj12bot.com/) - megatec.co.il 200 0 0 20140 374 140
+2018-01-28 07:42:36 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_aero.html - 80 - 173.212.240.226 Mozilla/5.0+(compatible;+MJ12bot/v1.4.8;+http://mj12bot.com/) - megatec.co.il 200 0 0 17015 383 140
+2018-01-28 07:43:24 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_construction.html - 80 - 173.212.240.226 Mozilla/5.0+(compatible;+MJ12bot/v1.4.8;+http://mj12bot.com/) - megatec.co.il 200 0 0 16283 391 140
+2018-01-28 07:44:44 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_it.html - 80 - 173.212.240.226 Mozilla/5.0+(compatible;+MJ12bot/v1.4.8;+http://mj12bot.com/) - megatec.co.il 200 0 0 15961 381 203
+2018-01-28 07:46:27 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 173.212.240.226 Mozilla/5.0+(compatible;+MJ12bot/v1.4.8;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 269 165 140
+2018-01-28 07:46:45 W3SVC1760 VIOLET 143.95.252.51 GET /eb_electrical.html - 80 - 173.212.240.226 Mozilla/5.0+(compatible;+MJ12bot/v1.4.8;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 14815 360 249
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 08:08:39
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 08:08:39 W3SVC1760 VIOLET 143.95.252.51 GET /plugins/community/uploadify/uploadify.css - 80 - 212.83.165.202 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/60.0.3112.113+Safari/537.36 - megatec.co.il 404 0 2 1405 280 187
+2018-01-28 08:22:54 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 178.159.37.11 Mozilla/5.0+(Windows+NT+6.1;+Win64;+rv:38.0)+Gecko/20100101+Firefox/38.0 http://megatec.co.il/ megatec.co.il 200 0 0 19536 241 609
+2018-01-28 08:22:55 W3SVC1760 VIOLET 143.95.252.51 GET /cr8000.html - 80 - 178.159.37.11 Mozilla/5.0+(Windows+NT+6.1;+Win64;+rv:38.0)+Gecko/20100101+Firefox/38.0 http://megatec.co.il/cr8000.html megatec.co.il 200 0 0 13841 263 343
+2018-01-28 08:22:55 W3SVC1760 VIOLET 143.95.252.51 GET /index.php - 80 - 178.159.37.11 Mozilla/5.0+(Windows+NT+6.1;+Win64;+rv:38.0)+Gecko/20100101+Firefox/38.0 http://megatec.co.il/index.php megatec.co.il 404 0 2 1424 259 156
+2018-01-28 08:22:55 W3SVC1760 VIOLET 143.95.252.51 GET /index.php - 80 - 178.159.37.11 Mozilla/5.0+(Windows+NT+6.1;+Win64;+rv:38.0)+Gecko/20100101+Firefox/38.0 http://megatec.co.il/index.php megatec.co.il 404 0 2 1424 259 171
+2018-01-28 08:22:56 W3SVC1760 VIOLET 143.95.252.51 GET /index.php - 80 - 178.159.37.11 Mozilla/5.0+(Windows+NT+6.1;+Win64;+rv:38.0)+Gecko/20100101+Firefox/38.0 http://megatec.co.il/index.php megatec.co.il 404 0 2 1424 259 156
+2018-01-28 08:28:06 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - megatec.co.il 200 0 0 269 220 46
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 09:16:11
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 09:16:11 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/syfan_logo.gif - 80 - 207.46.13.145 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - megatec.co.il 200 0 0 4215 299 140
+2018-01-28 09:29:31 W3SVC1760 VIOLET 143.95.252.51 HEAD / - 80 - 74.115.214.143 Mozilla/5.0+(compatible;+Uptimebot/1.0;++http://www.uptime.com/uptimebot) http://uptime-as.net/megatec.co.il megatec.co.il 200 0 0 268 191 218
+2018-01-28 09:34:13 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.199 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 269 224 62
+2018-01-28 09:36:21 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 62.122.91.180 Mozilla/5.0+(Windows+NT+6.3;+WOW64;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/ megatec.co.il 200 0 0 19536 241 599
+2018-01-28 09:36:39 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 62.122.91.180 Mozilla/5.0+(Windows+NT+6.3;+WOW64;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/ megatec.co.il 200 0 0 336 1360 18530
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 10:25:49
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 10:25:48 W3SVC1760 VIOLET 143.95.252.51 GET /cad_main.html - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - megatec.co.il 200 0 0 11992 223 203
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 10:52:23
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 10:52:22 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 37.115.194.156 Mozilla/5.0+(Windows+NT+10.1;+Win64;+rv:38.0)+Gecko/20100101+Firefox/38.0 http://megatec.co.il/ megatec.co.il 200 0 0 19536 242 671
+2018-01-28 10:52:42 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 37.115.194.156 Mozilla/5.0+(Windows+NT+10.1;+Win64;+rv:38.0)+Gecko/20100101+Firefox/38.0 http://megatec.co.il/ megatec.co.il 200 0 0 336 1708 18718
+2018-01-28 10:52:42 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 37.115.194.156 Mozilla/5.0+(Windows+NT+10.1;+Win64;+rv:38.0)+Gecko/20100101+Firefox/38.0 http://megatec.co.il/ megatec.co.il 200 0 0 19536 242 500
+2018-01-28 10:59:38 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 77.88.47.46 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 269 196 156
+2018-01-28 10:59:42 W3SVC1760 VIOLET 143.95.252.51 GET /eb_basic.html - 80 - 141.8.144.41 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 12150 230 328
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 11:15:54
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 11:15:53 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 62.210.103.31 Mozilla/5.0+(compatible;+MJ12bot/v1.4.7;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 269 165 124
+2018-01-28 11:16:02 W3SVC1760 VIOLET 143.95.252.51 GET /cr8000.html - 80 - 62.210.103.31 Mozilla/5.0+(compatible;+MJ12bot/v1.4.7;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 13822 353 234
+2018-01-28 11:16:07 W3SVC1760 VIOLET 143.95.252.51 GET /he/about.html - 80 - 62.210.103.31 Mozilla/5.0+(compatible;+MJ12bot/v1.4.7;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 15717 378 124
+2018-01-28 11:16:10 W3SVC1760 VIOLET 143.95.252.51 GET /he/contacts.html - 80 - 62.210.103.31 Mozilla/5.0+(compatible;+MJ12bot/v1.4.7;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 12346 381 125
+2018-01-28 11:16:16 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_cable.html - 80 - 62.210.103.31 Mozilla/5.0+(compatible;+MJ12bot/v1.4.7;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 16176 381 124
+2018-01-28 11:16:28 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_instrumentation.html - 80 - 62.210.103.31 Mozilla/5.0+(compatible;+MJ12bot/v1.4.7;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 15910 391 125
+2018-01-28 11:16:31 W3SVC1760 VIOLET 143.95.252.51 GET /he/index.html - 80 - 62.210.103.31 Mozilla/5.0+(compatible;+MJ12bot/v1.4.7;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 20140 378 125
+2018-01-28 11:16:35 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/intel_logo.jpg - 80 - 66.249.79.68 Googlebot-Image/1.0 - www.megatec.co.il 304 0 0 163 262 46
+2018-01-28 11:16:42 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_aero.html - 80 - 62.210.103.31 Mozilla/5.0+(compatible;+MJ12bot/v1.4.7;+http://mj12bot.com/) - www.megatec.co.il 200 0 0 17015 387 125
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 11:36:09
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 11:36:09 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 269 224 46
+2018-01-28 11:45:56 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 157.55.39.11 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - www.megatec.co.il 200 0 0 19517 272 156
+2018-01-28 11:57:41 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_oil.html - 80 - 54.36.148.123 Mozilla/5.0+(compatible;+AhrefsBot/5.2;++http://ahrefs.com/robot/) - megatec.co.il 200 0 0 14323 182 234
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 12:42:08
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 12:42:07 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 79.110.17.2 Mozilla/5.0+(Windows+NT+10.0;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/56.0.2924.87+YaBrowser/17.3.1.840+Yowser/2.5+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19536 310 765
+2018-01-28 12:42:26 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 79.110.17.2 Mozilla/5.0+(Windows+NT+10.0;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/56.0.2924.87+YaBrowser/17.3.1.840+Yowser/2.5+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 64 0 871 18515
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 13:31:05
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 13:31:05 W3SVC1760 VIOLET 143.95.252.51 GET /he/contacts.html - 80 - 93.158.161.72 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 12346 233 421
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 13:47:54
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 13:47:53 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/main_page/slide1.jpg 1517147272762 80 - 37.142.12.154 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.132+Safari/537.36 http://www.megatec.co.il/he/index.html www.megatec.co.il 200 0 0 260462 457 1218
+2018-01-28 13:47:54 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/main_page/3.jpg 1517147274007 80 - 37.142.12.154 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.132+Safari/537.36 http://www.megatec.co.il/he/index.html www.megatec.co.il 200 0 0 136449 493 187
+2018-01-28 13:47:54 W3SVC1760 VIOLET 143.95.252.51 GET /favicon.ico - 80 - 37.142.12.154 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.132+Safari/537.36 http://www.megatec.co.il/he/index.html www.megatec.co.il 404 0 2 1405 461 218
+2018-01-28 13:48:00 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/main_page/slide3.jpg 1517147280459 80 - 37.142.12.154 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.132+Safari/537.36 http://www.megatec.co.il/he/index.html www.megatec.co.il 200 0 0 203053 498 203
+2018-01-28 13:48:06 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/main_page/slide4.jpg 1517147286754 80 - 37.142.12.154 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.132+Safari/537.36 http://www.megatec.co.il/he/index.html www.megatec.co.il 200 0 0 215974 498 234
+2018-01-28 13:48:13 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/main_page/14.jpg 1517147293786 80 - 37.142.12.154 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.132+Safari/537.36 http://www.megatec.co.il/he/index.html www.megatec.co.il 200 0 0 345992 494 203
+2018-01-28 13:54:50 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 89.249.64.180 Mozilla/5.0+(Windows+NT+5.1;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/ megatec.co.il 200 0 0 19536 234 609
+2018-01-28 13:54:50 W3SVC1760 VIOLET 143.95.252.51 GET /cr8000.html - 80 - 89.249.64.180 Mozilla/5.0+(Windows+NT+5.1;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/cr8000.html megatec.co.il 200 0 0 13841 256 343
+2018-01-28 13:54:51 W3SVC1760 VIOLET 143.95.252.51 GET /index.php - 80 - 89.249.64.180 Mozilla/5.0+(Windows+NT+5.1;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/index.php megatec.co.il 404 0 2 1424 252 171
+2018-01-28 13:54:51 W3SVC1760 VIOLET 143.95.252.51 GET /index.php - 80 - 89.249.64.180 Mozilla/5.0+(Windows+NT+5.1;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/index.php megatec.co.il 404 0 2 1424 252 171
+2018-01-28 13:54:51 W3SVC1760 VIOLET 143.95.252.51 GET /index.php - 80 - 89.249.64.180 Mozilla/5.0+(Windows+NT+5.1;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/index.php megatec.co.il 404 0 64 1424 252 171
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 14:18:45
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 14:18:45 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 93.158.161.72 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 269 196 249
+2018-01-28 14:18:49 W3SVC1760 VIOLET 143.95.252.51 GET /eb_advanced.html - 80 - 5.255.250.39 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 10956 233 343
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 14:48:46
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 14:48:45 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 269 224 171
+2018-01-28 14:48:56 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.199 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - megatec.co.il 200 0 0 269 220 46
+2018-01-28 14:54:42 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/shikun_logo.jpg - 80 - 66.249.79.65 Googlebot-Image/1.0 - www.megatec.co.il 304 0 0 164 263 62
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 15:15:54
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 15:15:53 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 91.107.44.48 Mozilla/5.0+(Windows+NT+10.0;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/56.0.2924.87+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19536 278 656
+2018-01-28 15:27:17 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 19517 169 171
+2018-01-28 15:27:17 W3SVC1760 VIOLET 143.95.252.51 GET /images/icon1.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 1896 185 62
+2018-01-28 15:27:17 W3SVC1760 VIOLET 143.95.252.51 GET /images/partners/1.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 24306 190 78
+2018-01-28 15:27:17 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/elisra_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 8130 201 62
+2018-01-28 15:27:17 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/spectralink_logo.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 68654 206 109
+2018-01-28 15:27:17 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/intel_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 18322 200 62
+2018-01-28 15:27:17 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/elbit_logo.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 12190 200 109
+2018-01-28 15:27:19 W3SVC1760 VIOLET 143.95.252.51 GET /images/megatec-logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 129366 192 171
+2018-01-28 15:27:19 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/gilat_logo.JPG - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 7595 200 78
+2018-01-28 15:27:19 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/plasan_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4574 201 62
+2018-01-28 15:27:19 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/netafim_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 590592 202 250
+2018-01-28 15:27:19 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/sherman_logo.GIF - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4970 202 62
+2018-01-28 15:27:19 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/tadiran_logo.gif - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 1993 202 62
+2018-01-28 15:27:20 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/shikun_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 6256 201 62
+2018-01-28 15:27:20 W3SVC1760 VIOLET 143.95.252.51 GET /images/icon2.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 1880 185 62
+2018-01-28 15:27:20 W3SVC1760 VIOLET 143.95.252.51 GET /images/partners/2.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 47141 190 62
+2018-01-28 15:27:20 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/rafael_logo.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 6469 201 62
+2018-01-28 15:27:20 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/syfan_logo.gif - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4215 200 156
+2018-01-28 15:27:20 W3SVC1760 VIOLET 143.95.252.51 GET /images/icon3.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 1595 185 140
+2018-01-28 15:27:20 W3SVC1760 VIOLET 143.95.252.51 GET /images/featured_solutions/2.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 61755 200 62
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/elco_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 21813 199 93
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET /images/partners/3.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 69282 190 140
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET /images/featured_solutions/1.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 416770 200 93
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4797 169 78
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/kramer_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4133 201 46
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET /images/icon1.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 1896 185 62
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET /images/featured_solutions/3.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 62887 200 78
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET /images/partners/1.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 24306 190 109
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/nazelec_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4795 202 93
+2018-01-28 15:27:21 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/elisra_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 8130 201 46
+2018-01-28 15:27:22 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/spectralink_logo.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 68654 206 62
+2018-01-28 15:27:22 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/intel_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 18322 200 62
+2018-01-28 15:27:22 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/elbit_logo.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 12190 200 62
+2018-01-28 15:27:22 W3SVC1760 VIOLET 143.95.252.51 GET /images/megatec-logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 129366 192 46
+2018-01-28 15:27:22 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/gilat_logo.JPG - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 7595 200 62
+2018-01-28 15:27:22 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/plasan_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4574 201 62
+2018-01-28 15:27:22 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/netafim_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 590592 202 93
+2018-01-28 15:27:22 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/sherman_logo.GIF - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4970 202 46
+2018-01-28 15:27:23 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/tadiran_logo.gif - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 1993 202 62
+2018-01-28 15:27:23 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/shikun_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 6256 201 62
+2018-01-28 15:27:23 W3SVC1760 VIOLET 143.95.252.51 GET /images/icon2.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 1880 185 62
+2018-01-28 15:27:23 W3SVC1760 VIOLET 143.95.252.51 GET /images/partners/2.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 47141 190 62
+2018-01-28 15:27:23 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/rafael_logo.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 6469 201 46
+2018-01-28 15:27:23 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/syfan_logo.gif - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4215 200 46
+2018-01-28 15:27:23 W3SVC1760 VIOLET 143.95.252.51 GET /images/icon3.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 1595 185 62
+2018-01-28 15:27:23 W3SVC1760 VIOLET 143.95.252.51 GET /images/featured_solutions/2.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 61755 200 46
+2018-01-28 15:27:24 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/elco_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 21813 199 62
+2018-01-28 15:27:24 W3SVC1760 VIOLET 143.95.252.51 GET /images/partners/3.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 69282 190 78
+2018-01-28 15:27:24 W3SVC1760 VIOLET 143.95.252.51 GET /images/featured_solutions/1.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 416770 200 62
+2018-01-28 15:27:24 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/kramer_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4133 201 62
+2018-01-28 15:27:24 W3SVC1760 VIOLET 143.95.252.51 GET /images/featured_solutions/3.png - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 62887 200 78
+2018-01-28 15:27:24 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/nazelec_logo.jpg - 80 - 34.209.175.187 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko - www.megatec.co.il 200 0 0 4795 202 46
+2018-01-28 15:28:52 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 180.76.15.19 Mozilla/5.0+(Windows+NT+5.1;+rv:6.0.2)+Gecko/20100101+Firefox/6.0.2 - www.megatec.co.il 200 0 0 288 219 203
+2018-01-28 15:28:52 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 180.76.15.150 Mozilla/5.0+(Windows+NT+5.1;+rv:6.0.2)+Gecko/20100101+Firefox/6.0.2 - www.megatec.co.il 200 0 0 288 219 203
+2018-01-28 15:29:44 W3SVC1760 VIOLET 143.95.252.51 GET /eb_electrical.html - 80 - 180.76.15.141 Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html) - www.megatec.co.il 200 0 0 14834 237 406
+2018-01-28 15:39:48 W3SVC1760 VIOLET 143.95.252.51 GET /images/partners/3.jpg - 80 - 66.249.79.70 Googlebot-Image/1.0 - www.megatec.co.il 304 0 0 164 252 46
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 15:58:19
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 15:58:19 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 77.247.25.14 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/62.0.3250.0+Iron+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19536 281 562
+2018-01-28 15:58:36 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 77.247.25.14 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/62.0.3250.0+Iron+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 336 775 17015
+2018-01-28 16:00:53 W3SVC1760 VIOLET 143.95.252.51 GET /p6_basic.html - 80 - 100.43.85.120 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 11721 230 312
+2018-01-28 16:03:25 W3SVC1760 VIOLET 143.95.252.51 GET /he/cad_main.html - 80 - 100.43.85.120 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 13378 233 328
+2018-01-28 16:16:25 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 52.205.212.221 Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0) - www.megatec.co.il 200 0 0 19517 133 109
+2018-01-28 16:23:26 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_oil.html - 80 - 77.88.47.6 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 15373 238 296
+2018-01-28 16:30:24 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_construction.html - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+ONEPLUS+A3003+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 https://www.google.it/ www.megatec.co.il 200 0 0 14574 504 484
+2018-01-28 16:30:24 W3SVC1760 VIOLET 143.95.252.51 GET /css/camera.css - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 5126 410 218
+2018-01-28 16:30:24 W3SVC1760 VIOLET 143.95.252.51 GET /css/prettyPhoto.css - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 20306 415 453
+2018-01-28 16:30:24 W3SVC1760 VIOLET 143.95.252.51 GET /css/bootstrap-responsive.css - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 16419 424 468
+2018-01-28 16:30:24 W3SVC1760 VIOLET 143.95.252.51 GET /css/site.css - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 30503 408 671
+2018-01-28 16:30:26 W3SVC1760 VIOLET 143.95.252.51 GET /css/bootstrap.css - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 129722 413 1156
+2018-01-28 16:30:26 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.min.js - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 93696 397 531
+2018-01-28 16:30:26 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.easing.1.3.js - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 8357 404 218
+2018-01-28 16:30:26 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.mobile.customized.min.js - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 17814 415 249
+2018-01-28 16:30:26 W3SVC1760 VIOLET 143.95.252.51 GET /js/superfish.js - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 4048 396 328
+2018-01-28 16:30:26 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.prettyPhoto.js - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 25545 405 374
+2018-01-28 16:30:26 W3SVC1760 VIOLET 143.95.252.51 GET /images/line.jpg - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/css/site.css www.megatec.co.il 200 0 0 1021 417 296
+2018-01-28 16:30:26 W3SVC1760 VIOLET 143.95.252.51 GET /js/camera.js - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 70832 393 546
+2018-01-28 16:30:27 W3SVC1760 VIOLET 143.95.252.51 GET /js/htweet.js - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 7262 393 312
+2018-01-28 16:30:27 W3SVC1760 VIOLET 143.95.252.51 GET /js/custom.js - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 7343 393 281
+2018-01-28 16:30:27 W3SVC1760 VIOLET 143.95.252.51 GET /images/top_socials.png - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/css/site.css www.megatec.co.il 200 0 0 2139 424 203
+2018-01-28 16:30:27 W3SVC1760 VIOLET 143.95.252.51 GET /js/bootstrap.js - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 58561 396 968
+2018-01-28 16:30:27 W3SVC1760 VIOLET 143.95.252.51 GET /images/megatec-logo.jpg - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 129366 440 734
+2018-01-28 16:30:27 W3SVC1760 VIOLET 143.95.252.51 GET /images/caption_bg.png - 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/css/camera.css www.megatec.co.il 200 0 0 354 507 265
+2018-01-28 16:30:29 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/project_management/cons1.jpg 1517157027612 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 0 283485 555 1531
+2018-01-28 16:30:29 W3SVC1760 VIOLET 143.95.252.51 GET /images/slider/project_management/cons2.jpg 1517157029239 80 - 5.170.120.233 Mozilla/5.0+(Linux;+Android+8.0.0;+Build/OPR6.170623.013)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.111+Mobile+Safari/537.36 http://www.megatec.co.il/primavera_construction.html www.megatec.co.il 200 0 64 0 555 812
+2018-01-28 16:37:36 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_it.html - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 14688 231 140
+2018-01-28 16:38:26 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 46.161.9.51 Mozilla/5.0+(Windows+NT+6.2;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/57.0.2987.133+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19536 278 515
+2018-01-28 16:38:45 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 46.161.9.51 Mozilla/5.0+(Windows+NT+6.2;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/57.0.2987.133+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 336 713 18937
+2018-01-28 16:52:30 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 50.19.154.226 Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0) - www.megatec.co.il 200 0 0 19517 133 93
+2018-01-28 16:57:31 W3SVC1760 VIOLET 143.95.252.51 GET /trainings.html - 80 - 216.244.66.199 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - megatec.co.il 200 0 0 11203 224 109
+2018-01-28 17:05:05 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 176.110.129.2 Mozilla/5.0+(Windows+NT+7.1;+Win64;+rv:43.1)+Gecko/20100101+Firefox/43.1 http://megatec.co.il/ megatec.co.il 200 0 0 19536 241 546
+2018-01-28 17:05:06 W3SVC1760 VIOLET 143.95.252.51 GET /cr8000.html - 80 - 176.110.129.2 Mozilla/5.0+(Windows+NT+7.1;+Win64;+rv:43.1)+Gecko/20100101+Firefox/43.1 http://megatec.co.il/cr8000.html megatec.co.il 200 0 0 13841 263 390
+2018-01-28 17:05:06 W3SVC1760 VIOLET 143.95.252.51 GET /index.php - 80 - 176.110.129.2 Mozilla/5.0+(Windows+NT+7.1;+Win64;+rv:43.1)+Gecko/20100101+Firefox/43.1 http://megatec.co.il/index.php megatec.co.il 404 0 2 1424 259 187
+2018-01-28 17:05:07 W3SVC1760 VIOLET 143.95.252.51 GET /index.php - 80 - 176.110.129.2 Mozilla/5.0+(Windows+NT+7.1;+Win64;+rv:43.1)+Gecko/20100101+Firefox/43.1 http://megatec.co.il/index.php megatec.co.il 404 0 2 1424 259 187
+2018-01-28 17:05:07 W3SVC1760 VIOLET 143.95.252.51 GET /index.php - 80 - 176.110.129.2 Mozilla/5.0+(Windows+NT+7.1;+Win64;+rv:43.1)+Gecko/20100101+Firefox/43.1 http://megatec.co.il/index.php megatec.co.il 404 0 2 1424 259 171
+2018-01-28 17:14:40 W3SVC1760 VIOLET 143.95.252.51 GET /google6b4e74022bf3babc.html - 80 - 72.14.199.132 Mozilla/5.0+(compatible;+Google-Site-Verification/1.0) - www.megatec.co.il 404 0 2 1405 209 62
+2018-01-28 17:19:30 W3SVC1760 VIOLET 143.95.252.51 GET /google06927393bf85d9eb.html - 80 - 72.14.199.132 Mozilla/5.0+(compatible;+Google-Site-Verification/1.0) - www.megatec.co.il 200 0 0 299 209 78
+2018-01-28 17:28:34 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 80.233.134.210 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/58.0.3029.96+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19536 282 484
+2018-01-28 17:28:58 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 80.233.134.210 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/58.0.3029.96+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 1236 0 2389 24780
+2018-01-28 17:30:47 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_cable.html - 80 - 66.249.79.70 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - www.megatec.co.il 200 0 0 16176 203 124
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 17:49:26
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 17:49:25 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/elbit_logo.png - 80 - 66.249.79.68 Googlebot-Image/1.0 - www.megatec.co.il 304 0 0 164 262 62
+2018-01-28 17:58:17 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 95.158.189.118 Mozilla/5.0+(compatible;+RukiCrawler/1.0;++http://ruki.rezko.net) - www.megatec.co.il 200 0 0 19536 275 515
+2018-01-28 18:01:06 W3SVC1760 VIOLET 143.95.252.51 GET /contacts.html - 80 - 95.158.189.118 Mozilla/5.0+(compatible;+RukiCrawler/1.0;++http://ruki.rezko.net) - www.megatec.co.il 200 0 0 11912 310 359
+2018-01-28 18:05:13 W3SVC1760 VIOLET 143.95.252.51 GET /contacts.html - 80 - 95.158.189.118 Mozilla/5.0+(compatible;+RukiCrawler/1.0;++http://ruki.rezko.net) - www.megatec.co.il 200 0 0 11912 310 343
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 18:54:38
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 18:54:38 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 37.115.204.220 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/58.0.3029.81+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19536 282 703
+2018-01-28 18:54:57 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 37.115.204.220 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/58.0.3029.81+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 336 51536 19890
+2018-01-28 18:56:38 W3SVC1760 VIOLET 143.95.252.51 GET /trainings.html - 80 - 216.244.66.199 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - megatec.co.il 200 0 0 11203 224 109
+2018-01-28 19:02:37 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 46.161.9.51 Mozilla/5.0+(Windows+NT+6.3;+WOW64;+rv:53.0)+Gecko/20100101+Firefox/53.0 http://megatec.co.il/ megatec.co.il 200 0 0 19536 241 499
+2018-01-28 19:02:52 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/plasan_logo.jpg - 80 - 66.249.79.136 Googlebot-Image/1.0 - www.megatec.co.il 200 0 0 4574 213 46
+2018-01-28 19:03:00 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 46.161.9.51 Mozilla/5.0+(Windows+NT+6.3;+WOW64;+rv:53.0)+Gecko/20100101+Firefox/53.0 http://megatec.co.il/ megatec.co.il 200 0 0 336 1249 20452
+2018-01-28 19:14:05 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 46.161.9.51 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/57.0.2987.110+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19536 284 484
+2018-01-28 19:14:25 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 46.161.9.51 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/57.0.2987.110+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 336 808 18671
+2018-01-28 19:24:42 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 141.8.143.154 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 269 196 156
+2018-01-28 19:26:48 W3SVC1760 VIOLET 143.95.252.51 GET /Style1.aspx RowId=0&Upper=rdocontact 80 - 84.201.133.54 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 404 0 0 2124 253 156
+2018-01-28 19:28:49 W3SVC1760 VIOLET 143.95.252.51 GET /info2.aspx RowId=0&Upper=rdoabout 80 - 100.43.85.120 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 404 0 0 2123 250 156
+2018-01-28 19:40:55 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 84.201.133.27 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - www.megatec.co.il 200 0 0 269 200 140
+2018-01-28 19:41:00 W3SVC1760 VIOLET 143.95.252.51 GET /favicon.ico - 80 - 93.158.161.94 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - www.megatec.co.il 404 0 2 1405 232 171
+2018-01-28 19:45:52 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 66.249.79.136 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - www.megatec.co.il 200 0 0 19517 294 156
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 20:29:30
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 20:29:30 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_construction.html - 80 - 5.255.250.12 Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots) - megatec.co.il 200 0 0 16283 247 406
+2018-01-28 20:39:54 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 176.192.170.134 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/61.0.3163.100+YaBrowser/17.10.1.1204+Yowser/2.5+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19517 417 593
+2018-01-28 20:40:38 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 79.106.97.118 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/61.0.3163.100+YaBrowser/17.10.1.1204+Yowser/2.5+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 317 2508 18187
+2018-01-28 20:50:43 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 269 224 46
+2018-01-28 20:52:14 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 269 224 62
+2018-01-28 21:00:27 W3SVC1760 VIOLET 143.95.252.51 GET /index.html - 80 - 46.229.168.70 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 19536 203 125
+2018-01-28 21:00:42 W3SVC1760 VIOLET 143.95.252.51 GET /he/about.html - 80 - 46.229.168.73 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 15736 206 156
+2018-01-28 21:00:50 W3SVC1760 VIOLET 143.95.252.51 GET /index.html - 80 - 46.229.168.80 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 19536 203 156
+2018-01-28 21:00:58 W3SVC1760 VIOLET 143.95.252.51 GET /he/about.html - 80 - 46.229.168.73 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 15736 206 109
+2018-01-28 21:01:19 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_hitech.html - 80 - 46.229.168.73 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 14096 214 156
+2018-01-28 21:01:32 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_hitech.html - 80 - 46.229.168.73 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 14096 214 109
+2018-01-28 21:01:35 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_oil.html - 80 - 46.229.168.69 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 14342 211 156
+2018-01-28 21:01:52 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 46.161.9.25 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/51.0.2704.79+Safari/537.36+Edge/14.14393 http://megatec.co.il/ megatec.co.il 200 0 0 19536 297 468
+2018-01-28 21:02:01 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_hitech.html - 80 - 46.229.168.67 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 16626 217 203
+2018-01-28 21:02:10 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 46.161.9.25 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/51.0.2704.79+Safari/537.36+Edge/14.14393 http://megatec.co.il/ megatec.co.il 200 0 0 336 1357 18765
+2018-01-28 21:02:17 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_main.html - 80 - 46.229.168.70 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 14481 215 124
+2018-01-28 21:02:23 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_hitech.html - 80 - 46.229.168.67 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 16626 217 109
+2018-01-28 21:02:40 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_basic.html - 80 - 46.229.168.74 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 13318 209 124
+2018-01-28 21:03:04 W3SVC1760 VIOLET 143.95.252.51 GET /cad_main.html - 80 - 46.229.168.78 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 12011 206 124
+2018-01-28 21:03:15 W3SVC1760 VIOLET 143.95.252.51 GET /he/contacts.html - 80 - 46.229.168.71 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 12365 209 171
+2018-01-28 21:03:26 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_main.html - 80 - 46.229.168.74 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 14481 215 124
+2018-01-28 21:04:05 W3SVC1760 VIOLET 143.95.252.51 GET /he/p6_basic.html - 80 - 46.229.168.75 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 64 0 209 46
+2018-01-28 21:04:05 W3SVC1760 VIOLET 143.95.252.51 GET /he/p6_basic.html - 80 - 46.229.168.75 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 3423 209 78
+2018-01-28 21:04:17 W3SVC1760 VIOLET 143.95.252.51 GET /cr8000.html - 80 - 46.229.168.73 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 13841 204 78
+2018-01-28 21:04:46 W3SVC1760 VIOLET 143.95.252.51 GET /cad_main.html - 80 - 46.229.168.76 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 12011 206 109
+2018-01-28 21:05:09 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_it.html - 80 - 46.229.168.75 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 14707 210 203
+2018-01-28 21:05:09 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_it.html - 80 - 46.229.168.75 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 4161 210 105
+2018-01-28 21:05:17 W3SVC1760 VIOLET 143.95.252.51 GET /eb_basic.html - 80 - 46.229.168.75 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 12169 206 156
+2018-01-28 21:05:37 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_aero.html - 80 - 46.229.168.72 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 17034 215 140
+2018-01-28 21:06:02 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_aero.html - 80 - 46.229.168.79 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 64 0 212 46
+2018-01-28 21:06:02 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_aero.html - 80 - 46.229.168.79 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 3802 212 31
+2018-01-28 21:06:08 W3SVC1760 VIOLET 143.95.252.51 GET /trainings.html - 80 - 46.229.168.68 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 11222 207 109
+2018-01-28 21:06:28 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_electrical.html - 80 - 46.229.168.66 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 16929 214 249
+2018-01-28 21:06:39 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_electrical.html - 80 - 46.229.168.66 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 16929 214 109
+2018-01-28 21:06:49 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_instrumentation.html - 80 - 46.229.168.68 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 15929 219 124
+2018-01-28 21:06:58 W3SVC1760 VIOLET 143.95.252.51 GET /eb_basic.html - 80 - 46.229.168.71 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 12169 206 109
+2018-01-28 21:07:08 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_instrumentation.html - 80 - 46.229.168.68 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 15929 219 124
+2018-01-28 21:07:17 W3SVC1760 VIOLET 143.95.252.51 GET /eb_basic.html - 80 - 46.229.168.71 Mozilla/5.0+(compatible;+SemrushBot/1.2~bl;++http://www.semrush.com/bot.html) - megatec.co.il 200 0 0 12169 206 104
+2018-01-28 21:09:09 W3SVC1760 VIOLET 143.95.252.51 GET /robots.txt - 80 - 54.36.150.142 Mozilla/5.0+(compatible;+AhrefsBot/5.2;++http://ahrefs.com/robot/) - www.megatec.co.il 200 0 0 269 178 124
+2018-01-28 21:09:09 W3SVC1760 VIOLET 143.95.252.51 GET /cr8000.html - 80 - 54.36.148.240 Mozilla/5.0+(compatible;+AhrefsBot/5.2;++http://ahrefs.com/robot/) - www.megatec.co.il 200 0 0 13822 179 234
+2018-01-28 21:10:47 W3SVC1760 VIOLET 143.95.252.51 GET /Style1.aspx RowId=375 80 - 66.249.79.134 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - www.megatec.co.il 404 0 0 2124 315 62
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 21:27:14
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 21:27:13 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 79.117.197.193 Mozilla/5.0+(Windows+NT+6.1;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/ megatec.co.il 200 0 0 19536 234 499
+2018-01-28 21:27:31 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 79.117.197.193 Mozilla/5.0+(Windows+NT+6.1;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/ megatec.co.il 200 0 0 336 471 17421
+2018-01-28 21:27:31 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 79.117.197.193 Mozilla/5.0+(Windows+NT+6.1;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/ megatec.co.il 200 0 0 19536 234 500
+2018-01-28 21:27:32 W3SVC1760 VIOLET 143.95.252.51 GET /cr8000.html - 80 - 79.117.197.193 Mozilla/5.0+(Windows+NT+6.1;+rv:52.0)+Gecko/20100101+Firefox/52.0 http://megatec.co.il/cr8000.html megatec.co.il 200 0 0 13841 256 343
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 21:55:04
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 21:55:03 W3SVC1760 VIOLET 143.95.252.51 GET /cimmetry/office.asp - 80 - 157.55.39.161 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - megatec.co.il 404 0 2 1405 287 140
+2018-01-28 22:02:36 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 93.188.39.169 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.84+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 19536 282 609
+2018-01-28 22:03:01 W3SVC1760 VIOLET 143.95.252.51 POST /send.php - 80 - 93.188.39.169 Mozilla/5.0+(Windows+NT+6.1;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/63.0.3239.84+Safari/537.36 http://megatec.co.il/ megatec.co.il 200 0 0 336 1720 20015
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 19517 439 124
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/sherman_logo.GIF - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 4970 396 62
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /images/customers/gilat_logo.JPG - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 7595 394 46
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.easing.1.3.js - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 8357 350 46
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /js/superfish.js - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 4048 342 46
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.mobile.customized.min.js - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 17814 361 125
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.min.js - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 93696 343 203
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /js/camera.js - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 70832 339 156
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /js/jquery.prettyPhoto.js - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 25545 351 46
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /js/bootstrap.js - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 58561 342 171
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /js/htweet.js - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 7262 339 46
+2018-01-28 22:03:08 W3SVC1760 VIOLET 143.95.252.51 GET /js/custom.js - 80 - 138.197.111.53 Mozilla/5.0+(compatible;+DnyzBot/1.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+HeadlessChrome/64.0.3264.0+Safari/537.36 - www.megatec.co.il 200 0 0 7343 339 46
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 22:29:07
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 22:29:07 W3SVC1760 VIOLET 143.95.252.51 GET /he/eb_electrical.html - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 16910 235 234
+2018-01-28 22:41:30 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 42.236.99.30 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.102+Safari/537.36;+360Spider http://megatec.co.il/ megatec.co.il 200 0 0 19517 307 1249
+2018-01-28 22:41:44 W3SVC1760 VIOLET 143.95.252.51 GET /primavera_oil.html - 80 - 216.244.66.246 Mozilla/5.0+(compatible;+DotBot/1.1;+http://www.opensiteexplorer.org/dotbot,+help@moz.com) - www.megatec.co.il 200 0 0 14323 232 109
+2018-01-28 22:49:41 W3SVC1760 VIOLET 143.95.252.51 GET /info2.aspx RowId=270 80 - 66.249.79.138 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - www.megatec.co.il 404 0 0 2123 314 46
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 23:03:07
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 23:03:07 W3SVC1760 VIOLET 143.95.252.51 GET /he/primavera_main.html - 80 - 66.249.79.136 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - www.megatec.co.il 200 0 0 14462 316 109
+#Software: Microsoft Internet Information Services 8.0
+#Version: 1.0
+#Date: 2018-01-28 23:21:23
+#Fields: date time s-sitename s-computername s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2018-01-28 23:21:22 W3SVC1760 VIOLET 143.95.252.51 GET /wp-content/plugins/php-event-calendar/js/file-uploader/jquery.fileupload.js - 80 - 185.106.122.254 Mozilla/5.0+(Windows+NT+6.1;+Trident/7.0;+rv:11.0)+like+Gecko - megatec.co.il 404 0 2 1405 307 203
+2018-01-28 23:34:45 W3SVC1760 VIOLET 143.95.252.51 GET / - 80 - 180.153.236.165 Mozilla/5.0(compatible;MSIE9.0;WindowsNT6.1;Trident/5.0) http://www.megatec.co.il/ www.megatec.co.il 200 0 0 19517 251 515
+2018-01-28 23:35:52 W3SVC1760 VIOLET 143.95.252.51 GET /eb_instrumentation.html - 80 - 54.36.148.98 Mozilla/5.0+(compatible;+AhrefsBot/5.2;++http://ahrefs.com/robot/) - megatec.co.il 200 0 0 14063 187 250
