@@ -14,7 +14,9 @@
     <link href="css/site-modern.css" rel="stylesheet">
 
     <!-- Font -->
-    <link href='https://fonts.googleapis.com/css?family=Muli:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Muli:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!--[if lt IE 9]>
         <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,7 +44,7 @@
                             <img src="images/megatec-logo.jpg" alt="Megatec Advanced Technologies" />
                         </a>
                     </div>
-                    <div class="navbar fright">
+                    <div class="navbar fright desktop-nav">
                         <nav id="main_menu">
                             <div class="menu_wrap">
                                 <ul class="nav sf-menu">
@@ -71,11 +73,50 @@
                             </div>
                         </nav>
                     </div>
+                    <button class="mobile-menu-toggle fright" aria-label="Open menu" onclick="toggleMobileMenu()">
+                        <span class="hamburger"></span>
+                    </button>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
         <!-- //Header -->
+
+        <!-- Mobile Menu -->
+        <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <img src="images/megatec-logo.jpg" alt="Megatec" class="mobile-menu-logo">
+                <button class="mobile-menu-close" onclick="closeMobileMenu()">&times;</button>
+            </div>
+            <nav class="mobile-menu-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="has-submenu">
+                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Solutions</a>
+                        <ul class="mobile-submenu">
+                            <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
+                            <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+                            <li><a href="aconex.html">Oracle Aconex</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Industries</a>
+                        <ul class="mobile-submenu">
+                            <li><a href="primavera_construction.html">Construction</a></li>
+                            <li><a href="primavera_hitech.html">High-Tech</a></li>
+                            <li><a href="primavera_it.html">IT</a></li>
+                            <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
+                            <li><a href="primavera_oil.html">Oil & Gas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="trainings.html">Training</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                    <li><a href="he/aconex.html">Hebrew</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <!-- Page Container -->
         <div class="page_container">
@@ -238,10 +279,10 @@
                         </div>
                         <div class="span5">
                             <h2 class="title">Contact Us</h2>
-                            <form action="send.php" method="post" id="contact_form">
-                                <input type="text" name="name" id="name" placeholder="Name" />
-                                <input type="text" name="email" id="email" placeholder="Email" />
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <form id="footer-contact-form">
+                                <input type="text" name="name" id="footer-name" placeholder="Name" required />
+                                <input type="email" name="email" id="footer-email" placeholder="Email" required />
+                                <textarea name="message" id="footer-message" placeholder="Message" required></textarea>
                                 <div class="clear"></div>
                                 <input type="submit" class="contact_btn" id="button-send" value="Send" />
                                 <div class="clear"></div>
@@ -276,5 +317,91 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/superfish.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+    function toggleMobileMenu() {
+        document.querySelector('.mobile-menu').classList.toggle('active');
+        document.querySelector('.mobile-nav-overlay').classList.toggle('active');
+        document.querySelector('.mobile-menu-toggle').classList.toggle('active');
+        document.body.style.overflow = document.querySelector('.mobile-menu').classList.contains('active') ? 'hidden' : '';
+    }
+    function closeMobileMenu() {
+        document.querySelector('.mobile-menu').classList.remove('active');
+        document.querySelector('.mobile-nav-overlay').classList.remove('active');
+        document.querySelector('.mobile-menu-toggle').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    function toggleSubmenu(element) {
+        var parent = element.parentElement;
+        parent.classList.toggle('open');
+        var submenu = parent.querySelector('.mobile-submenu');
+        submenu.classList.toggle('active');
+    }
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) { closeMobileMenu(); }
+    });
+    </script>
+<!-- Footer Contact Form Handler -->
+<script>
+(function() {
+    var footerForm = document.getElementById('footer-contact-form');
+    if (footerForm) {
+        footerForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name = document.getElementById('footer-name').value.trim();
+            var email = document.getElementById('footer-email').value.trim();
+            var message = document.getElementById('footer-message').value.trim();
+            var statusEl = document.getElementById('footer-form-status');
+            var submitBtn = document.getElementById('footer-submit-btn');
+            
+            if (!name || !email || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                statusEl.textContent = 'Please fill in all fields with valid data.';
+                statusEl.style.display = 'block';
+                statusEl.style.background = '#fee2e2';
+                statusEl.style.color = '#991b1b';
+                return;
+            }
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            var formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('subject', 'Quick Contact');
+            formData.append('message', message);
+            formData.append('category', 'general');
+            
+            fetch('api/contact.php', { method: 'POST', body: formData })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                statusEl.style.display = 'block';
+                if (data.success) {
+                    statusEl.textContent = 'Message sent!';
+                    statusEl.style.background = '#d1fae5';
+                    statusEl.style.color = '#065f46';
+                    footerForm.reset();
+                } else {
+                    statusEl.textContent = data.error || 'Failed to send.';
+                    statusEl.style.background = '#fee2e2';
+                    statusEl.style.color = '#991b1b';
+                }
+            })
+            .catch(function() {
+                statusEl.textContent = 'An error occurred.';
+                statusEl.style.display = 'block';
+                statusEl.style.background = '#fee2e2';
+                statusEl.style.color = '#991b1b';
+            })
+            .finally(function() {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send';
+            });
+        });
+    }
+})();
+</script>
+<script src="js/modern-animations.js"></script>
 </body>
 </html>

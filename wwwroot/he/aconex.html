@@ -14,7 +14,9 @@
     <link href="../css/site-modern.css" rel="stylesheet">
 
     <!-- Font -->
-    <link href='https://fonts.googleapis.com/css?family=Muli:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Muli:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Google Analytics -->
     <script>
@@ -38,7 +40,7 @@
                             <img src="../images/megatec-logo.jpg" alt="מגהטק טכנולוגיות מתקדמות" />
                         </a>
                     </div>
-                    <div class="navbar fleft">
+                    <div class="navbar desktop-nav fleft">
                         <nav id="main_menu">
                             <div class="menu_wrap">
                                 <ul class="nav sf-menu">
@@ -67,11 +69,50 @@
                             </div>
                         </nav>
                     </div>
+                    <button class="mobile-menu-toggle fright" aria-label="פתח תפריט" onclick="toggleMobileMenu()">
+                        <span class="hamburger"></span>
+                    </button>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
         <!-- //Header -->
+
+<!-- Mobile Menu -->
+<div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+<div class="mobile-menu">
+    <div class="mobile-menu-header">
+        <img src="../images/megatec-logo.jpg" alt="מגהטק" class="mobile-menu-logo">
+        <button class="mobile-menu-close" onclick="closeMobileMenu()">&times;</button>
+    </div>
+    <nav class="mobile-menu-nav">
+        <ul>
+            <li><a href="index.html">ראשי</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li class="has-submenu">
+                <a href="javascript:{}" onclick="toggleSubmenu(this)">פתרונות</a>
+                <ul class="mobile-submenu">
+                    <li><a href="primavera_main.html">Primavera P6</a></li>
+                    <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+                    <li><a href="aconex.html">Oracle Aconex</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:{}" onclick="toggleSubmenu(this)">תעשיות</a>
+                <ul class="mobile-submenu">
+                    <li><a href="primavera_construction.html">בנייה</a></li>
+                    <li><a href="primavera_hitech.html">היי-טק</a></li>
+                    <li><a href="primavera_it.html">IT</a></li>
+                    <li><a href="primavera_aero.html">תעופה וביטחון</a></li>
+                    <li><a href="primavera_oil.html">נפט וגז</a></li>
+                </ul>
+            </li>
+            <li><a href="trainings.html">הדרכות</a></li>
+            <li><a href="contacts.html">צור קשר</a></li>
+            <li><a href="../aconex.html">English</a></li>
+        </ul>
+    </nav>
+</div>
 
         <!-- Page Container -->
         <div class="page_container">
@@ -154,12 +195,14 @@
                         </div>
                         <div class="span5">
                             <h2 class="title">צור קשר</h2>
-                            <form action="../send.php" method="post" id="contact_form">
-                                <input type="text" name="name" id="name" placeholder="שם" />
-                                <input type="text" name="email" id="email" placeholder="אימייל" />
-                                <textarea name="message" id="message" placeholder="הודעה"></textarea>
+                            <form id="footer-contact-form">
+                                <input type="text" name="name" id="footer-name" placeholder="שם" required />
+                                <input type="email" name="email" id="footer-email" placeholder="אימייל" required />
+                                <textarea name="message" id="footer-message" placeholder="הודעה" required></textarea>
                                 <div class="clear"></div>
-                                <input type="submit" class="contact_btn_he" value="שלח" />
+                                <button type="submit" class="contact_btn_he" id="footer-submit-btn">שלח</button>
+                                <div class="clear"></div>
+                                <div id="footer-form-status" class="form-status"></div>
                                 <div class="clear"></div>
                             </form>
                         </div>
@@ -189,5 +232,91 @@
     <script src="../js/bootstrap.js"></script>
     <script src="../js/superfish.js"></script>
     <script src="../js/custom.js"></script>
+
+<!-- Mobile Menu JavaScript -->
+<script>
+function toggleMobileMenu() {
+    document.querySelector('.mobile-menu').classList.toggle('active');
+    document.querySelector('.mobile-nav-overlay').classList.toggle('active');
+    document.querySelector('.mobile-menu-toggle').classList.toggle('active');
+    document.body.style.overflow = document.querySelector('.mobile-menu').classList.contains('active') ? 'hidden' : '';
+}
+function closeMobileMenu() {
+    document.querySelector('.mobile-menu').classList.remove('active');
+    document.querySelector('.mobile-nav-overlay').classList.remove('active');
+    document.querySelector('.mobile-menu-toggle').classList.remove('active');
+    document.body.style.overflow = '';
+}
+function toggleSubmenu(element) {
+    var parent = element.parentElement;
+    parent.classList.toggle('open');
+    var submenu = parent.querySelector('.mobile-submenu');
+    submenu.classList.toggle('active');
+}
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) { closeMobileMenu(); }
+});
+</script>
+<!-- Footer Contact Form Handler -->
+<script>
+(function() {
+    var footerForm = document.getElementById('footer-contact-form');
+    if (footerForm) {
+        footerForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var name = document.getElementById('footer-name').value.trim();
+            var email = document.getElementById('footer-email').value.trim();
+            var message = document.getElementById('footer-message').value.trim();
+            var statusEl = document.getElementById('footer-form-status');
+            var submitBtn = document.getElementById('footer-submit-btn');
+            
+            if (!name || !email || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                statusEl.textContent = 'נא למלא את כל השדות.';
+                statusEl.style.display = 'block';
+                statusEl.style.background = '#fee2e2';
+                statusEl.style.color = '#991b1b';
+                return;
+            }
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'שולח...';
+            
+            var formData = new FormData();
+            formData.append('name', name);
+            formData.append('email', email);
+            formData.append('subject', 'Quick Contact');
+            formData.append('message', message);
+            formData.append('category', 'general');
+            
+            fetch('../api/contact.php', { method: 'POST', body: formData })
+            .then(function(r) { return r.json(); })
+            .then(function(data) {
+                statusEl.style.display = 'block';
+                if (data.success) {
+                    statusEl.textContent = 'ההודעה נשלחה!';
+                    statusEl.style.background = '#d1fae5';
+                    statusEl.style.color = '#065f46';
+                    footerForm.reset();
+                } else {
+                    statusEl.textContent = data.error || 'אירעה שגיאה.';
+                    statusEl.style.background = '#fee2e2';
+                    statusEl.style.color = '#991b1b';
+                }
+            })
+            .catch(function() {
+                statusEl.textContent = 'אירעה שגיאה.';
+                statusEl.style.display = 'block';
+                statusEl.style.background = '#fee2e2';
+                statusEl.style.color = '#991b1b';
+            })
+            .finally(function() {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'שלח';
+            });
+        });
+    }
+})();
+</script>
+<script src="../js/modern-animations.js"></script>
 </body>
 </html>

@@ -14,7 +14,9 @@
     <link href="css/site-modern.css" rel="stylesheet">
 
     <!-- Font -->
-    <link href='https://fonts.googleapis.com/css?family=Muli:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Muli:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!--[if lt IE 9]>
         <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,7 +44,7 @@
                             <img src="images/megatec-logo.jpg" alt="Megatec Advanced Technologies" />
                         </a>
                     </div>
-                    <div class="navbar fright">
+                    <div class="navbar fright desktop-nav">
                         <nav id="main_menu">
                             <div class="menu_wrap">
                                 <ul class="nav sf-menu">
@@ -71,11 +73,50 @@
                             </div>
                         </nav>
                     </div>
+                    <button class="mobile-menu-toggle fright" aria-label="Open menu" onclick="toggleMobileMenu()">
+                        <span class="hamburger"></span>
+                    </button>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
         <!-- //Header -->
+
+        <!-- Mobile Menu -->
+        <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <img src="images/megatec-logo.jpg" alt="Megatec" class="mobile-menu-logo">
+                <button class="mobile-menu-close" onclick="closeMobileMenu()">&times;</button>
+            </div>
+            <nav class="mobile-menu-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="has-submenu">
+                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Solutions</a>
+                        <ul class="mobile-submenu">
+                            <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
+                            <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+                            <li><a href="aconex.html">Oracle Aconex</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Industries</a>
+                        <ul class="mobile-submenu">
+                            <li><a href="primavera_construction.html">Construction</a></li>
+                            <li><a href="primavera_hitech.html">High-Tech</a></li>
+                            <li><a href="primavera_it.html">IT</a></li>
+                            <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
+                            <li><a href="primavera_oil.html">Oil & Gas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="trainings.html">Training</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                    <li><a href="he/contacts.html">Hebrew</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <!-- Page Container -->
         <div class="page_container">
@@ -148,16 +189,32 @@
                                 <p style="color: #4a5568; margin-bottom: 24px;">Have a question about our Oracle Primavera solutions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
 
                                 <div class="contact_form">
-                                    <div id="note"></div>
+                                    <div id="form-status" style="display: none; padding: 16px; border-radius: 8px; margin-bottom: 16px;"></div>
                                     <div id="fields">
-                                        <form id="ajax-contact-form" action="send.php" method="post">
-                                            <input class="span7" type="text" name="name" placeholder="Your Name *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
-                                            <input class="span7" type="email" name="email" placeholder="Your Email *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
-                                            <input class="span7" type="text" name="subject" placeholder="Subject" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
-                                            <textarea name="message" id="message" class="span8" placeholder="Your Message *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; min-height: 180px; margin-bottom: 16px;"></textarea>
+                                        <form id="contact-form" novalidate>
+                                            <input class="span7" type="text" name="name" id="contact-name" placeholder="Your Name *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
+                                            <div class="field-error" id="name-error" style="display: none; color: #ef4444; font-size: 14px; margin-top: -12px; margin-bottom: 12px;"></div>
+
+                                            <input class="span7" type="email" name="email" id="contact-email" placeholder="Your Email *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
+                                            <div class="field-error" id="email-error" style="display: none; color: #ef4444; font-size: 14px; margin-top: -12px; margin-bottom: 12px;"></div>
+
+                                            <select name="category" id="contact-category" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px; background: #fff; font-size: 16px;">
+                                                <option value="general">General Inquiry</option>
+                                                <option value="sales">Sales / Pricing</option>
+                                                <option value="training">Training Information</option>
+                                            </select>
+
+                                            <input class="span7" type="text" name="subject" id="contact-subject" placeholder="Subject" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
+
+                                            <textarea name="message" id="contact-message" class="span8" placeholder="Your Message *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; min-height: 180px; margin-bottom: 16px;"></textarea>
+                                            <div class="field-error" id="message-error" style="display: none; color: #ef4444; font-size: 14px; margin-top: -12px; margin-bottom: 12px;"></div>
+
                                             <div class="clear"></div>
-                                            <input type="reset" class="contact_btn" value="Clear" style="margin-right: 8px;" />
-                                            <input type="submit" class="contact_btn" value="Send Message" style="background: #1dace8;" />
+                                            <button type="reset" class="contact_btn" style="margin-right: 8px;">Clear</button>
+                                            <button type="submit" class="contact_btn" id="submit-btn" style="background: #1dace8;">
+                                                <span id="submit-text">Send Message</span>
+                                                <span id="submit-loading" style="display: none;">Sending...</span>
+                                            </button>
                                             <div class="clear"></div>
                                         </form>
                                     </div>
@@ -197,13 +254,14 @@
                         </div>
                         <div class="span5">
                             <h2 class="title">Quick Contact</h2>
-                            <form action="send.php" method="post" id="contact_form">
-                                <input type="text" name="name" id="name" placeholder="Name" />
-                                <input type="text" name="email" id="email" placeholder="Email" />
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <form id="footer-contact-form">
+                                <input type="text" name="name" id="footer-name" placeholder="Name" required />
+                                <input type="email" name="email" id="footer-email" placeholder="Email" required />
+                                <textarea name="message" id="footer-message" placeholder="Message" required></textarea>
                                 <div class="clear"></div>
-                                <input type="submit" class="contact_btn" value="Send" />
+                                <button type="submit" class="contact_btn" id="footer-submit-btn">Send</button>
                                 <div class="clear"></div>
+                                <div id="footer-form-status" class="form-status"></div>
                             </form>
                         </div>
                     </div>
@@ -234,5 +292,204 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/superfish.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Mobile Menu JavaScript -->
+    <script>
+    function toggleMobileMenu() {
+        document.querySelector('.mobile-menu').classList.toggle('active');
+        document.querySelector('.mobile-nav-overlay').classList.toggle('active');
+        document.querySelector('.mobile-menu-toggle').classList.toggle('active');
+        document.body.style.overflow = document.querySelector('.mobile-menu').classList.contains('active') ? 'hidden' : '';
+    }
+    function closeMobileMenu() {
+        document.querySelector('.mobile-menu').classList.remove('active');
+        document.querySelector('.mobile-nav-overlay').classList.remove('active');
+        document.querySelector('.mobile-menu-toggle').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    function toggleSubmenu(element) {
+        var parent = element.parentElement;
+        parent.classList.toggle('open');
+        var submenu = parent.querySelector('.mobile-submenu');
+        submenu.classList.toggle('active');
+    }
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) { closeMobileMenu(); }
+    });
+    </script>
+
+    <!-- Contact Form Handler -->
+    <script>
+    (function() {
+        // Clear field errors
+        function clearErrors() {
+            var errors = document.querySelectorAll('.field-error');
+            errors.forEach(function(el) { el.style.display = 'none'; });
+            var inputs = document.querySelectorAll('input, textarea, select');
+            inputs.forEach(function(el) { el.style.borderColor = '#e2e8f0'; });
+        }
+
+        // Show field error
+        function showError(fieldId, message) {
+            var errorEl = document.getElementById(fieldId + '-error');
+            var inputEl = document.getElementById('contact-' + fieldId);
+            if (errorEl) {
+                errorEl.textContent = message;
+                errorEl.style.display = 'block';
+            }
+            if (inputEl) inputEl.style.borderColor = '#ef4444';
+        }
+
+        // Show form status
+        function showStatus(elementId, message, isSuccess) {
+            var statusEl = document.getElementById(elementId);
+            if (statusEl) {
+                statusEl.textContent = message;
+                statusEl.style.display = 'block';
+                statusEl.style.background = isSuccess ? '#d1fae5' : '#fee2e2';
+                statusEl.style.color = isSuccess ? '#065f46' : '#991b1b';
+            }
+        }
+
+        // Client-side email validation
+        function validateEmail(email) {
+            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // Main contact form submission
+        var contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                clearErrors();
+
+                var name = document.getElementById('contact-name').value.trim();
+                var email = document.getElementById('contact-email').value.trim();
+                var subject = document.getElementById('contact-subject').value.trim();
+                var message = document.getElementById('contact-message').value.trim();
+                var category = document.getElementById('contact-category').value;
+
+                // Client-side validation
+                var hasErrors = false;
+                if (name.length < 2) {
+                    showError('name', 'Please enter your name (at least 2 characters)');
+                    hasErrors = true;
+                }
+                if (!email || !validateEmail(email)) {
+                    showError('email', 'Please enter a valid email address');
+                    hasErrors = true;
+                }
+                if (message.length < 10) {
+                    showError('message', 'Please enter a message (at least 10 characters)');
+                    hasErrors = true;
+                }
+
+                if (hasErrors) return;
+
+                // Show loading state
+                var submitBtn = document.getElementById('submit-btn');
+                var submitText = document.getElementById('submit-text');
+                var submitLoading = document.getElementById('submit-loading');
+                submitBtn.disabled = true;
+                submitText.style.display = 'none';
+                submitLoading.style.display = 'inline';
+
+                // Prepare form data
+                var formData = new FormData();
+                formData.append('name', name);
+                formData.append('email', email);
+                formData.append('subject', subject || 'Website Inquiry');
+                formData.append('message', message);
+                formData.append('category', category);
+
+                // Submit to API
+                fetch('api/contact.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(function(response) {
+                    return response.json().then(function(data) {
+                        return { status: response.status, data: data };
+                    });
+                })
+                .then(function(result) {
+                    if (result.data.success) {
+                        showStatus('form-status', result.data.message || 'Thank you! Your message has been sent.', true);
+                        contactForm.reset();
+                    } else {
+                        // Handle field-specific errors
+                        if (result.data.errors) {
+                            for (var field in result.data.errors) {
+                                showError(field, result.data.errors[field]);
+                            }
+                        }
+                        showStatus('form-status', result.data.error || 'Failed to send message. Please try again.', false);
+                    }
+                })
+                .catch(function(error) {
+                    showStatus('form-status', 'An error occurred. Please try again later.', false);
+                })
+                .finally(function() {
+                    submitBtn.disabled = false;
+                    submitText.style.display = 'inline';
+                    submitLoading.style.display = 'none';
+                });
+            });
+        }
+
+        // Footer quick contact form (simpler, no Turnstile)
+        var footerForm = document.getElementById('footer-contact-form');
+        if (footerForm) {
+            footerForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                var name = document.getElementById('footer-name').value.trim();
+                var email = document.getElementById('footer-email').value.trim();
+                var message = document.getElementById('footer-message').value.trim();
+
+                if (!name || !validateEmail(email) || !message) {
+                    showStatus('footer-form-status', 'Please fill in all fields with valid data.', false);
+                    return;
+                }
+
+                var submitBtn = document.getElementById('footer-submit-btn');
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+
+                var formData = new FormData();
+                formData.append('name', name);
+                formData.append('email', email);
+                formData.append('subject', 'Quick Contact');
+                formData.append('message', message);
+                formData.append('category', 'general');
+
+                fetch('api/contact.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    if (data.success) {
+                        showStatus('footer-form-status', 'Message sent!', true);
+                        footerForm.reset();
+                    } else {
+                        showStatus('footer-form-status', data.error || 'Failed to send.', false);
+                    }
+                })
+                .catch(function() {
+                    showStatus('footer-form-status', 'An error occurred.', false);
+                })
+                .finally(function() {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send';
+                });
+            });
+        }
+    })();
+    </script>
+<script src="js/modern-animations.js"></script>
 </body>
 </html>

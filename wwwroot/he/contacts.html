@@ -18,13 +18,16 @@
 
 
 <!-- Font -->
-<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Muli:wght@400;600;700&display=swap" rel="stylesheet">
 
 
 <!--[if lt IE 9]>
 	<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-     <!--Google Analytics-->
+
+<!--Google Analytics-->
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -43,7 +46,7 @@
 			<div class="wrap">
 				<div class="container">
 					<div class="fleft logo"><a href="index.html"><img src="../images/megatec-logo.jpg" alt="Megatec Advanced Technologies" /></a></div>
-					<div class="navbar fright">
+					<div class="navbar fright desktop-nav">
 					<nav id="main_menu">
 							<div class="menu_wrap">
 								<ul class="nav sf-menu">
@@ -72,6 +75,9 @@
 							</div>
 						</nav>
 				</div>
+				<button class="mobile-menu-toggle fright" aria-label="פתח תפריט" onclick="toggleMobileMenu()">
+					<span class="hamburger"></span>
+				</button>
 					<div class="clear"></div>
 				</div>
 
@@ -79,6 +85,41 @@
 		</div>
         <!--//header-->
 
+		<!-- Mobile Menu -->
+		<div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
+		<div class="mobile-menu">
+			<div class="mobile-menu-header">
+				<img src="../images/megatec-logo.jpg" alt="מגהטק" class="mobile-menu-logo">
+				<button class="mobile-menu-close" onclick="closeMobileMenu()">&times;</button>
+			</div>
+			<nav class="mobile-menu-nav">
+				<ul>
+					<li><a href="index.html">ראשי</a></li>
+					<li><a href="about.html">אודות</a></li>
+					<li class="has-submenu">
+						<a href="javascript:{}" onclick="toggleSubmenu(this)">פתרונות</a>
+						<ul class="mobile-submenu">
+							<li><a href="primavera_main.html">Primavera P6</a></li>
+							<li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+							<li><a href="aconex.html">Oracle Aconex</a></li>
+						</ul>
+					</li>
+					<li class="has-submenu">
+						<a href="javascript:{}" onclick="toggleSubmenu(this)">תעשיות</a>
+						<ul class="mobile-submenu">
+							<li><a href="primavera_construction.html">בנייה</a></li>
+							<li><a href="primavera_hitech.html">היי-טק</a></li>
+							<li><a href="primavera_it.html">IT</a></li>
+							<li><a href="primavera_aero.html">תעופה וביטחון</a></li>
+							<li><a href="primavera_oil.html">נפט וגז</a></li>
+						</ul>
+					</li>
+					<li><a href="trainings.html">הדרכות</a></li>
+					<li><a href="contacts.html">צור קשר</a></li>
+					<li><a href="../contacts.html">English</a></li>
+				</ul>
+			</nav>
+		</div>
 
     <!--page_container-->
     <div class="page_container">
@@ -99,17 +140,33 @@
                         </div>
                     	<div class="span8">
                         	<h2 class="title_he">צור קשר</h2>
-                            <div class="contact_form_he" >
-                            	<div id="note"></div>
+                            <div class="contact_form_he">
+                                <div id="form-status" style="display: none; padding: 16px; border-radius: 8px; margin-bottom: 16px;"></div>
                                 <div id="fields">
-                                    <form id="ajax-contact-form" action="../send.php" method="post">
-                                        <input class="span7_he" type="text" name="name" value="" placeholder="שם"  />
-                                        <input class="span7_he" type="text" name="email" value="" placeholder="כתובת מייל" />
-                                        <input class="span7_he" type="text" name="subject" value="" placeholder="נושא" />
-                                        <textarea name="message" id="message" class="span8_he" placeholder="גוף ההודעה"></textarea>
+                                    <form id="contact-form" novalidate>
+                                        <input class="span7_he" type="text" name="name" id="contact-name" placeholder="שם *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
+                                        <div class="field-error" id="name-error" style="display: none; color: #ef4444; font-size: 14px; margin-top: -12px; margin-bottom: 12px; text-align: right;"></div>
+
+                                        <input class="span7_he" type="email" name="email" id="contact-email" placeholder="כתובת מייל *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
+                                        <div class="field-error" id="email-error" style="display: none; color: #ef4444; font-size: 14px; margin-top: -12px; margin-bottom: 12px; text-align: right;"></div>
+
+                                        <select name="category" id="contact-category" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px; background: #fff; font-size: 16px; text-align: right; direction: rtl;">
+                                            <option value="general">פנייה כללית</option>
+                                            <option value="sales">מכירות / הצעת מחיר</option>
+                                            <option value="training">מידע על הדרכות</option>
+                                        </select>
+
+                                        <input class="span7_he" type="text" name="subject" id="contact-subject" placeholder="נושא" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
+
+                                        <textarea name="message" id="contact-message" class="span8_he" placeholder="תוכן ההודעה *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; min-height: 180px; margin-bottom: 16px;"></textarea>
+                                        <div class="field-error" id="message-error" style="display: none; color: #ef4444; font-size: 14px; margin-top: -12px; margin-bottom: 12px; text-align: right;"></div>
+
                                         <div class="clear"></div>
-                                        <input type="reset" class="contact_btn_he" value="נקה טופס" />
-                                        <input type="submit" class="contact_btn_he" value="שלח" />
+                                        <button type="reset" class="contact_btn_he" style="margin-left: 8px;">נקה טופס</button>
+                                        <button type="submit" class="contact_btn_he" id="submit-btn" style="background: #1dace8;">
+                                            <span id="submit-text">שלח</span>
+                                            <span id="submit-loading" style="display: none;">שולח...</span>
+                                        </button>
                                         <div class="clear"></div>
                                     </form>
                                 </div>
@@ -148,13 +205,14 @@
                 </div>
                 <div class="span5">
                     <h2 class="title">צור קשר</h2>
-                    <form action="../send.php" method="post" id="contact_form">
-                        <input type="text" name="name" id="name" placeholder="שם" />
-                        <input type="text" name="email" id="email" placeholder="אימייל" />
-                        <textarea name="message" id="message" placeholder="הודעה"></textarea>
+                    <form id="footer-contact-form">
+                        <input type="text" name="name" id="footer-name" placeholder="שם" required />
+                        <input type="email" name="email" id="footer-email" placeholder="אימייל" required />
+                        <textarea name="message" id="footer-message" placeholder="הודעה" required></textarea>
                         <div class="clear"></div>
-                        <input type="submit" class="contact_btn_he" value="שלח" />
+                        <button type="submit" class="contact_btn_he" id="footer-submit-btn">שלח</button>
                         <div class="clear"></div>
+                        <div id="footer-form-status" style="display: none; margin-top: 10px; padding: 8px; border-radius: 4px; font-size: 14px; text-align: right;"></div>
                     </form>
                 </div>
             </div>
@@ -189,6 +247,218 @@
 
     <script type="text/javascript" src="../js/custom.js"></script>
 
+    <!-- Mobile Menu JavaScript -->
+    <script>
+    function toggleMobileMenu() {
+        document.querySelector('.mobile-menu').classList.toggle('active');
+        document.querySelector('.mobile-nav-overlay').classList.toggle('active');
+        document.querySelector('.mobile-menu-toggle').classList.toggle('active');
+        document.body.style.overflow = document.querySelector('.mobile-menu').classList.contains('active') ? 'hidden' : '';
+    }
+    function closeMobileMenu() {
+        document.querySelector('.mobile-menu').classList.remove('active');
+        document.querySelector('.mobile-nav-overlay').classList.remove('active');
+        document.querySelector('.mobile-menu-toggle').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    function toggleSubmenu(element) {
+        var parent = element.parentElement;
+        parent.classList.toggle('open');
+        var submenu = parent.querySelector('.mobile-submenu');
+        submenu.classList.toggle('active');
+    }
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) { closeMobileMenu(); }
+    });
+    </script>
+
+    <!-- Contact Form Handler -->
+    <script>
+    (function() {
+        // Clear field errors
+        function clearErrors() {
+            var errors = document.querySelectorAll('.field-error');
+            errors.forEach(function(el) { el.style.display = 'none'; });
+            var inputs = document.querySelectorAll('input, textarea, select');
+            inputs.forEach(function(el) { el.style.borderColor = '#e2e8f0'; });
+        }
+
+        // Show field error
+        function showError(fieldId, message) {
+            var errorEl = document.getElementById(fieldId + '-error');
+            var inputEl = document.getElementById('contact-' + fieldId);
+            if (errorEl) {
+                errorEl.textContent = message;
+                errorEl.style.display = 'block';
+            }
+            if (inputEl) inputEl.style.borderColor = '#ef4444';
+        }
+
+        // Show form status
+        function showStatus(elementId, message, isSuccess) {
+            var statusEl = document.getElementById(elementId);
+            if (statusEl) {
+                statusEl.textContent = message;
+                statusEl.style.display = 'block';
+                statusEl.style.background = isSuccess ? '#d1fae5' : '#fee2e2';
+                statusEl.style.color = isSuccess ? '#065f46' : '#991b1b';
+            }
+        }
+
+        // Client-side email validation
+        function validateEmail(email) {
+            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // Hebrew error messages
+        var messages = {
+            nameRequired: 'נא להזין שם (לפחות 2 תווים)',
+            emailRequired: 'נא להזין כתובת מייל תקינה',
+            messageRequired: 'נא להזין הודעה (לפחות 10 תווים)',
+            success: 'תודה! ההודעה נשלחה בהצלחה.',
+            error: 'שליחת ההודעה נכשלה. נא לנסות שוב.',
+            networkError: 'אירעה שגיאה. נא לנסות שוב מאוחר יותר.',
+            footerError: 'נא למלא את כל השדות.',
+            footerSuccess: 'ההודעה נשלחה!',
+            sending: 'שולח...',
+            send: 'שלח'
+        };
+
+        // Main contact form submission
+        var contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                clearErrors();
+
+                var name = document.getElementById('contact-name').value.trim();
+                var email = document.getElementById('contact-email').value.trim();
+                var subject = document.getElementById('contact-subject').value.trim();
+                var message = document.getElementById('contact-message').value.trim();
+                var category = document.getElementById('contact-category').value;
+
+                // Client-side validation
+                var hasErrors = false;
+                if (name.length < 2) {
+                    showError('name', messages.nameRequired);
+                    hasErrors = true;
+                }
+                if (!email || !validateEmail(email)) {
+                    showError('email', messages.emailRequired);
+                    hasErrors = true;
+                }
+                if (message.length < 10) {
+                    showError('message', messages.messageRequired);
+                    hasErrors = true;
+                }
+
+                if (hasErrors) return;
+
+                // Show loading state
+                var submitBtn = document.getElementById('submit-btn');
+                var submitText = document.getElementById('submit-text');
+                var submitLoading = document.getElementById('submit-loading');
+                submitBtn.disabled = true;
+                submitText.style.display = 'none';
+                submitLoading.style.display = 'inline';
+
+                // Prepare form data
+                var formData = new FormData();
+                formData.append('name', name);
+                formData.append('email', email);
+                formData.append('subject', subject || 'פנייה מהאתר');
+                formData.append('message', message);
+                formData.append('category', category);
+
+                // Submit to API
+                fetch('../api/contact.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(function(response) {
+                    return response.json().then(function(data) {
+                        return { status: response.status, data: data };
+                    });
+                })
+                .then(function(result) {
+                    if (result.data.success) {
+                        showStatus('form-status', messages.success, true);
+                        contactForm.reset();
+                    } else {
+                        // Handle field-specific errors
+                        if (result.data.errors) {
+                            for (var field in result.data.errors) {
+                                showError(field, result.data.errors[field]);
+                            }
+                        }
+                        showStatus('form-status', result.data.error || messages.error, false);
+                    }
+                })
+                .catch(function() {
+                    showStatus('form-status', messages.networkError, false);
+                })
+                .finally(function() {
+                    submitBtn.disabled = false;
+                    submitText.style.display = 'inline';
+                    submitLoading.style.display = 'none';
+                });
+            });
+        }
+
+        // Footer quick contact form
+        var footerForm = document.getElementById('footer-contact-form');
+        if (footerForm) {
+            footerForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                var name = document.getElementById('footer-name').value.trim();
+                var email = document.getElementById('footer-email').value.trim();
+                var message = document.getElementById('footer-message').value.trim();
+
+                if (!name || !validateEmail(email) || !message) {
+                    showStatus('footer-form-status', messages.footerError, false);
+                    return;
+                }
+
+                var submitBtn = document.getElementById('footer-submit-btn');
+                submitBtn.disabled = true;
+                submitBtn.textContent = messages.sending;
+
+                var formData = new FormData();
+                formData.append('name', name);
+                formData.append('email', email);
+                formData.append('subject', 'פנייה מהירה');
+                formData.append('message', message);
+                formData.append('category', 'general');
+
+                fetch('../api/contact.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(data) {
+                    if (data.success) {
+                        showStatus('footer-form-status', messages.footerSuccess, true);
+                        footerForm.reset();
+                    } else {
+                        showStatus('footer-form-status', data.error || messages.error, false);
+                    }
+                })
+                .catch(function() {
+                    showStatus('footer-form-status', messages.networkError, false);
+                })
+                .finally(function() {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = messages.send;
+                });
+            });
+        }
+    })();
+    </script>
+<script src="../js/modern-animations.js"></script>
 </body>
 
 </html>
