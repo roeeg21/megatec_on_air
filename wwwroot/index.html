@@ -159,83 +159,6 @@
             color: #1a202c;
             margin: 0;
         }
-        .customers-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-        @media (max-width: 768px) {
-            .customers-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        .customer-logo-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s ease;
-        }
-        .customer-logo-box:hover {
-            border-color: #1dace8;
-        }
-        .customer-logo-box img {
-            max-width: 100px;
-            max-height: 50px;
-            object-fit: contain;
-            filter: grayscale(100%);
-            opacity: 0.7;
-            transition: all 0.2s ease;
-        }
-        .customer-logo-box:hover img {
-            filter: grayscale(0%);
-            opacity: 1;
-        }
-        .partners-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-            margin-bottom: 40px;
-        }
-        @media (max-width: 640px) {
-            .partners-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        .partner-card-home {
-            background: #fff;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            padding: 32px;
-            display: flex;
-            align-items: center;
-            gap: 24px;
-            transition: all 0.2s ease;
-        }
-        .partner-card-home:hover {
-            border-color: #1dace8;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-        }
-        .partner-card-home img {
-            width: 120px;
-            height: 60px;
-            object-fit: contain;
-        }
-        .partner-card-home h4 {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #1a202c;
-            margin-bottom: 4px;
-        }
-        .partner-card-home p {
-            font-size: 0.875rem;
-            color: #4a5568;
-            margin: 0;
-        }
         .cta-section {
             background: linear-gradient(135deg, #2d3748, #1a202c);
             padding: 48px;
@@ -337,7 +260,7 @@
                     <div class="camera_wrap" id="camera_wrap_1">
                         <div data-src="images/slider/main_page/slide1.jpg">
                             <div class="camera_caption fadeIn">
-                                <div class="slide_descr">Improve the efficiency, productivity and quality<br/> of your operations</div>
+                                <div class="slide_descr">Megatec – Advanced Tools for Project Management</div>
                             </div>
                         </div>
                         <div data-src="images/slider/main_page/3.jpg">
@@ -455,47 +378,6 @@
             </div>
             <!-- //CTA Banner -->
 
-            <!-- Our Customers -->
-            <div class="wrap">
-                <h2 class="title" style="font-size: 1.5rem; font-weight: 600; margin-bottom: 32px;">Trusted By Leading Companies</h2>
-                <div class="customers-grid">
-                    <div class="customer-logo-box"><img src="images/customers/elbit_logo.png" alt="Elbit" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/intel_logo.jpg" alt="Intel" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/rafael_logo.png" alt="Rafael" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/plasan_logo.jpg" alt="Plasan" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/netafim_logo.jpg" alt="Netafim" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/sherman_logo.GIF" alt="Sherman" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/shikun_logo.jpg" alt="Shikun" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/tadiran_logo.gif" alt="Tadiran" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/elco_logo.jpg" alt="Elco" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/elisra_logo.jpg" alt="Elisra" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/gilat_logo.JPG" alt="Gilat" /></div>
-                    <div class="customer-logo-box"><img src="images/customers/kramer_logo.jpg" alt="Kramer" /></div>
-                </div>
-            </div>
-            <!-- //Our Customers -->
-
-            <!-- Our Partners -->
-            <div class="wrap">
-                <h2 class="title" style="font-size: 1.5rem; font-weight: 600; margin-bottom: 32px;">Our Partners</h2>
-                <div class="partners-grid">
-                    <a href="https://www.oracle.com" target="_blank" class="partner-card-home">
-                        <img src="images/partners/2.png" alt="Oracle" />
-                        <div>
-                            <h4>Oracle</h4>
-                            <p>Enterprise Project Portfolio Management Solutions</p>
-                        </div>
-                    </a>
-                    <a href="https://www.oracle.com/primavera" target="_blank" class="partner-card-home">
-                        <img src="images/partners/2.png" alt="Oracle Primavera" />
-                        <div>
-                            <h4>Oracle Primavera</h4>
-                            <p>Project Management & Construction Engineering</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <!-- //Our Partners -->
 
         </div>
         <!-- //Page Container -->
@@ -545,7 +427,7 @@
             <div class="footer_bottom">
                 <div class="wrap">
                     <div class="container">
-                        <div class="fleft copyright">Megatec Advanced Technologies Ltd. &copy; 2024 | <a href="javascript:void(0);">Privacy Policy</a></div>
+                        <div class="fleft copyright">Megatec Advanced Technologies Ltd. &copy; <script>document.write(new Date().getFullYear())</script> | <a href="javascript:void(0);">Privacy Policy</a></div>
                         <div class="fright follow_us">
                             <ul>
                                 <li><a href="https://www.facebook.com/megatecadvancedtechnologies" class="soc2"></a></li>

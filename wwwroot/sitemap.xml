@@ -1,225 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Megatec Advanced Technologies Sitemap - Updated 2024 -->
 
+<!-- English Pages -->
 <url>
-  <loc>http://www.megatec.co.il/</loc>
-  <lastmod>2015-06-08T08:36:11+00:00</lastmod>
+  <loc>https://www.megatec.co.il/</loc>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://www.megatec.co.il/index.html</loc>
-  <lastmod>2015-06-08T08:36:11+00:00</lastmod>
+  <loc>https://www.megatec.co.il/index.html</loc>
   <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/about.html</loc>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.megatec.co.il/about.html</loc>
-  <lastmod>2015-06-08T08:50:04+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.megatec.co.il/primavera_main.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/primavera_cloud.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/aconex.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/primavera_construction.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/primavera_hitech.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/primavera_it.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/primavera_aero.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/primavera_oil.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/trainings.html</loc>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.megatec.co.il/cad_main.html</loc>
-  <lastmod>2015-06-08T08:50:04+00:00</lastmod>
+  <loc>https://www.megatec.co.il/p6_basic.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/contacts.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<!-- Hebrew Pages -->
+<url>
+  <loc>https://www.megatec.co.il/he/index.html</loc>
   <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/about.html</loc>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.megatec.co.il/cr8000.html</loc>
-  <lastmod>2015-06-08T08:50:04+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.megatec.co.il/he/primavera_main.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/primavera_cloud.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/aconex.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/primavera_construction.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/primavera_hitech.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/primavera_it.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/primavera_aero.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/primavera_oil.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/trainings.html</loc>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.megatec.co.il/eb_electrical.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <loc>https://www.megatec.co.il/he/p6_basic.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.megatec.co.il/he/contacts.html</loc>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/eb_instrumentation.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/eb_cable.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/primavera_main.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/primavera_construction.html</loc>
-  <lastmod>2015-06-08T08:50:04+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/primavera_hitech.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/primavera_it.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/primavera_aero.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/primavera_oil.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/trainings.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/contacts.html</loc>
-  <lastmod>2015-06-08T08:50:04+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/index.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/about.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/primavera_main.html</loc>
-  <lastmod>2015-06-08T08:50:06+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/eb_electrical.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/eb_instrumentation.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/eb_cable.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/primavera_construction.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/primavera_hitech.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/primavera_it.html</loc>
-  <lastmod>2015-06-08T08:50:06+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/primavera_aero.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/primavera_oil.html</loc>
-  <lastmod>2015-06-08T08:50:06+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/trainings.html</loc>
-  <lastmod>2015-06-08T08:50:06+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/eb_basic.html</loc>
-  <lastmod>2015-06-08T08:50:04+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/eb_advanced.html</loc>
-  <lastmod>2015-06-08T08:50:04+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/p6_basic.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/contacts.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/cad_main.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/eb_basic.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/eb_advanced.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://www.megatec.co.il/he/p6_basic.html</loc>
-  <lastmod>2015-06-08T08:50:05+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>0.51</priority>
 </url>
 </urlset>

@@ -1136,8 +1136,26 @@ a:hover {
 }
 
 /* ============================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN - Mobile First
+   Breakpoints: 320px, 375px, 390px, 430px, 768px, 1024px, 1440px
    ============================================ */
+
+/* Base mobile styles (320px+) */
+@media (max-width: 1440px) {
+  .container-modern {
+    max-width: 100%;
+    padding: 0 var(--space-4);
+  }
+}
+
+/* Large desktop (1440px+) */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1320px;
+  }
+}
+
+/* Desktop (1024px - 1440px) */
 @media (max-width: 1024px) {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1150,11 +1168,19 @@ a:hover {
   .partner-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .customer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
+/* Tablet (768px - 1024px) */
 @media (max-width: 768px) {
   :root {
     --container-padding: var(--space-4);
+    --font-size-4xl: 1.875rem;
+    --font-size-3xl: 1.5rem;
+    --font-size-2xl: 1.25rem;
   }
 
   .nav-modern {
@@ -1169,12 +1195,19 @@ a:hover {
     font-size: var(--font-size-2xl);
   }
 
+  .slide_descr {
+    font-size: var(--font-size-xl) !important;
+    padding: var(--space-4) !important;
+  }
+
   .feature-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-4);
   }
 
   .customer-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
   }
 
   .partner-grid {
@@ -1187,6 +1220,7 @@ a:hover {
 
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-5);
   }
 
   .footer-bottom {
@@ -1198,24 +1232,167 @@ a:hover {
   .cta-banner {
     flex-direction: column;
     text-align: center;
+    padding: var(--space-5);
   }
 
   .page-header {
-    padding: var(--space-8) 0;
+    padding: var(--space-6) 0;
   }
 
   .page-header-title {
     font-size: var(--font-size-2xl);
   }
+
+  .content-section {
+    padding: var(--space-5);
+  }
+
+  /* Header adjustments for tablet */
+  .header .container,
+  .header .wrap {
+    padding: var(--space-3);
+  }
+
+  .logo img {
+    max-height: 40px;
+    width: auto;
+  }
 }
 
-@media (max-width: 480px) {
-  .customer-grid {
-    grid-template-columns: 1fr;
+/* Large phone (430px - 768px) */
+@media (max-width: 430px) {
+  :root {
+    --container-padding: var(--space-3);
+    --font-size-4xl: 1.5rem;
+    --font-size-3xl: 1.25rem;
+    --font-size-2xl: 1.125rem;
+  }
+
+  .slide_descr {
+    font-size: var(--font-size-lg) !important;
+    line-height: 1.4 !important;
+  }
+
+  .camera_caption {
+    padding: var(--space-4) !important;
+  }
+
+  .product-card,
+  .card-modern {
+    padding: var(--space-4);
   }
 
   .btn-lg {
     width: 100%;
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .section-title {
+    font-size: var(--font-size-xl);
+  }
+}
+
+/* Medium phone (390px - 430px) */
+@media (max-width: 390px) {
+  .customer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  .customer-logo {
+    padding: var(--space-3);
+  }
+
+  .customer-logo img {
+    max-width: 80px;
+    max-height: 40px;
+  }
+
+  .footer-links a {
+    font-size: var(--font-size-xs);
+  }
+}
+
+/* Small phone (375px - 390px) */
+@media (max-width: 375px) {
+  :root {
+    --container-padding: var(--space-3);
+  }
+
+  .slide_descr {
+    font-size: var(--font-size-base) !important;
+  }
+
+  .product-card-title,
+  .card-title {
+    font-size: var(--font-size-base);
+  }
+
+  .product-card-desc,
+  .card-text {
+    font-size: var(--font-size-xs);
+  }
+
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1.125rem; }
+}
+
+/* Extra small phone (320px - 375px) */
+@media (max-width: 320px) {
+  :root {
+    --container-padding: var(--space-2);
+    --font-size-base: 0.875rem;
+  }
+
+  .customer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    font-size: var(--font-size-xs);
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .logo img {
+    max-height: 32px;
+  }
+
+  .header-inner {
+    padding: var(--space-2) 0;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets */
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .nav-modern a {
+    min-height: 44px;
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .footer-links a {
+    display: block;
+    padding: var(--space-2) 0;
+    min-height: 44px;
+    line-height: 2.5;
+  }
+
+  /* Disable hover effects on touch */
+  .card-modern:hover,
+  .product-card:hover {
+    transform: none;
+  }
+
+  /* Active states instead */
+  .card-modern:active,
+  .product-card:active {
+    transform: scale(0.98);
   }
 }
 
