@@ -308,19 +308,9 @@
                                 </div>
                             </div>
 
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="contact-category">Category</label>
-                                    <select name="category" id="contact-category">
-                                        <option value="general">General Inquiry</option>
-                                        <option value="sales">Sales / Pricing</option>
-                                        <option value="training">Training Information</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="contact-subject">Subject</label>
-                                    <input type="text" name="subject" id="contact-subject" placeholder="Subject">
-                                </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Subject</label>
+                                <input type="text" name="subject" id="contact-subject" placeholder="Subject">
                             </div>
 
                             <div class="form-group">
@@ -442,7 +432,6 @@
                 var email = document.getElementById('contact-email').value.trim();
                 var subject = document.getElementById('contact-subject').value.trim();
                 var message = document.getElementById('contact-message').value.trim();
-                var category = document.getElementById('contact-category').value;
                 var hasErrors = false;
 
                 if (name.length < 2) { showError('name', 'Please enter your name'); hasErrors = true; }
@@ -460,7 +449,6 @@
                 formData.append('email', email);
                 formData.append('subject', subject || 'Website Inquiry');
                 formData.append('message', message);
-                formData.append('category', category);
 
                 fetch('api/contact.php', { method: 'POST', body: formData })
                 .then(function(r) { return r.json(); })
