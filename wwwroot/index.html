@@ -131,6 +131,66 @@
             <div class="hero-illustration-container reveal" id="hero-illustration">
                 <!-- SVG illustration injected by JavaScript -->
             </div>
+
+            <!-- Project Milestones Timeline -->
+            <div class="milestones-timeline reveal" style="width:100%;max-width:1000px;margin:var(--space-8) auto 0;padding:0 var(--container-padding);">
+                <div style="background:white;border-radius:12px;padding:24px 20px;box-shadow:0 2px 8px rgba(0,0,0,0.08);border:1px solid #E5E7EB;">
+                    <div style="display:flex;align-items:center;justify-content:space-between;position:relative;">
+                        <!-- Timeline line background -->
+                        <div style="position:absolute;top:50%;left:40px;right:40px;height:4px;background:#E5E7EB;border-radius:2px;transform:translateY(-50%);z-index:0;"></div>
+                        <!-- Timeline line progress -->
+                        <div style="position:absolute;top:50%;left:40px;width:35%;height:4px;background:linear-gradient(90deg,#10B981,#34D399);border-radius:2px;transform:translateY(-50%);z-index:1;"></div>
+
+                        <!-- Milestone 1: Planning -->
+                        <div style="display:flex;flex-direction:column;align-items:center;z-index:2;flex:1;">
+                            <span style="font-size:11px;color:#374151;margin-bottom:8px;font-weight:500;">Planning</span>
+                            <div style="width:24px;height:24px;border-radius:50%;background:#10B981;display:flex;align-items:center;justify-content:center;">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <span style="font-size:10px;color:#10B981;margin-top:6px;">Complete</span>
+                        </div>
+
+                        <!-- Milestone 2: Permits -->
+                        <div style="display:flex;flex-direction:column;align-items:center;z-index:2;flex:1;">
+                            <span style="font-size:11px;color:#374151;margin-bottom:8px;font-weight:500;">Permits</span>
+                            <div style="width:24px;height:24px;border-radius:50%;background:#10B981;display:flex;align-items:center;justify-content:center;">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <span style="font-size:10px;color:#10B981;margin-top:6px;">Complete</span>
+                        </div>
+
+                        <!-- Milestone 3: Foundation -->
+                        <div style="display:flex;flex-direction:column;align-items:center;z-index:2;flex:1;">
+                            <span style="font-size:11px;color:#374151;margin-bottom:8px;font-weight:500;">Foundation</span>
+                            <div style="width:24px;height:24px;border-radius:50%;background:#3B82F6;border:3px solid #1D4ED8;display:flex;align-items:center;justify-content:center;">
+                                <div style="width:8px;height:8px;border-radius:50%;background:white;"></div>
+                            </div>
+                            <span style="font-size:10px;color:#3B82F6;margin-top:6px;">In Progress</span>
+                        </div>
+
+                        <!-- Milestone 4: Structure -->
+                        <div style="display:flex;flex-direction:column;align-items:center;z-index:2;flex:1;">
+                            <span style="font-size:11px;color:#6B7280;margin-bottom:8px;font-weight:500;">Structure</span>
+                            <div style="width:24px;height:24px;border-radius:50%;background:white;border:2px solid #D1D5DB;"></div>
+                            <span style="font-size:10px;color:#9CA3AF;margin-top:6px;">Upcoming</span>
+                        </div>
+
+                        <!-- Milestone 5: MEP Install -->
+                        <div style="display:flex;flex-direction:column;align-items:center;z-index:2;flex:1;">
+                            <span style="font-size:11px;color:#6B7280;margin-bottom:8px;font-weight:500;">MEP Install</span>
+                            <div style="width:24px;height:24px;border-radius:50%;background:white;border:2px solid #D1D5DB;"></div>
+                            <span style="font-size:10px;color:#9CA3AF;margin-top:6px;">Upcoming</span>
+                        </div>
+
+                        <!-- Milestone 6: Completion -->
+                        <div style="display:flex;flex-direction:column;align-items:center;z-index:2;flex:1;">
+                            <span style="font-size:11px;color:#6B7280;margin-bottom:8px;font-weight:500;">Completion</span>
+                            <div style="width:24px;height:24px;border-radius:50%;background:white;border:2px solid #D1D5DB;"></div>
+                            <span style="font-size:10px;color:#9CA3AF;margin-top:6px;">Q3 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Scroll Progress Indicator -->
@@ -149,7 +209,7 @@
                     <!-- Primavera P6 -->
                     <a href="primavera_main.html" class="tile tile-product reveal">
                         <div class="tile-icon">
-                            <img src="images/featured_solutions/3.png" alt="Oracle Primavera P6" width="80" height="80" loading="lazy">
+                            <img src="images/featured_solutions/primavera-p6-icon.svg" alt="Oracle Primavera P6" width="80" height="80" loading="lazy">
                         </div>
                         <div class="tile-body">
                             <span class="tile-eyebrow">By Oracle</span>
@@ -162,7 +222,7 @@
                     <!-- Primavera Cloud -->
                     <a href="primavera_cloud.html" class="tile tile-product reveal">
                         <div class="tile-icon">
-                            <img src="images/featured_solutions/3.png" alt="Oracle Primavera Cloud" width="80" height="80" loading="lazy">
+                            <img src="images/featured_solutions/primavera-cloud-icon.svg" alt="Oracle Primavera Cloud" width="80" height="80" loading="lazy">
                         </div>
                         <div class="tile-body">
                             <span class="tile-eyebrow">By Oracle</span>
@@ -175,7 +235,7 @@
                     <!-- Aconex -->
                     <a href="aconex.html" class="tile tile-product reveal">
                         <div class="tile-icon">
-                            <img src="images/featured_solutions/3.png" alt="Oracle Aconex" width="80" height="80" loading="lazy">
+                            <img src="images/featured_solutions/aconex-icon.svg" alt="Oracle Aconex" width="80" height="80" loading="lazy">
                         </div>
                         <div class="tile-body">
                             <span class="tile-eyebrow">By Oracle</span>

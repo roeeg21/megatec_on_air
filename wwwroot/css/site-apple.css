@@ -631,7 +631,7 @@ a:hover {
   min-height: 70vh;
   padding: calc(var(--nav-height) + var(--space-20)) var(--container-padding) var(--space-20);
   text-align: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-section.hero-light {

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Background -->
+  <rect width="120" height="120" rx="20" fill="#C74634"/>
+
+  <!-- P6 Symbol - Gantt Chart Style -->
+  <g fill="white">
+    <!-- Gantt bars representing project scheduling -->
+    <rect x="20" y="28" width="45" height="10" rx="2"/>
+    <rect x="30" y="44" width="55" height="10" rx="2"/>
+    <rect x="25" y="60" width="40" height="10" rx="2"/>
+    <rect x="40" y="76" width="50" height="10" rx="2"/>
+  </g>
+
+  <!-- Timeline grid lines -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="1">
+    <line x1="35" y1="22" x2="35" y2="92"/>
+    <line x1="55" y1="22" x2="55" y2="92"/>
+    <line x1="75" y1="22" x2="75" y2="92"/>
+  </g>
+
+  <!-- P6 Badge -->
+  <rect x="70" y="70" width="36" height="36" rx="6" fill="white"/>
+  <text x="88" y="96" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#C74634">P6</text>
+</svg>

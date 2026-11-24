@@ -10,7 +10,7 @@ const MegatecIllustrations = {
      * Features project planning elements: Gantt charts, blueprints, infrastructure
      */
     heroScene: `
-        <svg class="hero-svg" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Construction Project Planning Illustration">
+        <svg class="hero-svg" viewBox="0 0 1000 450" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Construction Project Planning Illustration">
             <defs>
                 <!-- Gradients -->
                 <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -39,10 +39,10 @@ const MegatecIllustrations = {
             </defs>
 
             <!-- Background -->
-            <rect width="1000" height="500" fill="url(#skyGradient)" class="hero-element parallax-slow"/>
+            <rect width="1000" height="450" fill="url(#skyGradient)" class="hero-element parallax-slow"/>
 
             <!-- Ground plane -->
-            <path d="M0 420 Q250 400 500 420 Q750 440 1000 420 L1000 500 L0 500 Z" fill="#E5D9C5" class="hero-element ground"/>
+            <path d="M0 400 Q250 380 500 400 Q750 420 1000 400 L1000 450 L0 450 Z" fill="#E5D9C5" class="hero-element ground"/>
 
             <!-- BLUEPRINT/PLANNING SECTION (Left) -->
             <g class="planning-group" transform="translate(30, 60)">
@@ -274,60 +274,10 @@ const MegatecIllustrations = {
                 </g>
             </g>
 
-            <!-- MILESTONES TIMELINE (Bottom) -->
-            <g class="milestones hero-element" transform="translate(50, 380)">
-                <rect x="0" y="0" width="900" height="60" fill="white" rx="10" stroke="#E5E7EB"/>
-
-                <!-- Timeline line -->
-                <line x1="30" y1="30" x2="870" y2="30" stroke="#E5E7EB" stroke-width="3"/>
-                <line x1="30" y1="30" x2="400" y2="30" stroke="url(#progressGradient)" stroke-width="3"/>
-
-                <!-- Milestones -->
-                <g class="milestone hero-element" transform="translate(100, 30)">
-                    <circle cx="0" cy="0" r="10" fill="#10B981"/>
-                    <path d="M-4 0 L-1 3 L4 -3" stroke="white" stroke-width="2" fill="none"/>
-                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#374151" font-family="var(--font-family)">Planning</text>
-                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#10B981" font-family="var(--font-family)">Complete</text>
-                </g>
-
-                <g class="milestone hero-element" transform="translate(250, 30)">
-                    <circle cx="0" cy="0" r="10" fill="#10B981"/>
-                    <path d="M-4 0 L-1 3 L4 -3" stroke="white" stroke-width="2" fill="none"/>
-                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#374151" font-family="var(--font-family)">Permits</text>
-                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#10B981" font-family="var(--font-family)">Complete</text>
-                </g>
-
-                <g class="milestone hero-element" transform="translate(400, 30)">
-                    <circle cx="0" cy="0" r="10" fill="#3B82F6" stroke="#1D4ED8" stroke-width="2"/>
-                    <circle cx="0" cy="0" r="4" fill="white"/>
-                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#374151" font-family="var(--font-family)">Foundation</text>
-                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#3B82F6" font-family="var(--font-family)">In Progress</text>
-                </g>
-
-                <g class="milestone hero-element" transform="translate(550, 30)">
-                    <circle cx="0" cy="0" r="10" fill="white" stroke="#D1D5DB" stroke-width="2"/>
-                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#6B7280" font-family="var(--font-family)">Structure</text>
-                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#9CA3AF" font-family="var(--font-family)">Upcoming</text>
-                </g>
-
-                <g class="milestone hero-element" transform="translate(700, 30)">
-                    <circle cx="0" cy="0" r="10" fill="white" stroke="#D1D5DB" stroke-width="2"/>
-                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#6B7280" font-family="var(--font-family)">MEP Install</text>
-                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#9CA3AF" font-family="var(--font-family)">Upcoming</text>
-                </g>
-
-                <g class="milestone hero-element" transform="translate(850, 30)">
-                    <circle cx="0" cy="0" r="10" fill="white" stroke="#D1D5DB" stroke-width="2"/>
-                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#6B7280" font-family="var(--font-family)">Completion</text>
-                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#9CA3AF" font-family="var(--font-family)">Q3 2025</text>
-                </g>
-            </g>
-
             <!-- DATA CONNECTION LINES -->
             <g class="connections" opacity="0.4">
                 <path d="M310 150 Q325 150 340 100" stroke="#1dace8" stroke-width="1.5" fill="none" stroke-dasharray="6,4" class="connection-line hero-element"/>
                 <path d="M660 150 Q670 150 680 180" stroke="#1dace8" stroke-width="1.5" fill="none" stroke-dasharray="6,4" class="connection-line hero-element"/>
-                <path d="M500 260 L500 380" stroke="#1dace8" stroke-width="1.5" fill="none" stroke-dasharray="6,4" class="connection-line hero-element"/>
             </g>
 
             <!-- MEGATEC BADGE -->
