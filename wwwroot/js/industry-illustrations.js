@@ -6,11 +6,11 @@
 const MegatecIllustrations = {
 
     /**
-     * Hero Combined Industries Illustration
-     * Features elements from Construction, Aerospace, and Oil & Gas
+     * Hero Construction Planning Illustration
+     * Features project planning elements: Gantt charts, blueprints, infrastructure
      */
     heroScene: `
-        <svg class="hero-svg" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Project Management Industries Illustration">
+        <svg class="hero-svg" viewBox="0 0 1000 500" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Construction Project Planning Illustration">
             <defs>
                 <!-- Gradients -->
                 <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -25,16 +25,17 @@ const MegatecIllustrations = {
                     <stop offset="0%" stop-color="#1dace8"/>
                     <stop offset="100%" stop-color="#0a7399"/>
                 </linearGradient>
-                <linearGradient id="flameGradient" x1="0%" y1="100%" x2="0%" y2="0%">
-                    <stop offset="0%" stop-color="#F59E0B"/>
-                    <stop offset="50%" stop-color="#EF4444"/>
-                    <stop offset="100%" stop-color="#FBBF24"/>
+                <linearGradient id="blueprintGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#1E40AF"/>
+                    <stop offset="100%" stop-color="#1E3A8A"/>
                 </linearGradient>
-
-                <!-- Clip paths -->
-                <clipPath id="windowClip">
-                    <rect x="0" y="0" width="20" height="15" rx="2"/>
-                </clipPath>
+                <pattern id="blueprintGrid" patternUnits="userSpaceOnUse" width="15" height="15">
+                    <path d="M 15 0 L 0 0 0 15" fill="none" stroke="#3B82F6" stroke-width="0.5" opacity="0.4"/>
+                </pattern>
+                <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#10B981"/>
+                    <stop offset="100%" stop-color="#34D399"/>
+                </linearGradient>
             </defs>
 
             <!-- Background -->
@@ -43,211 +44,297 @@ const MegatecIllustrations = {
             <!-- Ground plane -->
             <path d="M0 420 Q250 400 500 420 Q750 440 1000 420 L1000 500 L0 500 Z" fill="#E5D9C5" class="hero-element ground"/>
 
-            <!-- Connection lines (animated paths) -->
-            <g class="connection-lines">
-                <path class="connection-line hero-element" d="M200 350 Q350 300 500 320 Q650 340 800 300" stroke="#1dace8" stroke-width="2" fill="none" stroke-dasharray="10,5"/>
-                <path class="connection-line hero-element" d="M150 380 L300 350 L450 370 L600 340 L750 360 L900 330" stroke="#1dace8" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <!-- BLUEPRINT/PLANNING SECTION (Left) -->
+            <g class="planning-group" transform="translate(30, 60)">
+                <!-- Large Blueprint Document -->
+                <g class="blueprint hero-element">
+                    <rect x="0" y="0" width="280" height="200" fill="url(#blueprintGradient)" rx="4" stroke="#1E3A8A" stroke-width="2"/>
+                    <rect x="0" y="0" width="280" height="200" fill="url(#blueprintGrid)" rx="4"/>
+
+                    <!-- Building floor plan -->
+                    <g transform="translate(20, 20)" stroke="#60A5FA" stroke-width="1.5" fill="none">
+                        <!-- Outer walls -->
+                        <rect x="0" y="0" width="120" height="80" stroke-width="2"/>
+                        <!-- Interior walls -->
+                        <line x1="40" y1="0" x2="40" y2="50"/>
+                        <line x1="80" y1="30" x2="80" y2="80"/>
+                        <line x1="0" y1="50" x2="60" y2="50"/>
+                        <!-- Doors -->
+                        <path d="M40 50 Q50 45 50 55" stroke="#93C5FD"/>
+                        <path d="M80 70 Q90 65 90 75" stroke="#93C5FD"/>
+                        <!-- Dimension lines -->
+                        <g stroke="#93C5FD" stroke-width="0.5" stroke-dasharray="3,2">
+                            <line x1="0" y1="90" x2="120" y2="90"/>
+                            <line x1="0" y1="88" x2="0" y2="92"/>
+                            <line x1="120" y1="88" x2="120" y2="92"/>
+                        </g>
+                        <text x="60" y="100" text-anchor="middle" font-size="8" fill="#93C5FD" font-family="var(--font-family)">24m</text>
+                    </g>
+
+                    <!-- Infrastructure diagram -->
+                    <g transform="translate(160, 25)" stroke="#60A5FA" stroke-width="1" fill="none">
+                        <!-- Road/bridge section -->
+                        <path d="M0 20 L80 20" stroke-width="3"/>
+                        <path d="M20 20 L20 50" stroke-width="2"/>
+                        <path d="M60 20 L60 50" stroke-width="2"/>
+                        <rect x="15" y="50" width="10" height="20" fill="#3B82F6" opacity="0.3"/>
+                        <rect x="55" y="50" width="10" height="20" fill="#3B82F6" opacity="0.3"/>
+                        <!-- Support cables -->
+                        <path d="M20 20 Q40 5 60 20" stroke="#93C5FD" stroke-dasharray="2,2"/>
+                    </g>
+
+                    <!-- Title block -->
+                    <rect x="160" y="130" width="110" height="60" fill="#1E3A8A" stroke="#3B82F6"/>
+                    <text x="215" y="148" text-anchor="middle" font-size="8" fill="#93C5FD" font-family="var(--font-family)">PROJECT PLAN</text>
+                    <text x="215" y="162" text-anchor="middle" font-size="10" fill="white" font-weight="600" font-family="var(--font-family)">Infrastructure</text>
+                    <text x="215" y="175" text-anchor="middle" font-size="10" fill="white" font-weight="600" font-family="var(--font-family)">Development</text>
+                    <text x="215" y="185" text-anchor="middle" font-size="6" fill="#60A5FA" font-family="var(--font-family)">Rev. 2.4 | Phase 3</text>
+                </g>
+
+                <!-- Planning tools -->
+                <g class="tools hero-element" transform="translate(10, 210)">
+                    <!-- Ruler -->
+                    <rect x="0" y="0" width="100" height="12" fill="#F59E0B" rx="1"/>
+                    <g fill="#92400E">
+                        <rect x="10" y="0" width="1" height="6"/>
+                        <rect x="20" y="0" width="1" height="8"/>
+                        <rect x="30" y="0" width="1" height="6"/>
+                        <rect x="40" y="0" width="1" height="8"/>
+                        <rect x="50" y="0" width="1" height="6"/>
+                        <rect x="60" y="0" width="1" height="8"/>
+                        <rect x="70" y="0" width="1" height="6"/>
+                        <rect x="80" y="0" width="1" height="8"/>
+                        <rect x="90" y="0" width="1" height="6"/>
+                    </g>
+                    <!-- Pencil -->
+                    <g transform="translate(110, -5)">
+                        <rect x="0" y="5" width="60" height="8" fill="#FFD166"/>
+                        <polygon points="60,5 70,9 60,13" fill="#F8B4B4"/>
+                        <polygon points="70,9 75,9 70,9" fill="#374151"/>
+                        <rect x="-5" y="5" width="5" height="8" fill="#F8B4B4"/>
+                    </g>
+                </g>
             </g>
 
-            <!-- CONSTRUCTION SECTION (Left) -->
-            <g class="construction-group" transform="translate(50, 100)">
+            <!-- GANTT CHART PANEL (Center) -->
+            <g class="gantt-panel hero-element" transform="translate(340, 40)">
+                <rect x="0" y="0" width="320" height="220" fill="white" rx="12" stroke="#E5E7EB" stroke-width="2"/>
+
+                <!-- Header -->
+                <rect x="0" y="0" width="320" height="35" fill="#1d1d1f" rx="12 12 0 0"/>
+                <text x="20" y="23" font-size="12" fill="white" font-weight="600" font-family="var(--font-family)">Project Schedule - Primavera P6</text>
+                <g transform="translate(270, 12)">
+                    <circle cx="0" cy="0" r="5" fill="#EF4444"/>
+                    <circle cx="15" cy="0" r="5" fill="#F59E0B"/>
+                    <circle cx="30" cy="0" r="5" fill="#10B981"/>
+                </g>
+
+                <!-- Timeline header -->
+                <g transform="translate(100, 45)" fill="#86868b" font-size="8" font-family="var(--font-family)">
+                    <text x="0" y="0">Jan</text>
+                    <text x="40" y="0">Feb</text>
+                    <text x="80" y="0">Mar</text>
+                    <text x="120" y="0">Apr</text>
+                    <text x="160" y="0">May</text>
+                </g>
+
+                <!-- Grid lines -->
+                <g stroke="#E5E7EB" stroke-width="1">
+                    <line x1="100" y1="50" x2="100" y2="210"/>
+                    <line x1="140" y1="50" x2="140" y2="210"/>
+                    <line x1="180" y1="50" x2="180" y2="210"/>
+                    <line x1="220" y1="50" x2="220" y2="210"/>
+                    <line x1="260" y1="50" x2="260" y2="210"/>
+                    <line x1="300" y1="50" x2="300" y2="210"/>
+                </g>
+
+                <!-- Task rows -->
+                <g class="tasks">
+                    <!-- Task 1: Site Preparation -->
+                    <g transform="translate(0, 60)">
+                        <text x="15" y="12" font-size="9" fill="#374151" font-family="var(--font-family)">Site Prep</text>
+                        <rect x="100" y="2" width="60" height="16" fill="#10B981" rx="3" class="gantt-bar hero-element"/>
+                        <rect x="100" y="2" width="60" height="16" fill="url(#progressGradient)" rx="3" opacity="0.8"/>
+                    </g>
+
+                    <!-- Task 2: Foundation -->
+                    <g transform="translate(0, 85)">
+                        <text x="15" y="12" font-size="9" fill="#374151" font-family="var(--font-family)">Foundation</text>
+                        <rect x="140" y="2" width="80" height="16" fill="#3B82F6" rx="3" class="gantt-bar hero-element"/>
+                        <rect x="140" y="2" width="50" height="16" fill="#60A5FA" rx="3"/>
+                    </g>
+
+                    <!-- Task 3: Structure -->
+                    <g transform="translate(0, 110)">
+                        <text x="15" y="12" font-size="9" fill="#374151" font-family="var(--font-family)">Structure</text>
+                        <rect x="180" y="2" width="100" height="16" fill="#8B5CF6" rx="3" class="gantt-bar hero-element"/>
+                        <rect x="180" y="2" width="30" height="16" fill="#A78BFA" rx="3"/>
+                    </g>
+
+                    <!-- Task 4: MEP Systems -->
+                    <g transform="translate(0, 135)">
+                        <text x="15" y="12" font-size="9" fill="#374151" font-family="var(--font-family)">MEP Systems</text>
+                        <rect x="200" y="2" width="90" height="16" fill="#F59E0B" rx="3" class="gantt-bar hero-element"/>
+                    </g>
+
+                    <!-- Task 5: Finishing -->
+                    <g transform="translate(0, 160)">
+                        <text x="15" y="12" font-size="9" fill="#374151" font-family="var(--font-family)">Finishing</text>
+                        <rect x="260" y="2" width="50" height="16" fill="#EC4899" rx="3" class="gantt-bar hero-element"/>
+                    </g>
+                </g>
+
+                <!-- Today marker -->
+                <line x1="195" y1="50" x2="195" y2="185" stroke="#EF4444" stroke-width="2" stroke-dasharray="4,2"/>
+                <polygon points="195,48 190,40 200,40" fill="#EF4444"/>
+                <text x="195" y="195" text-anchor="middle" font-size="7" fill="#EF4444" font-family="var(--font-family)">TODAY</text>
+
+                <!-- Progress indicator -->
+                <g transform="translate(15, 200)">
+                    <text x="0" y="0" font-size="8" fill="#86868b" font-family="var(--font-family)">Overall Progress:</text>
+                    <rect x="80" y="-8" width="100" height="8" fill="#E5E7EB" rx="4"/>
+                    <rect x="80" y="-8" width="45" height="8" fill="#10B981" rx="4"/>
+                    <text x="185" y="0" font-size="8" fill="#10B981" font-weight="600" font-family="var(--font-family)">45%</text>
+                </g>
+            </g>
+
+            <!-- CONSTRUCTION SITE (Right) -->
+            <g class="construction-site" transform="translate(680, 100)">
                 <!-- Building under construction -->
                 <g class="building hero-element">
                     <!-- Foundation -->
-                    <rect x="30" y="280" width="180" height="40" fill="#6B7280" rx="2"/>
+                    <rect x="0" y="260" width="180" height="30" fill="#6B7280" rx="2"/>
 
-                    <!-- Building structure -->
-                    <rect x="40" y="120" width="160" height="160" fill="url(#buildingGradient)" class="building-main"/>
+                    <!-- Building structure with floors -->
+                    <rect x="10" y="80" width="160" height="180" fill="url(#buildingGradient)" stroke="#6B7280" stroke-width="2"/>
 
-                    <!-- Floors -->
-                    <g class="floors">
-                        <rect x="50" y="130" width="140" height="35" fill="#93C5FD" opacity="0.7" class="floor hero-element"/>
-                        <rect x="50" y="175" width="140" height="35" fill="#93C5FD" opacity="0.7" class="floor hero-element"/>
-                        <rect x="50" y="220" width="140" height="35" fill="#93C5FD" opacity="0.7" class="floor hero-element"/>
-                        <rect x="50" y="265" width="140" height="8" fill="#93C5FD" opacity="0.7" class="floor hero-element"/>
+                    <!-- Completed floors (darker) -->
+                    <g class="completed-floors">
+                        <rect x="20" y="200" width="140" height="50" fill="#9CA3AF"/>
+                        <rect x="20" y="140" width="140" height="50" fill="#B0B7C3"/>
                     </g>
 
-                    <!-- Windows grid -->
+                    <!-- In-progress floor (with scaffolding) -->
+                    <rect x="20" y="90" width="140" height="40" fill="#D1D5DB" stroke="#F59E0B" stroke-width="2" stroke-dasharray="5,3"/>
+
+                    <!-- Windows on completed floors -->
                     <g fill="#60A5FA" opacity="0.8">
-                        <rect x="55" y="135" width="18" height="12" rx="1"/>
-                        <rect x="78" y="135" width="18" height="12" rx="1"/>
-                        <rect x="101" y="135" width="18" height="12" rx="1"/>
-                        <rect x="124" y="135" width="18" height="12" rx="1"/>
-                        <rect x="147" y="135" width="18" height="12" rx="1"/>
+                        <rect x="30" y="210" width="25" height="30" rx="2"/>
+                        <rect x="65" y="210" width="25" height="30" rx="2"/>
+                        <rect x="100" y="210" width="25" height="30" rx="2"/>
+                        <rect x="135" y="210" width="25" height="30" rx="2"/>
+                        <rect x="30" y="150" width="25" height="30" rx="2"/>
+                        <rect x="65" y="150" width="25" height="30" rx="2"/>
+                        <rect x="100" y="150" width="25" height="30" rx="2"/>
+                        <rect x="135" y="150" width="25" height="30" rx="2"/>
+                    </g>
+
+                    <!-- Scaffolding on current floor -->
+                    <g stroke="#F59E0B" stroke-width="2" fill="none">
+                        <line x1="15" y1="90" x2="15" y2="130"/>
+                        <line x1="165" y1="90" x2="165" y2="130"/>
+                        <line x1="15" y1="100" x2="165" y2="100"/>
+                        <line x1="15" y1="120" x2="165" y2="120"/>
                     </g>
                 </g>
 
                 <!-- Crane -->
-                <g class="crane hero-element">
-                    <!-- Crane tower -->
-                    <rect x="220" y="80" width="15" height="240" fill="#FF8C42"/>
-                    <rect x="217" y="320" width="21" height="10" fill="#6B7280"/>
-
-                    <!-- Crane arm -->
-                    <g class="crane-arm">
-                        <rect x="220" y="75" width="120" height="10" fill="#FF8C42"/>
-                        <rect x="335" y="60" width="8" height="30" fill="#6B7280"/>
-                        <!-- Cable -->
-                        <line x1="339" y1="90" x2="339" y2="180" stroke="#374151" stroke-width="2"/>
-                        <!-- Hook -->
-                        <path d="M334 180 L344 180 L344 195 Q339 200 334 195 Z" fill="#6B7280"/>
-                    </g>
-
-                    <!-- Counter weight -->
-                    <rect x="180" y="70" width="40" height="20" fill="#6B7280"/>
-                </g>
-
-                <!-- Construction beams -->
-                <g class="beams">
-                    <rect x="260" y="200" width="60" height="8" fill="#9CA3AF" class="beam hero-element"/>
-                    <rect x="250" y="230" width="70" height="8" fill="#9CA3AF" class="beam hero-element"/>
-                    <rect x="270" y="260" width="50" height="8" fill="#9CA3AF" class="beam hero-element"/>
+                <g class="crane hero-element" transform="translate(180, -20)">
+                    <rect x="0" y="30" width="12" height="280" fill="#FF8C42"/>
+                    <rect x="-4" y="310" width="20" height="10" fill="#6B7280"/>
+                    <rect x="0" y="20" width="100" height="8" fill="#FF8C42"/>
+                    <rect x="-40" y="20" width="40" height="8" fill="#FF8C42"/>
+                    <rect x="-35" y="28" width="25" height="15" fill="#6B7280"/>
+                    <!-- Cable and hook -->
+                    <line x1="80" y1="28" x2="80" y2="120" stroke="#374151" stroke-width="2"/>
+                    <path d="M75 120 L85 120 L85 135 Q80 140 75 135 Z" fill="#6B7280"/>
+                    <!-- Beam being lifted -->
+                    <rect x="60" y="140" width="50" height="8" fill="#9CA3AF" class="beam hero-element"/>
                 </g>
 
                 <!-- Workers -->
                 <g class="workers">
-                    <circle cx="100" cy="295" r="8" fill="#FFD166" class="worker hero-element"/>
-                    <circle cx="140" cy="295" r="8" fill="#FFD166" class="worker hero-element"/>
-                    <circle cx="260" cy="308" r="8" fill="#FFD166" class="worker hero-element"/>
+                    <g transform="translate(50, 285)">
+                        <circle cx="0" cy="0" r="8" fill="#FFD166"/>
+                        <rect x="-5" y="8" width="10" height="15" fill="#3B82F6" rx="2"/>
+                    </g>
+                    <g transform="translate(130, 285)">
+                        <circle cx="0" cy="0" r="8" fill="#FFD166"/>
+                        <rect x="-5" y="8" width="10" height="15" fill="#EF4444" rx="2"/>
+                    </g>
+                </g>
+
+                <!-- Progress sign -->
+                <g class="progress-sign hero-element" transform="translate(200, 240)">
+                    <rect x="0" y="0" width="80" height="50" fill="white" rx="6" stroke="#E5E7EB"/>
+                    <text x="40" y="18" text-anchor="middle" font-size="8" fill="#86868b" font-family="var(--font-family)">Floor 3 of 5</text>
+                    <rect x="10" y="25" width="60" height="6" fill="#E5E7EB" rx="3"/>
+                    <rect x="10" y="25" width="36" height="6" fill="#10B981" rx="3"/>
+                    <text x="40" y="42" text-anchor="middle" font-size="10" fill="#10B981" font-weight="600" font-family="var(--font-family)">60%</text>
                 </g>
             </g>
 
-            <!-- AEROSPACE SECTION (Center) -->
-            <g class="aerospace-group" transform="translate(380, 50)">
-                <!-- Satellite -->
-                <g class="satellite hero-element" transform="translate(100, 30)">
-                    <rect x="-15" y="-8" width="30" height="16" fill="#9CA3AF" rx="3"/>
-                    <!-- Solar panels -->
-                    <rect x="-55" y="-5" width="38" height="10" fill="#3B82F6" class="solar-panel"/>
-                    <rect x="17" y="-5" width="38" height="10" fill="#3B82F6" class="solar-panel"/>
-                    <!-- Antenna -->
-                    <circle cx="0" cy="-12" r="4" fill="#60A5FA"/>
+            <!-- MILESTONES TIMELINE (Bottom) -->
+            <g class="milestones hero-element" transform="translate(50, 380)">
+                <rect x="0" y="0" width="900" height="60" fill="white" rx="10" stroke="#E5E7EB"/>
+
+                <!-- Timeline line -->
+                <line x1="30" y1="30" x2="870" y2="30" stroke="#E5E7EB" stroke-width="3"/>
+                <line x1="30" y1="30" x2="400" y2="30" stroke="url(#progressGradient)" stroke-width="3"/>
+
+                <!-- Milestones -->
+                <g class="milestone hero-element" transform="translate(100, 30)">
+                    <circle cx="0" cy="0" r="10" fill="#10B981"/>
+                    <path d="M-4 0 L-1 3 L4 -3" stroke="white" stroke-width="2" fill="none"/>
+                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#374151" font-family="var(--font-family)">Planning</text>
+                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#10B981" font-family="var(--font-family)">Complete</text>
                 </g>
 
-                <!-- Orbit path -->
-                <ellipse cx="100" cy="100" rx="150" ry="80" fill="none" stroke="#60A5FA" stroke-width="1" stroke-dasharray="8,4" opacity="0.3" class="orbit-path hero-element"/>
-
-                <!-- Aircraft -->
-                <g class="aircraft hero-element" transform="translate(50, 150)">
-                    <!-- Fuselage -->
-                    <ellipse cx="60" cy="15" rx="55" ry="12" fill="#9CA3AF"/>
-                    <!-- Cockpit -->
-                    <ellipse cx="105" cy="15" rx="15" ry="10" fill="#60A5FA" opacity="0.8"/>
-                    <!-- Wings -->
-                    <path d="M40 15 L20 45 L80 45 L60 15" fill="#6B7280" class="aircraft-wing"/>
-                    <!-- Tail -->
-                    <path d="M10 15 L0 0 L20 15" fill="#6B7280"/>
-                    <!-- Engine -->
-                    <ellipse cx="50" cy="45" rx="8" ry="4" fill="#374151"/>
+                <g class="milestone hero-element" transform="translate(250, 30)">
+                    <circle cx="0" cy="0" r="10" fill="#10B981"/>
+                    <path d="M-4 0 L-1 3 L4 -3" stroke="white" stroke-width="2" fill="none"/>
+                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#374151" font-family="var(--font-family)">Permits</text>
+                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#10B981" font-family="var(--font-family)">Complete</text>
                 </g>
 
-                <!-- Radar station -->
-                <g class="radar hero-element" transform="translate(160, 320)">
-                    <rect x="-15" y="0" width="30" height="60" fill="#1E3A5F" class="radar-base"/>
-                    <path d="M0 0 L-40 -50 A50 50 0 0 1 40 -50 Z" fill="#10B981" opacity="0.3" class="radar-sweep"/>
-                    <circle cx="0" cy="-5" r="8" fill="#1E3A5F"/>
+                <g class="milestone hero-element" transform="translate(400, 30)">
+                    <circle cx="0" cy="0" r="10" fill="#3B82F6" stroke="#1D4ED8" stroke-width="2"/>
+                    <circle cx="0" cy="0" r="4" fill="white"/>
+                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#374151" font-family="var(--font-family)">Foundation</text>
+                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#3B82F6" font-family="var(--font-family)">In Progress</text>
                 </g>
 
-                <!-- Signal waves -->
-                <g class="signals" transform="translate(160, 260)">
-                    <circle cx="0" cy="0" r="20" fill="none" stroke="#10B981" stroke-width="2" opacity="0.6" class="signal-wave hero-element"/>
-                    <circle cx="0" cy="0" r="35" fill="none" stroke="#10B981" stroke-width="2" opacity="0.4" class="signal-wave hero-element"/>
-                    <circle cx="0" cy="0" r="50" fill="none" stroke="#10B981" stroke-width="2" opacity="0.2" class="signal-wave hero-element"/>
+                <g class="milestone hero-element" transform="translate(550, 30)">
+                    <circle cx="0" cy="0" r="10" fill="white" stroke="#D1D5DB" stroke-width="2"/>
+                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#6B7280" font-family="var(--font-family)">Structure</text>
+                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#9CA3AF" font-family="var(--font-family)">Upcoming</text>
                 </g>
 
-                <!-- Control panels (floating UI elements) -->
-                <g class="control-panels">
-                    <g class="control-panel hero-element" transform="translate(0, 220)">
-                        <rect x="0" y="0" width="70" height="45" fill="white" rx="6" stroke="#E5E7EB"/>
-                        <rect x="8" y="8" width="54" height="4" fill="#E5E7EB" rx="2"/>
-                        <rect x="8" y="16" width="40" height="4" fill="#1dace8" rx="2"/>
-                        <rect x="8" y="24" width="30" height="4" fill="#E5E7EB" rx="2"/>
-                        <circle cx="55" cy="35" r="6" fill="#10B981"/>
-                    </g>
+                <g class="milestone hero-element" transform="translate(700, 30)">
+                    <circle cx="0" cy="0" r="10" fill="white" stroke="#D1D5DB" stroke-width="2"/>
+                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#6B7280" font-family="var(--font-family)">MEP Install</text>
+                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#9CA3AF" font-family="var(--font-family)">Upcoming</text>
+                </g>
+
+                <g class="milestone hero-element" transform="translate(850, 30)">
+                    <circle cx="0" cy="0" r="10" fill="white" stroke="#D1D5DB" stroke-width="2"/>
+                    <text x="0" y="-18" text-anchor="middle" font-size="8" fill="#6B7280" font-family="var(--font-family)">Completion</text>
+                    <text x="0" y="22" text-anchor="middle" font-size="7" fill="#9CA3AF" font-family="var(--font-family)">Q3 2025</text>
                 </g>
             </g>
 
-            <!-- OIL & GAS SECTION (Right) -->
-            <g class="oil-gas-group" transform="translate(680, 100)">
-                <!-- Refinery -->
-                <g class="refinery hero-element">
-                    <!-- Main tower -->
-                    <rect x="40" y="100" width="40" height="180" fill="#6B7280"/>
-                    <rect x="35" y="90" width="50" height="15" fill="#4B5563"/>
-
-                    <!-- Secondary tower -->
-                    <rect x="100" y="140" width="30" height="140" fill="#6B7280"/>
-                    <rect x="95" y="130" width="40" height="15" fill="#4B5563"/>
-
-                    <!-- Distillation column details -->
-                    <circle cx="60" cy="130" r="12" fill="#4B5563"/>
-                    <circle cx="60" cy="170" r="12" fill="#4B5563"/>
-                    <circle cx="60" cy="210" r="12" fill="#4B5563"/>
-
-                    <!-- Flame stack -->
-                    <rect x="150" y="80" width="12" height="200" fill="#4B5563"/>
-                    <g class="flame hero-element">
-                        <path d="M156 80 Q166 50 156 30 Q146 50 156 80" fill="url(#flameGradient)"/>
-                        <path d="M156 75 Q162 55 156 40 Q150 55 156 75" fill="#FBBF24"/>
-                    </g>
-                </g>
-
-                <!-- Pipelines -->
-                <g class="pipelines">
-                    <path d="M80 200 Q120 200 140 220 Q160 240 200 240" stroke="#4B5563" stroke-width="8" fill="none" stroke-linecap="round" class="pipeline hero-element"/>
-                    <path d="M80 200 Q120 200 140 220 Q160 240 200 240" stroke="#F59E0B" stroke-width="4" fill="none" stroke-linecap="round" class="pipeline-inner"/>
-
-                    <path d="M130 160 L180 160 L180 200" stroke="#4B5563" stroke-width="6" fill="none" stroke-linecap="round" class="pipeline hero-element"/>
-                </g>
-
-                <!-- Storage tanks -->
-                <g class="storage-tanks">
-                    <g class="storage-tank hero-element" transform="translate(200, 200)">
-                        <ellipse cx="30" cy="0" rx="30" ry="10" fill="#6B7280"/>
-                        <rect x="0" y="0" width="60" height="80" fill="#6B7280"/>
-                        <ellipse cx="30" cy="80" rx="30" ry="10" fill="#4B5563"/>
-                        <!-- Tank level indicator -->
-                        <rect x="10" y="30" width="40" height="40" fill="#F59E0B" opacity="0.6"/>
-                    </g>
-
-                    <g class="storage-tank hero-element" transform="translate(270, 220)">
-                        <ellipse cx="25" cy="0" rx="25" ry="8" fill="#6B7280"/>
-                        <rect x="0" y="0" width="50" height="60" fill="#6B7280"/>
-                        <ellipse cx="25" cy="60" rx="25" ry="8" fill="#4B5563"/>
-                        <rect x="8" y="20" width="34" height="30" fill="#F59E0B" opacity="0.6"/>
-                    </g>
-                </g>
-
-                <!-- Drilling platform (offshore feel) -->
-                <g class="drilling-platform hero-element" transform="translate(220, 320)">
-                    <rect x="0" y="0" width="80" height="8" fill="#374151"/>
-                    <rect x="10" y="8" width="8" height="50" fill="#4B5563" class="platform-leg"/>
-                    <rect x="62" y="8" width="8" height="50" fill="#4B5563" class="platform-leg"/>
-                    <rect x="30" y="-30" width="20" height="30" fill="#6B7280"/>
-                </g>
-            </g>
-
-            <!-- DATA FLOW INDICATORS (connecting all sections) -->
-            <g class="data-indicators">
-                <g class="data-node hero-element" transform="translate(350, 350)">
-                    <circle cx="0" cy="0" r="12" fill="white" stroke="#1dace8" stroke-width="2"/>
-                    <circle cx="0" cy="0" r="6" fill="#1dace8"/>
-                </g>
-                <g class="data-node hero-element" transform="translate(500, 380)">
-                    <circle cx="0" cy="0" r="12" fill="white" stroke="#1dace8" stroke-width="2"/>
-                    <circle cx="0" cy="0" r="6" fill="#1dace8"/>
-                </g>
-                <g class="data-node hero-element" transform="translate(650, 360)">
-                    <circle cx="0" cy="0" r="12" fill="white" stroke="#1dace8" stroke-width="2"/>
-                    <circle cx="0" cy="0" r="6" fill="#1dace8"/>
-                </g>
+            <!-- DATA CONNECTION LINES -->
+            <g class="connections" opacity="0.4">
+                <path d="M310 150 Q325 150 340 100" stroke="#1dace8" stroke-width="1.5" fill="none" stroke-dasharray="6,4" class="connection-line hero-element"/>
+                <path d="M660 150 Q670 150 680 180" stroke="#1dace8" stroke-width="1.5" fill="none" stroke-dasharray="6,4" class="connection-line hero-element"/>
+                <path d="M500 260 L500 380" stroke="#1dace8" stroke-width="1.5" fill="none" stroke-dasharray="6,4" class="connection-line hero-element"/>
             </g>
 
             <!-- MEGATEC BADGE -->
-            <g class="megatec-badge hero-element parallax-fast" transform="translate(850, 420)">
-                <rect x="0" y="0" width="120" height="50" rx="8" fill="white" stroke="#E5E7EB"/>
-                <text x="60" y="22" text-anchor="middle" font-size="10" fill="#86868b" font-family="var(--font-family)">Powered by</text>
-                <text x="60" y="38" text-anchor="middle" font-size="12" fill="#1d1d1f" font-weight="600" font-family="var(--font-family)">Primavera</text>
+            <g class="megatec-badge hero-element parallax-fast" transform="translate(30, 290)">
+                <rect x="0" y="0" width="130" height="55" rx="8" fill="white" stroke="#E5E7EB"/>
+                <text x="65" y="20" text-anchor="middle" font-size="9" fill="#86868b" font-family="var(--font-family)">Powered by</text>
+                <text x="65" y="38" text-anchor="middle" font-size="13" fill="#1d1d1f" font-weight="600" font-family="var(--font-family)">Primavera P6</text>
             </g>
         </svg>
     `,
