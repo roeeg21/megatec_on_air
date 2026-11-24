@@ -1,380 +1,261 @@
 <!DOCTYPE html>
-<html lang="he">
-
+<html lang="he" dir="rtl">
 <head>
-<meta charset="utf-8" />
-<title>Primavera P6 Energy Distribution Project Management | Megatec Advanced Technologies Ltd</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Primavera P6 - Oil, Gas and Energy distribution project Management">
-<meta name="author" content="">
-<!-- Stylesheets -->
-<link href="../css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" id="camera-css"  href="../css/camera.css" type="text/css" media="all">
-<link href="../css/bootstrap.css" rel="stylesheet">
-<link href="../css/site.css" rel="stylesheet">
-<link href="../css/site-modern.css" rel="stylesheet">
-<link href="../css/bootstrap-responsive.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>נפט וגז | מגהטק טכנולוגיות מתקדמות</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="פתרונות Oracle Primavera לתעשיית הנפט והגז - ניהול פורטפוליו פרויקטים ברמה ארגונית לפרויקטי אנרגיה במעלה, באמצע ובמורד הזרם">
+    <meta name="author" content="Megatec Advanced Technologies">
 
-<!-- Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Muli:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../css/site-apple.css" rel="stylesheet">
+    <link href="../css/scroll-illustrations.css" rel="stylesheet">
 
+    <!-- GSAP for scroll-driven animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 
-
-<!--[if lt IE 9]>
-	<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
- <!--Google Analytics-->
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-39375429-3', 'auto');
+        ga('send', 'pageview');
+    </script>
 
-  ga('create', 'UA-39375429-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    <style>
+        body { font-family: var(--font-family-hebrew); }
+    </style>
 </head>
-<body >
-	<div class="container box_shadow">
+<body>
+    <a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
 
-		<!--header-->
-		<div class="header">
-			<div class="wrap">
-				<div class="container">
-					<div class="fleft logo"><a href="index.html"><img src="../images/megatec-logo.jpg" alt="Megatec Advanced Technologies" /></a></div>
-					<div class="navbar desktop-nav fright">
-					<nav id="main_menu">
-							<div class="menu_wrap">
-								<ul class="nav sf-menu">
-    <li><a href="../primavera_oil.html">English</a></li>
-    <li><a href="contacts.html">צור קשר</a></li>
-    <li><a href="trainings.html">הדרכות</a></li>
-    <li class="sub-menu"><a href="javascript:{}">תעשיות</a>
-        <ul>
-            <li><a href="primavera_construction.html">בנייה</a></li>
-            <li><a href="primavera_hitech.html">היי-טק</a></li>
-            <li><a href="primavera_it.html">IT</a></li>
-            <li><a href="primavera_aero.html">תעופה וביטחון</a></li>
-            <li><a href="primavera_oil.html">נפט וגז</a></li>
-        </ul>
-    </li>
-    <li class="sub-menu"><a href="javascript:{}">פתרונות</a>
-        <ul>
-            <li><a href="primavera_main.html">Primavera P6</a></li>
-            <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
-            <li><a href="aconex.html">Oracle Aconex</a></li>
-        </ul>
-    </li>
-    <li><a href="about.html">אודות</a></li>
-    <li><a href="index.html">ראשי</a></li>
-</ul>
-							</div>
-						</nav>
-				</div>
-                <button class="mobile-menu-toggle fright" aria-label="פתח תפריט" onclick="toggleMobileMenu()">
-                    <span class="hamburger"></span>
-                </button>
-					<div class="clear"></div>
-				</div>
-
-			</div>
-		</div>
-        <!--//header-->
-
-<!-- Mobile Menu -->
-<div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
-<div class="mobile-menu">
-    <div class="mobile-menu-header">
-        <img src="../images/megatec-logo.jpg" alt="מגהטק" class="mobile-menu-logo">
-        <button class="mobile-menu-close" onclick="closeMobileMenu()">&times;</button>
-    </div>
-    <nav class="mobile-menu-nav">
-        <ul>
-            <li><a href="index.html">ראשי</a></li>
-            <li><a href="about.html">אודות</a></li>
-            <li class="has-submenu">
-                <a href="javascript:{}" onclick="toggleSubmenu(this)">פתרונות</a>
-                <ul class="mobile-submenu">
-                    <li><a href="primavera_main.html">Primavera P6</a></li>
-                    <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
-                    <li><a href="aconex.html">Oracle Aconex</a></li>
-                </ul>
-            </li>
-            <li class="has-submenu">
-                <a href="javascript:{}" onclick="toggleSubmenu(this)">תעשיות</a>
-                <ul class="mobile-submenu">
-                    <li><a href="primavera_construction.html">בנייה</a></li>
-                    <li><a href="primavera_hitech.html">היי-טק</a></li>
-                    <li><a href="primavera_it.html">IT</a></li>
-                    <li><a href="primavera_aero.html">תעופה וביטחון</a></li>
-                    <li><a href="primavera_oil.html">נפט וגז</a></li>
-                </ul>
-            </li>
-            <li><a href="trainings.html">הדרכות</a></li>
-            <li><a href="contacts.html">צור קשר</a></li>
-            <li><a href="../primavera_oil.html">English</a></li>
-        </ul>
-    </nav>
-</div>
-
-		<!--page_container-->
-		<div class="page_container">
-			<div class="container">
-				<!--slider-->
-				<div id="main_slider">
-					<div class="camera_wrap" id="camera_wrap_1">
-						<div data-src="../images/slider/project_management/oil1.jpg">
-							<div class="camera_caption fadeIn">
-								<div class="slide_descr">	 Identify and select the best exploration,<br/>
-production, and distribution opportunities </div>
-							</div>
-						</div>
-						<div data-src="../images/slider/project_management/oil2.jpg">
-							<div class="camera_caption fadeIn">
-								<div class="slide_descr">Maintain and improve existing assets</div>
-							</div>
-						</div><div data-src="../images/slider/project_management/oil3.jpg">
-							<div class="camera_caption fadeIn">
-								<div class="slide_descr">	 Coordinate existing resources and
-quickly train new talent</div>
-							</div>
-						</div>
-						<div data-src="../images/slider/project_management/oil4.jpg">
-							<div class="camera_caption fadeIn">
-								<div class="slide_descr">Maximize global labor pools through an
-integrated approach</div>
-							</div>
-
-					<!-- #camera_wrap_1 -->
-					<div class="clear"></div>
-				</div>
-				<!--//slider-->
-			</div>
-                </div>
-			<div class="container">
-                <section>
-                    <div class="row_he">
-                         <div class="span4_2">
-                            <h2 class="title_he">אורקל Primavera, מאפשרת לחברות קידוח נפט וגז:</h2>
-								<ul_simple style="direction:rtl;">
-                                <li>שיפור ערך ההשקעה על ידי תזמון פעילויות תחזוקה שותפת בהתאם לרמת סיכון והחזר השקעה</li>
-<li>ניהול משאבים מבוזרים ואבטחה שהמשאבים הדרושים נמצאים בזמן הנכון במקום הנכון</li>
-<li>שיפור ניכר בקשר לקבלני משנה</li>
-<li>אפשרות לניתוח "מה-אם" המאפשר להנהלה לקבל תמונת מצב הנכונה למצב היפוטתי אפשרי כלשהו</li>
-<li>שימור יידע ארגוני וביסוס מתודולוגיות ובכך להעלות את זמינות המשאבים</li>
-                                </ul_simple>
-						</div>
-                        <div class="span4_2">
-                            <h2 class="title_he">אורקל Primavera P6 - מומחית ניהול פרויקטים לאנרגיה ותשתיות</h2>
-
-                                <span style="display:inline-block; vertical-align:middle;text-align:right;direction:rtl;">חברות קידוח, נפט וגז, נאבקות להשיג מאזן רווחי לטווח ארוך בעוד הן מתמודדות עם מחסור של דרישה כתוצאה ממשברים כלכליים עולמיים. אילו החברות שהצליחו לשגשג בסביבה תחרותית זו הן אלו שלמדו להסתגל לשינויים בזריזות בעודן מנהלות את משאביהן היטב ושולטות בסיכונים ועלויות הפרוייקטים שאותן מבצעות.<br/>
-פתרונות ניהול הפרויקטים של אורקל Primavera מאפשרים לחברה בתחום הקידוח ותשתיות האנרגיה לבחור, לתכנן ולבצע את הפעילויות שלהן בעודן עונות לסוגיות חשובות בתכנון הפעילות.</span>
-						</div>
-                    </div>
-                </section>
-
-</div>
-
-			<!--Recent Gallery-->
-			<div class="wrap recent_gal_block">
-				<div class="container">
-					<h2 class="title_he">דוגמאות וסרטונים</h2>
-					<ul class="row_he">
-						<li class="span4">
-							<div class="proj_block">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/xkRX6OEyCLs" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</li>
-						<li class="span4">
-							<div class="proj_block">
-								<iframe width="420" height="315" src="https://www.youtube.com/embed/JCZLYW2Zy58" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</li>
-						<li class="span4">
-							<div class="proj_block">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/BwJMIPpVbPE" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</li>
-						<div class="clear"></div>
-					</ul>
-				</div>
-			</div>
-			<!--//Recent Gallery-->
-
-					<!--Welcome-->
-			<div class="wrap welcome_bg">
-				<div class="container">
-					<div class="welcome_block">
-                        <p class="fright">צור קשר למידע נוסף</p>
-						<a class="fleft" href="contacts.html">צור קשר</a>
-						<div class="clear"></div>
-					</div>
-				</div>
-			</div>
-			<!--//Welcome-->
-
-		</div>
-
-		<!--//page_container-->
-
-		<!--footer-->
-<div id="footer">
-    <div class="wrap">
-        <div>
-            <div class="row">
-                <div class="span4">
-                    <div class="tags">
-                        <h2 class="title">הפתרונות שלנו</h2>
-                        <a href="primavera_main.html">Primavera P6</a>
+    <!-- Navigation -->
+    <nav class="nav-apple" id="nav-main">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="../images/megatec-logo.jpg" alt="מגהטק טכנולוגיות מתקדמות" width="120" height="24">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">ראשי</a>
+                <a href="about.html" class="nav-link">אודות</a>
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link">פתרונות</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="primavera_main.html">Primavera P6 Professional</a>
                         <a href="primavera_cloud.html">Primavera Cloud</a>
                         <a href="aconex.html">Oracle Aconex</a>
-                        <a href="primavera_main.html">ניהול פרויקטים</a>
                     </div>
                 </div>
-                <div class="span3">
-                    <div class="tags">
-                        <h2 class="title">תעשיות</h2>
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link active">תעשיות</a>
+                    <div class="nav-dropdown-menu">
                         <a href="primavera_construction.html">בנייה</a>
-                        <a href="primavera_hitech.html">היי-טק</a>
-                        <a href="primavera_it.html">IT</a>
                         <a href="primavera_aero.html">תעופה וביטחון</a>
                         <a href="primavera_oil.html">נפט וגז</a>
                     </div>
                 </div>
-                <div class="span5">
-                    <h2 class="title">צור קשר</h2>
-                    <form id="footer-contact-form">
-                        <input type="text" name="name" id="footer-name" placeholder="שם" required />
-                        <input type="email" name="email" id="footer-email" placeholder="אימייל" required />
-                        <textarea name="message" id="footer-message" placeholder="הודעה" required></textarea>
-                        <div class="clear"></div>
-                        <button type="submit" class="contact_btn_he" id="footer-submit-btn">שלח</button>
-                                <div class="clear"></div>
-                                <div id="footer-form-status" class="form-status"></div>
-                        <div class="clear"></div>
-                    </form>
-                </div>
+                <a href="trainings.html" class="nav-link">הדרכות</a>
+                <a href="contacts.html" class="nav-link">צור קשר</a>
+                <a href="../primavera_oil.html" class="nav-lang">English</a>
             </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="פתח תפריט" onclick="toggleMobileMenu()">
+                <span class="nav-toggle-icon"></span>
+            </button>
         </div>
-    </div>
+    </nav>
 
-    <div class="footer_bottom">
-        <div class="wrap">
-            <div class="container">
-                <div class="fright copyright">מגהטק טכנולוגיות מתקדמות בע"מ &copy; <script>document.write(new Date().getFullYear())</script></div>
-                <div class="fleft follow_us">
-                    <ul>
-                        <li><a href="https://www.facebook.com/megatecadvancedtechnologies" class="soc2"></a></li>
-                        <div class="clear"></div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-apple" id="mobile-menu">
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="index.html">ראשי</a></li>
+                <li><a href="about.html">אודות</a></li>
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(this)">פתרונות</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
+                        <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+                        <li><a href="aconex.html">Oracle Aconex</a></li>
                     </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
+                </li>
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(this)">תעשיות</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="primavera_construction.html">בנייה</a></li>
+                        <li><a href="primavera_aero.html">תעופה וביטחון</a></li>
+                        <li><a href="primavera_oil.html">נפט וגז</a></li>
+                    </ul>
+                </li>
+                <li><a href="trainings.html">הדרכות</a></li>
+                <li><a href="contacts.html">צור קשר</a></li>
+                <li><a href="../primavera_oil.html">English</a></li>
+            </ul>
+        </nav>
     </div>
-</div>
-		<!--//footer-->
-	</div>
 
-	<script src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="../js/jquery.mobile.customized.min.js"></script>
-    <script type="text/javascript" src="../js/camera.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/superfish.js"></script>
-    <script type="text/javascript" src="../js/jquery.prettyPhoto.js"></script>
+    <main id="main-content">
+        <!-- Hero with Scroll-Driven Illustration -->
+        <section class="hero-with-illustration" style="min-height:70vh;">
+            <div class="hero-content reveal">
+                <nav style="margin-bottom:var(--space-4);font-size:var(--text-sm);color:var(--text-tertiary);">
+                    <a href="index.html" style="color:var(--text-secondary);">ראשי</a>
+                    <span style="margin:0 var(--space-2);">/</span>
+                    <span style="color:var(--text-secondary);">תעשיות</span>
+                    <span style="margin:0 var(--space-2);">/</span>
+                    <span>נפט וגז</span>
+                </nav>
+                <span class="hero-eyebrow">פתרון לתעשייה</span>
+                <h1 class="hero-title" style="font-size:var(--text-4xl);">נפט, גז ואנרגיה</h1>
+                <p class="hero-subtitle">ספקו פרויקטי הון אינטנסיביים באנרגיה עם ניהול פורטפוליו פרויקטים ברמה ארגונית הבנוי לדרישות תעשיית הנפט והגז</p>
+                <div class="hero-cta">
+                    <a href="contacts.html" class="btn btn-primary btn-lg">התחילו עכשיו</a>
+                    <a href="primavera_main.html" class="link-arrow">למידע על Primavera P6</a>
+                </div>
+            </div>
+            <!-- Oil & Gas Illustration -->
+            <div class="industry-illustration reveal" id="oil-illustration" data-industry="oil">
+                <!-- Illustration injected by JavaScript -->
+            </div>
+        </section>
 
-    <script type="text/javascript" src="../js/custom.js"></script>
+        <!-- Scroll Progress -->
+        <div class="scroll-progress"></div>
 
-<!-- Mobile Menu JavaScript -->
-<script>
-function toggleMobileMenu() {
-    document.querySelector('.mobile-menu').classList.toggle('active');
-    document.querySelector('.mobile-nav-overlay').classList.toggle('active');
-    document.querySelector('.mobile-menu-toggle').classList.toggle('active');
-    document.body.style.overflow = document.querySelector('.mobile-menu').classList.contains('active') ? 'hidden' : '';
-}
-function closeMobileMenu() {
-    document.querySelector('.mobile-menu').classList.remove('active');
-    document.querySelector('.mobile-nav-overlay').classList.remove('active');
-    document.querySelector('.mobile-menu-toggle').classList.remove('active');
-    document.body.style.overflow = '';
-}
-function toggleSubmenu(element) {
-    var parent = element.parentElement;
-    parent.classList.toggle('open');
-    var submenu = parent.querySelector('.mobile-submenu');
-    submenu.classList.toggle('active');
-}
-window.addEventListener('resize', function() {
-    if (window.innerWidth > 768) { closeMobileMenu(); }
-});
-</script>
+        <!-- Overview -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header text-right reveal">
+                    <h2 class="section-title">הניעו את פרויקטי האנרגיה שלכם</h2>
+                </div>
+                <div style="max-width:var(--max-prose);" class="reveal">
+                    <p style="font-size:var(--text-lg);line-height:var(--leading-relaxed);color:var(--text-secondary);margin-bottom:var(--space-6);">תעשיית הנפט והגז מפעילה כמה מהפרויקטים המורכבים והאינטנסיביים ביותר בהון בעולם. מפלטפורמות ים פתוח ועד בתי זיקוק, צנרת ועד מסופי LNG, מגה-פרויקטים אלה דורשים יכולות ניהול פרויקטים מתוחכמות לשליטה בעלויות, ניהול סיכונים ואספקה בזמן. Oracle Primavera היא הסטנדרט בתעשייה לניהול פורטפוליו פרויקטי אנרגיה.</p>
+                    <p style="font-size:var(--text-lg);line-height:var(--leading-relaxed);color:var(--text-secondary);margin:0;">בין אם אתם מנהלים חיפוש במעלה הזרם, תשתיות באמצע הזרם או מתקני עיבוד במורד הזרם, Primavera מספקת את הנראות, השליטה והאנליטיקה הנדרשים לביצוע מוצלח בסביבות מאתגרות.</p>
+                </div>
+            </div>
+        </section>
 
-<!-- Footer Contact Form Handler -->
-<script>
-(function() {
-    var footerForm = document.getElementById('footer-contact-form');
-    if (footerForm) {
-        footerForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            var name = document.getElementById('footer-name').value.trim();
-            var email = document.getElementById('footer-email').value.trim();
-            var message = document.getElementById('footer-message').value.trim();
-            var statusEl = document.getElementById('footer-form-status');
-            var submitBtn = document.getElementById('footer-submit-btn');
-            
-            if (!name || !email || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                statusEl.textContent = 'נא למלא את כל השדות.';
-                statusEl.style.display = 'block';
-                statusEl.style.background = '#fee2e2';
-                statusEl.style.color = '#991b1b';
-                return;
-            }
-            
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'שולח...';
-            
-            var formData = new FormData();
-            formData.append('name', name);
-            formData.append('email', email);
-            formData.append('subject', 'Quick Contact');
-            formData.append('message', message);
-            formData.append('category', 'general');
-            
-            fetch('../api/contact.php', { method: 'POST', body: formData })
-            .then(function(r) { return r.json(); })
-            .then(function(data) {
-                statusEl.style.display = 'block';
-                if (data.success) {
-                    statusEl.textContent = 'ההודעה נשלחה!';
-                    statusEl.style.background = '#d1fae5';
-                    statusEl.style.color = '#065f46';
-                    footerForm.reset();
-                } else {
-                    statusEl.textContent = data.error || 'אירעה שגיאה.';
-                    statusEl.style.background = '#fee2e2';
-                    statusEl.style.color = '#991b1b';
-                }
-            })
-            .catch(function() {
-                statusEl.textContent = 'אירעה שגיאה.';
-                statusEl.style.display = 'block';
-                statusEl.style.background = '#fee2e2';
-                statusEl.style.color = '#991b1b';
-            })
-            .finally(function() {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'שלח';
-            });
-        });
-    }
-})();
-</script>
-<script src="../js/modern-animations.js"></script>
+        <!-- Key Benefits -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">יתרונות</span>
+                    <h2 class="section-title">למה מובילי אנרגיה בוחרים ב-Primavera</h2>
+                </div>
+                <div class="card-grid card-grid-3 reveal-stagger">
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">שליטה בפרויקטי הון</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">ניהול פרויקטי הון רב-מיליארדיים עם בקרת עלויות ולוחות זמנים משולבת מ-FID ועד ההפעלה.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">ניהול Turnaround</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">תכנון וביצוע עצירות ו-Turnarounds מורכבים של מפעלים עם תזמון מדויק למזעור זמן השבתה.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">תיאום קבלנים</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">אינטגרציית לוחות זמנים מקבלני EPC מרובים עם דיווח עקבי ומדידת התקדמות.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">ניהול סיכונים</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">זיהוי, הערכה ומיתון סיכוני פרויקט עם סימולציית Monte Carlo וניתוח רזרבות.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">מדידת התקדמות</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">מעקב אחר התקדמות פיזית עם אבני דרך משוקללות, Earned Value ומדדי ביצוע.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">אנליטיקת פורטפוליו</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">נראות ארגונית על פני כל פרויקטי ההון עם דשבורדים להנהלה ודיווח פורטפוליו.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">יישומים</span>
+                    <h2 class="section-title">סוגי פרויקטי אנרגיה</h2>
+                </div>
+                <div class="card-grid card-grid-2 reveal-stagger">
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">פיתוח במעלה הזרם</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">פלטפורמות ים פתוח, מערכות תת-ימיות, קמפיינים קידוחים ופרויקטי פיתוח שדות.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">תשתיות באמצע הזרם</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">צנרות, תחנות דחיסה, מתקני אחסון ומסופי LNG ברחבי רשתות גלובליות.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">עיבוד במורד הזרם</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">בתי זיקוק, מפעלים פטרוכימיים ומתקני עיבוד הדורשים אינטגרציה מורכבת.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">אנרגיה מתחדשת</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">חוות רוח, מתקני סולאר, מתקני מימן ופרויקטי מעבר אנרגטי.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="cta-banner reveal" style="background:linear-gradient(135deg, var(--accent), var(--accent-dark));">
+                    <div class="cta-banner-content">
+                        <h3>מוכנים לייעל את פרויקטי האנרגיה שלכם?</h3>
+                        <p>צרו קשר כדי ללמוד כיצד Oracle Primavera יכולה לשנות את ניהול פרויקטי הנפט והגז שלכם.</p>
+                    </div>
+                    <a href="contacts.html" class="btn btn-white btn-lg">צור קשר</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-apple">
+        <div class="footer-top">
+            <div class="footer-column"><h4>הפתרונות שלנו</h4><ul><li><a href="primavera_main.html">Primavera P6</a></li><li><a href="primavera_cloud.html">Primavera Cloud</a></li><li><a href="aconex.html">Oracle Aconex</a></li></ul></div>
+            <div class="footer-column"><h4>חברה</h4><ul><li><a href="about.html">אודות</a></li><li><a href="trainings.html">הדרכות</a></li><li><a href="contacts.html">צור קשר</a></li></ul></div>
+            <div class="footer-column"><h4>צור קשר</h4><ul><li><a href="contacts.html">יצירת קשר</a></li><li><a href="https://www.facebook.com/megatecadvancedtechnologies">פייסבוק</a></li></ul></div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">מגהטק טכנולוגיות מתקדמות בע"מ &copy; <script>document.write(new Date().getFullYear())</script></p>
+            <div class="footer-links"><a href="javascript:void(0);">מדיניות פרטיות</a></div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/industry-illustrations.js"></script>
+    <script src="../js/scroll-illustrations.js"></script>
+    <script>
+    function toggleMobileMenu() { document.getElementById('nav-toggle').classList.toggle('active'); document.getElementById('mobile-menu').classList.toggle('active'); document.body.style.overflow = document.getElementById('mobile-menu').classList.contains('active') ? 'hidden' : ''; }
+    function toggleSubmenu(el) { el.parentElement.classList.toggle('open'); el.parentElement.querySelector('.mobile-submenu').classList.toggle('active'); }
+    window.addEventListener('resize', function() { if (window.innerWidth > 768) { document.getElementById('nav-toggle').classList.remove('active'); document.getElementById('mobile-menu').classList.remove('active'); document.body.style.overflow = ''; }});
+    window.addEventListener('scroll', function() { document.getElementById('nav-main').classList.toggle('scrolled', window.scrollY > 10); });
+
+    // Initialize oil & gas illustration
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof MegatecIllustrations !== 'undefined') {
+            MegatecIllustrations.inject('oil-illustration', 'oil');
+        }
+        if (typeof gsap !== 'undefined' && typeof MegatecScrollIllustrations !== 'undefined') {
+            MegatecScrollIllustrations.init();
+        }
+    });
+    </script>
+    <script>
+    (function() {
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            var els = document.querySelectorAll('.reveal');
+            var obs = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); }}); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            els.forEach(function(el) { obs.observe(el); });
+        } else { document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('revealed'); }); }
+    })();
+    </script>
 </body>
-
 </html>

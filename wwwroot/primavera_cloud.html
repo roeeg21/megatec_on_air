@@ -2,27 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Oracle Primavera Cloud | Megatec Advanced Technologies</title>
+    <title>Primavera Cloud | Megatec Advanced Technologies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Oracle Primavera Cloud (OPC) - Unified cloud-based project controls platform for managing schedules, costs, risks, resources, and contracts across the entire project lifecycle.">
+    <meta name="description" content="Oracle Primavera Cloud - Unified cloud-based project controls platform for managing schedules, costs, risks, and resources">
     <meta name="author" content="Megatec Advanced Technologies">
 
-    <!-- Stylesheets -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/site.css" rel="stylesheet">
-    <link href="css/site-modern.css" rel="stylesheet">
-
-    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Muli:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/site-apple.css" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,350 +22,266 @@
     </script>
 </head>
 <body>
-    <div class="container box_shadow">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-        <!-- Header -->
-        <div class="header">
-            <div class="wrap">
-                <div class="container">
-                    <div class="fleft logo">
-                        <a href="index.html">
-                            <img src="images/megatec-logo.jpg" alt="Megatec Advanced Technologies" />
-                        </a>
+    <!-- Navigation -->
+    <nav class="nav-apple" id="nav-main">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/megatec-logo.jpg" alt="Megatec Advanced Technologies" width="120" height="24">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link active">Solutions</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="primavera_main.html">Primavera P6 Professional</a>
+                        <a href="primavera_cloud.html">Primavera Cloud</a>
+                        <a href="aconex.html">Oracle Aconex</a>
                     </div>
-                    <div class="navbar fright desktop-nav">
-                        <nav id="main_menu">
-                            <div class="menu_wrap">
-                                <ul class="nav sf-menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li class="current sub-menu"><a href="javascript:{}">Solutions</a>
-                                        <ul>
-                                            <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
-                                            <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
-                                            <li><a href="aconex.html">Oracle Aconex</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub-menu"><a href="javascript:{}">Industries</a>
-                                        <ul>
-                                            <li><a href="primavera_construction.html">Construction</a></li>
-                                            <li><a href="primavera_hitech.html">High-Tech</a></li>
-                                            <li><a href="primavera_it.html">IT</a></li>
-                                            <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
-                                            <li><a href="primavera_oil.html">Oil & Gas</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="trainings.html">Training</a></li>
-                                    <li><a href="contacts.html">Contact Us</a></li>
-                                    <li><a href="he/primavera_cloud.html">Hebrew</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                    <button class="mobile-menu-toggle fright" aria-label="Open menu" onclick="toggleMobileMenu()">
-                        <span class="hamburger"></span>
-                    </button>
-                    <div class="clear"></div>
                 </div>
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link">Industries</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="primavera_construction.html">Construction</a>
+                        <a href="primavera_aero.html">Aerospace & Defense</a>
+                        <a href="primavera_oil.html">Oil & Gas</a>
+                    </div>
+                </div>
+                <a href="trainings.html" class="nav-link">Training</a>
+                <a href="contacts.html" class="nav-link">Contact Us</a>
+                <a href="he/primavera_cloud.html" class="nav-lang">Hebrew</a>
             </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleMobileMenu()">
+                <span class="nav-toggle-icon"></span>
+            </button>
         </div>
-        <!-- //Header -->
+    </nav>
 
-        <!-- Mobile Menu -->
-        <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
-        <div class="mobile-menu">
-            <div class="mobile-menu-header">
-                <img src="images/megatec-logo.jpg" alt="Megatec" class="mobile-menu-logo">
-                <button class="mobile-menu-close" onclick="closeMobileMenu()">&times;</button>
-            </div>
-            <nav class="mobile-menu-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="has-submenu">
-                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Solutions</a>
-                        <ul class="mobile-submenu">
-                            <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
-                            <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
-                            <li><a href="aconex.html">Oracle Aconex</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Industries</a>
-                        <ul class="mobile-submenu">
-                            <li><a href="primavera_construction.html">Construction</a></li>
-                            <li><a href="primavera_hitech.html">High-Tech</a></li>
-                            <li><a href="primavera_it.html">IT</a></li>
-                            <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
-                            <li><a href="primavera_oil.html">Oil & Gas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="trainings.html">Training</a></li>
-                    <li><a href="contacts.html">Contact Us</a></li>
-                    <li><a href="he/primavera_cloud.html">Hebrew</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Page Container -->
-        <div class="page_container">
-            <div class="wrap">
-                <!-- Breadcrumb -->
-                <div class="breadcrumb">
-                    <div>
-                        <a href="index.html">Home</a><span>/</span>
-                        <a href="javascript:{}">Solutions</a><span>/</span>
-                        Oracle Primavera Cloud
-                    </div>
-                </div>
-
-                <div class="container">
-                    <!-- Page Header -->
-                    <div style="text-align:center; margin-bottom: 40px;">
-                        <h1 style="font-size: 2.25rem; font-weight: 600; color: #1a202c; margin-bottom: 16px;">Oracle Primavera Cloud</h1>
-                        <p style="font-size: 1.125rem; color: #4a5568; max-width: 700px; margin: 0 auto;">Unified cloud-based project controls platform for enterprise project management</p>
-                    </div>
-
-                    <!-- Main Content -->
-                    <section style="margin-bottom: 40px;">
-                        <h2 class="title">Cloud-Based Project Controls</h2>
-                        <p>Oracle Primavera Cloud (OPC) is a unified, cloud-based project controls platform designed to manage schedules, costs, risks, resources, and contracts across the entire project lifecycle. Built for complex capital projects, Primavera Cloud enables organizations to standardize governance, improve collaboration, and gain real-time visibility across portfolios, programs, and projects.</p>
-                        <p>Unlike traditional on-premise solutions, Primavera Cloud offers the flexibility to access your project data from anywhere with internet connectivity, enabling better collaboration across distributed teams and stakeholders.</p>
-                    </section>
-
-                    <!-- Key Features -->
-                    <section style="margin-bottom: 40px;">
-                        <h2 class="title">Key Capabilities</h2>
-                        <div class="row" style="display: flex; flex-wrap: wrap; gap: 24px;">
-                            <div style="flex: 1; min-width: 280px; background: #f7fafc; padding: 24px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <h4 style="color: #1dace8; margin-bottom: 12px;">Project & Portfolio Management</h4>
-                                <p style="color: #4a5568; font-size: 14px; margin: 0;">Manage multiple projects and portfolios with comprehensive planning, scheduling, and resource allocation tools.</p>
-                            </div>
-                            <div style="flex: 1; min-width: 280px; background: #f7fafc; padding: 24px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <h4 style="color: #1dace8; margin-bottom: 12px;">Risk Management</h4>
-                                <p style="color: #4a5568; font-size: 14px; margin: 0;">Integrated risk register with Monte Carlo analysis for quantitative risk assessment and mitigation planning.</p>
-                            </div>
-                            <div style="flex: 1; min-width: 280px; background: #f7fafc; padding: 24px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <h4 style="color: #1dace8; margin-bottom: 12px;">Cost & Contract Management</h4>
-                                <p style="color: #4a5568; font-size: 14px; margin: 0;">Track budgets, manage contracts, and control costs with comprehensive financial oversight tools.</p>
-                            </div>
-                        </div>
-                        <div class="row" style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 24px;">
-                            <div style="flex: 1; min-width: 280px; background: #f7fafc; padding: 24px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <h4 style="color: #1dace8; margin-bottom: 12px;">Lean Scheduling & Pull Planning</h4>
-                                <p style="color: #4a5568; font-size: 14px; margin: 0;">Coordinate activities around milestones with advanced pull planning capabilities for agile project delivery.</p>
-                            </div>
-                            <div style="flex: 1; min-width: 280px; background: #f7fafc; padding: 24px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <h4 style="color: #1dace8; margin-bottom: 12px;">Mobile Access</h4>
-                                <p style="color: #4a5568; font-size: 14px; margin: 0;">Access project data from mobile and tablet devices, enabling real-time updates from the field.</p>
-                            </div>
-                            <div style="flex: 1; min-width: 280px; background: #f7fafc; padding: 24px; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <h4 style="color: #1dace8; margin-bottom: 12px;">Analytics & Reporting</h4>
-                                <p style="color: #4a5568; font-size: 14px; margin: 0;">Real-time dashboards and customizable reports for data-driven decision making across your portfolio.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Benefits -->
-                    <section style="margin-bottom: 40px;">
-                        <h2 class="title">Benefits</h2>
-                        <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-                            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <span style="color: #1dace8; font-size: 20px;">&#10003;</span>
-                                <span style="color: #4a5568;">Deliver projects on time, within budget, and to quality standards</span>
-                            </li>
-                            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <span style="color: #1dace8; font-size: 20px;">&#10003;</span>
-                                <span style="color: #4a5568;">Proactively identify and mitigate project risks</span>
-                            </li>
-                            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <span style="color: #1dace8; font-size: 20px;">&#10003;</span>
-                                <span style="color: #4a5568;">Monitor project progress and performance in real-time</span>
-                            </li>
-                            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <span style="color: #1dace8; font-size: 20px;">&#10003;</span>
-                                <span style="color: #4a5568;">Optimize project budgets and control expenditures</span>
-                            </li>
-                            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <span style="color: #1dace8; font-size: 20px;">&#10003;</span>
-                                <span style="color: #4a5568;">Streamline project planning and scheduling processes</span>
-                            </li>
-                            <li style="display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <span style="color: #1dace8; font-size: 20px;">&#10003;</span>
-                                <span style="color: #4a5568;">Efficiently allocate and manage project resources</span>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <!-- Integration -->
-                    <section style="margin-bottom: 40px;">
-                        <h2 class="title">Seamless Integration</h2>
-                        <p>Oracle Primavera Cloud integrates seamlessly with Primavera P6, allowing you to import P6 XML and XER files directly. Project files can also be exported for use in Primavera P6 and Primavera Enterprise, ensuring compatibility across your organization's project management ecosystem.</p>
-                    </section>
-
-                    <!-- CTA -->
-                    <section style="background: linear-gradient(135deg, #1dace8, #0d8bc4); padding: 40px; border-radius: 12px; text-align: center; margin-bottom: 40px;">
-                        <h3 style="color: white; font-size: 1.5rem; margin-bottom: 16px;">Ready to Transform Your Project Management?</h3>
-                        <p style="color: rgba(255,255,255,0.9); margin-bottom: 24px;">Contact us to learn how Oracle Primavera Cloud can help your organization.</p>
-                        <a href="contacts.html" style="display: inline-block; background: white; color: #1a202c; padding: 12px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: transform 0.2s;">Contact Us</a>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <!-- //Page Container -->
-
-        <!-- Footer -->
-        <div id="footer">
-            <div class="wrap">
-                <div>
-                    <div class="row">
-                        <div class="span4">
-                            <div class="tags">
-                                <h2 class="title">Our Solutions</h2>
-                                <a href="primavera_main.html">Primavera P6</a>
-                                <a href="primavera_cloud.html">Primavera Cloud</a>
-                                <a href="aconex.html">Oracle Aconex</a>
-                                <a href="primavera_main.html">Project Management</a>
-                                <a href="primavera_main.html">EPPM</a>
-                                <a href="primavera_construction.html">Construction</a>
-                                <a href="primavera_oil.html">Oil & Gas</a>
-                            </div>
-                        </div>
-                        <div class="span3">
-                            <div class="tags">
-                                <h2 class="title">Industries</h2>
-                                <a href="primavera_construction.html">Construction</a>
-                                <a href="primavera_hitech.html">High-Tech</a>
-                                <a href="primavera_it.html">IT</a>
-                                <a href="primavera_aero.html">Aerospace & Defense</a>
-                                <a href="primavera_oil.html">Oil & Gas</a>
-                            </div>
-                        </div>
-                        <div class="span5">
-                            <h2 class="title">Contact Us</h2>
-                            <form id="footer-contact-form">
-                                <input type="text" name="name" id="footer-name" placeholder="Name" required />
-                                <input type="email" name="email" id="footer-email" placeholder="Email" required />
-                                <textarea name="message" id="footer-message" placeholder="Message" required></textarea>
-                                <div class="clear"></div>
-                                <input type="submit" class="contact_btn" id="button-send" value="Send" />
-                                <div class="clear"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer_bottom">
-                <div class="wrap">
-                    <div class="container">
-                        <div class="fleft copyright">Megatec Advanced Technologies Ltd. &copy; <script>document.write(new Date().getFullYear())</script> | <a href="javascript:void(0);">Privacy Policy</a></div>
-                        <div class="fright follow_us">
-                            <ul>
-                                <li><a href="https://www.facebook.com/megatecadvancedtechnologies" class="soc2"></a></li>
-                                <li><a href="#" class="soc3"></a></li>
-                                <div class="clear"></div>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- //Footer -->
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-apple" id="mobile-menu">
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(this)">Solutions</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
+                        <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+                        <li><a href="aconex.html">Oracle Aconex</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(this)">Industries</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="primavera_construction.html">Construction</a></li>
+                        <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
+                        <li><a href="primavera_oil.html">Oil & Gas</a></li>
+                    </ul>
+                </li>
+                <li><a href="trainings.html">Training</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="he/primavera_cloud.html">Hebrew</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/superfish.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <main id="main-content">
+        <!-- Hero -->
+        <section class="hero-section hero-light" style="min-height:50vh;padding-top:calc(var(--nav-height) + var(--space-12));">
+            <div class="hero-content reveal">
+                <nav style="margin-bottom:var(--space-4);font-size:var(--text-sm);color:var(--text-tertiary);">
+                    <a href="index.html" style="color:var(--text-secondary);">Home</a>
+                    <span style="margin:0 var(--space-2);">/</span>
+                    <span style="color:var(--text-secondary);">Solutions</span>
+                    <span style="margin:0 var(--space-2);">/</span>
+                    <span>Primavera Cloud</span>
+                </nav>
+                <span class="hero-eyebrow">Oracle Solution</span>
+                <h1 class="hero-title" style="font-size:var(--text-4xl);">Oracle Primavera Cloud</h1>
+                <p class="hero-subtitle">Unified cloud-based project controls platform for managing schedules, costs, risks, and resources</p>
+                <div class="hero-cta">
+                    <a href="contacts.html" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="trainings.html" class="link-arrow">View Training</a>
+                </div>
+            </div>
+            <div class="hero-image reveal" style="max-width:800px;margin-top:var(--space-10);">
+                <img src="images/megatec_pm_banner.png" alt="Primavera Cloud" style="border-radius:var(--radius-2xl);width:100%;" loading="lazy">
+            </div>
+        </section>
 
-    <!-- Mobile Menu JavaScript -->
+        <!-- Overview -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header text-left reveal">
+                    <h2 class="section-title">Cloud-Based Project Controls</h2>
+                </div>
+                <div style="max-width:var(--max-prose);" class="reveal">
+                    <p style="font-size:var(--text-lg);line-height:var(--leading-relaxed);color:var(--text-secondary);margin-bottom:var(--space-6);">Oracle Primavera Cloud (OPC) is a unified, cloud-based project controls platform designed to manage schedules, costs, risks, resources, and contracts across the entire project lifecycle. Built for complex capital projects, Primavera Cloud enables organizations to standardize governance, improve collaboration, and gain real-time visibility across portfolios, programs, and projects.</p>
+                    <p style="font-size:var(--text-lg);line-height:var(--leading-relaxed);color:var(--text-secondary);margin:0;">Unlike traditional on-premise solutions, Primavera Cloud offers the flexibility to access your project data from anywhere with internet connectivity, enabling better collaboration across distributed teams and stakeholders.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Capabilities -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Features</span>
+                    <h2 class="section-title">Key Capabilities</h2>
+                </div>
+                <div class="card-grid card-grid-3 reveal-stagger">
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">Project & Portfolio Management</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">Manage multiple projects and portfolios with comprehensive planning, scheduling, and resource allocation tools.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">Risk Management</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">Integrated risk register with Monte Carlo analysis for quantitative risk assessment and mitigation planning.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">Cost & Contract Management</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">Track budgets, manage contracts, and control costs with comprehensive financial oversight tools.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">Lean Scheduling & Pull Planning</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">Coordinate activities around milestones with advanced pull planning capabilities for agile project delivery.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">Mobile Access</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">Access project data from mobile and tablet devices, enabling real-time updates from the field.</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-8);">
+                        <h3 style="color:var(--accent);font-size:var(--text-xl);margin-bottom:var(--space-3);">Analytics & Reporting</h3>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-sm);line-height:var(--leading-relaxed);">Real-time dashboards and customizable reports for data-driven decision making across your portfolio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Benefits</span>
+                    <h2 class="section-title">Why Primavera Cloud?</h2>
+                </div>
+                <div class="card-grid card-grid-2 reveal-stagger">
+                    <div class="tile reveal" style="padding:var(--space-6);display:flex;align-items:flex-start;gap:var(--space-4);">
+                        <span style="color:var(--accent);font-size:var(--text-2xl);line-height:1;">&#10003;</span>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-base);">Deliver projects on time, within budget, and to quality standards</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-6);display:flex;align-items:flex-start;gap:var(--space-4);">
+                        <span style="color:var(--accent);font-size:var(--text-2xl);line-height:1;">&#10003;</span>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-base);">Proactively identify and mitigate project risks</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-6);display:flex;align-items:flex-start;gap:var(--space-4);">
+                        <span style="color:var(--accent);font-size:var(--text-2xl);line-height:1;">&#10003;</span>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-base);">Monitor project progress and performance in real-time</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-6);display:flex;align-items:flex-start;gap:var(--space-4);">
+                        <span style="color:var(--accent);font-size:var(--text-2xl);line-height:1;">&#10003;</span>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-base);">Optimize project budgets and control expenditures</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-6);display:flex;align-items:flex-start;gap:var(--space-4);">
+                        <span style="color:var(--accent);font-size:var(--text-2xl);line-height:1;">&#10003;</span>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-base);">Enable collaboration across distributed teams and stakeholders</p>
+                    </div>
+                    <div class="tile reveal" style="padding:var(--space-6);display:flex;align-items:flex-start;gap:var(--space-4);">
+                        <span style="color:var(--accent);font-size:var(--text-2xl);line-height:1;">&#10003;</span>
+                        <p style="margin:0;color:var(--text-secondary);font-size:var(--text-base);">Standardize governance across your entire portfolio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Industries</span>
+                    <h2 class="section-title">Industries We Serve</h2>
+                    <p class="section-subtitle">Oracle Primavera Cloud is trusted by project-intensive organizations worldwide.</p>
+                </div>
+                <div class="card-grid card-grid-5 reveal-stagger">
+                    <a href="primavera_construction.html" class="tile tile-industry reveal">
+                        <div class="tile-image">
+                            <img src="images/slider/project_management/cons1_thumb.jpg" alt="Construction" width="72" height="72" loading="lazy">
+                        </div>
+                        <h4 class="tile-title">Engineering & Construction</h4>
+                    </a>
+                    <a href="primavera_aero.html" class="tile tile-industry reveal">
+                        <div class="tile-image">
+                            <img src="images/slider/project_management/aero1_thumb.jpg" alt="Aerospace" width="72" height="72" loading="lazy">
+                        </div>
+                        <h4 class="tile-title">Aerospace & Defense</h4>
+                    </a>
+                    <a href="primavera_oil.html" class="tile tile-industry reveal">
+                        <div class="tile-image">
+                            <img src="images/slider/project_management/oil3_thumb.jpg" alt="Oil & Gas" width="72" height="72" loading="lazy">
+                        </div>
+                        <h4 class="tile-title">Oil, Gas & Energy</h4>
+                    </a>
+                    <a href="primavera_it.html" class="tile tile-industry reveal">
+                        <div class="tile-image">
+                            <img src="images/slider/project_management/tech3_thumb.jpg" alt="IT" width="72" height="72" loading="lazy">
+                        </div>
+                        <h4 class="tile-title">IT Departments</h4>
+                    </a>
+                    <a href="primavera_hitech.html" class="tile tile-industry reveal">
+                        <div class="tile-image">
+                            <img src="images/slider/project_management/tech5_thumb.jpg" alt="High-Tech" width="72" height="72" loading="lazy">
+                        </div>
+                        <h4 class="tile-title">High-Tech Development</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="cta-banner reveal" style="background:linear-gradient(135deg, var(--accent), var(--accent-dark));">
+                    <div class="cta-banner-content">
+                        <h3>Ready to Move to the Cloud?</h3>
+                        <p>Contact us to learn how Oracle Primavera Cloud can transform your project management.</p>
+                    </div>
+                    <a href="contacts.html" class="btn btn-white btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-apple">
+        <div class="footer-top">
+            <div class="footer-column"><h4>Our Solutions</h4><ul><li><a href="primavera_main.html">Primavera P6</a></li><li><a href="primavera_cloud.html">Primavera Cloud</a></li><li><a href="aconex.html">Oracle Aconex</a></li></ul></div>
+            <div class="footer-column"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="trainings.html">Training</a></li><li><a href="contacts.html">Contact Us</a></li></ul></div>
+            <div class="footer-column"><h4>Contact</h4><ul><li><a href="contacts.html">Get in Touch</a></li><li><a href="https://www.facebook.com/megatecadvancedtechnologies">Facebook</a></li></ul></div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">Megatec Advanced Technologies Ltd. &copy; <script>document.write(new Date().getFullYear())</script></p>
+            <div class="footer-links"><a href="javascript:void(0);">Privacy Policy</a></div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
     <script>
-    function toggleMobileMenu() {
-        document.querySelector('.mobile-menu').classList.toggle('active');
-        document.querySelector('.mobile-nav-overlay').classList.toggle('active');
-        document.querySelector('.mobile-menu-toggle').classList.toggle('active');
-        document.body.style.overflow = document.querySelector('.mobile-menu').classList.contains('active') ? 'hidden' : '';
-    }
-    function closeMobileMenu() {
-        document.querySelector('.mobile-menu').classList.remove('active');
-        document.querySelector('.mobile-nav-overlay').classList.remove('active');
-        document.querySelector('.mobile-menu-toggle').classList.remove('active');
-        document.body.style.overflow = '';
-    }
-    function toggleSubmenu(element) {
-        var parent = element.parentElement;
-        parent.classList.toggle('open');
-        var submenu = parent.querySelector('.mobile-submenu');
-        submenu.classList.toggle('active');
-    }
-    window.addEventListener('resize', function() {
-        if (window.innerWidth > 768) { closeMobileMenu(); }
-    });
+    function toggleMobileMenu() { document.getElementById('nav-toggle').classList.toggle('active'); document.getElementById('mobile-menu').classList.toggle('active'); document.body.style.overflow = document.getElementById('mobile-menu').classList.contains('active') ? 'hidden' : ''; }
+    function toggleSubmenu(el) { el.parentElement.classList.toggle('open'); el.parentElement.querySelector('.mobile-submenu').classList.toggle('active'); }
+    window.addEventListener('resize', function() { if (window.innerWidth > 768) { document.getElementById('nav-toggle').classList.remove('active'); document.getElementById('mobile-menu').classList.remove('active'); document.body.style.overflow = ''; }});
+    window.addEventListener('scroll', function() { document.getElementById('nav-main').classList.toggle('scrolled', window.scrollY > 10); });
     </script>
-<!-- Footer Contact Form Handler -->
-<script>
-(function() {
-    var footerForm = document.getElementById('footer-contact-form');
-    if (footerForm) {
-        footerForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            var name = document.getElementById('footer-name').value.trim();
-            var email = document.getElementById('footer-email').value.trim();
-            var message = document.getElementById('footer-message').value.trim();
-            var statusEl = document.getElementById('footer-form-status');
-            var submitBtn = document.getElementById('footer-submit-btn');
-            
-            if (!name || !email || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                statusEl.textContent = 'Please fill in all fields with valid data.';
-                statusEl.style.display = 'block';
-                statusEl.style.background = '#fee2e2';
-                statusEl.style.color = '#991b1b';
-                return;
-            }
-            
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
-            
-            var formData = new FormData();
-            formData.append('name', name);
-            formData.append('email', email);
-            formData.append('subject', 'Quick Contact');
-            formData.append('message', message);
-            formData.append('category', 'general');
-            
-            fetch('api/contact.php', { method: 'POST', body: formData })
-            .then(function(r) { return r.json(); })
-            .then(function(data) {
-                statusEl.style.display = 'block';
-                if (data.success) {
-                    statusEl.textContent = 'Message sent!';
-                    statusEl.style.background = '#d1fae5';
-                    statusEl.style.color = '#065f46';
-                    footerForm.reset();
-                } else {
-                    statusEl.textContent = data.error || 'Failed to send.';
-                    statusEl.style.background = '#fee2e2';
-                    statusEl.style.color = '#991b1b';
-                }
-            })
-            .catch(function() {
-                statusEl.textContent = 'An error occurred.';
-                statusEl.style.display = 'block';
-                statusEl.style.background = '#fee2e2';
-                statusEl.style.color = '#991b1b';
-            })
-            .finally(function() {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send';
-            });
-        });
-    }
-})();
-</script>
-<script src="js/modern-animations.js"></script>
+    <script>
+    (function() {
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            var els = document.querySelectorAll('.reveal');
+            var obs = new IntersectionObserver(function(entries) { entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); }}); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            els.forEach(function(el) { obs.observe(el); });
+        } else { document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('revealed'); }); }
+    })();
+    </script>
 </body>
 </html>

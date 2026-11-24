@@ -7,18 +7,20 @@
     <meta name="description" content="Megatec Advanced Technologies - Leading provider of Oracle Primavera P6, Primavera Cloud, and Aconex project management solutions in Israel since 1995.">
     <meta name="author" content="Megatec Advanced Technologies">
 
-    <!-- Stylesheets -->
-    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" id="camera-css" href="css/camera.css" type="text/css" media="all">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/site.css" rel="stylesheet">
-    <link href="css/site-modern.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- Fonts -->
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Muli:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Fonts: Plus Jakarta Sans (English) + Rubik (Hebrew) - Premium Tech Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="css/site-apple.css" rel="stylesheet">
+    <link href="css/scroll-illustrations.css" rel="stylesheet">
+
+    <!-- GSAP for scroll-driven animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 
     <!--[if lt IE 9]>
         <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,556 +35,449 @@
         ga('create', 'UA-39375429-3', 'auto');
         ga('send', 'pageview');
     </script>
-
-    <style>
-        /* Homepage specific styles */
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            margin-bottom: 40px;
-        }
-        @media (max-width: 768px) {
-            .products-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        .product-card-home {
-            background: #fff;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            padding: 32px 24px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-        .product-card-home:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
-            border-color: #1dace8;
-        }
-        .product-card-home img {
-            width: 80px;
-            height: 80px;
-            object-fit: contain;
-            margin-bottom: 20px;
-        }
-        .product-card-home h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #1a202c;
-            margin-bottom: 8px;
-        }
-        .product-card-home .vendor {
-            font-size: 0.875rem;
-            color: #1dace8;
-            font-weight: 500;
-            margin-bottom: 16px;
-        }
-        .product-card-home p {
-            font-size: 0.875rem;
-            color: #4a5568;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .product-card-home .btn-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: #1dace8;
-            font-weight: 600;
-            font-size: 0.875rem;
-        }
-        .product-card-home .btn-link:hover {
-            color: #0d8bc4;
-        }
-        .news-section {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
-            margin-bottom: 40px;
-        }
-        @media (max-width: 768px) {
-            .news-section {
-                grid-template-columns: 1fr;
-            }
-        }
-        .news-card {
-            background: #fff;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            padding: 24px;
-        }
-        .news-card h4 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #1a202c;
-            margin-bottom: 16px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        .industries-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 16px;
-            margin-bottom: 40px;
-        }
-        @media (max-width: 1024px) {
-            .industries-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        @media (max-width: 640px) {
-            .industries-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        .industry-card {
-            background: #fff;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            padding: 20px 16px;
-            text-align: center;
-            transition: all 0.2s ease;
-        }
-        .industry-card:hover {
-            border-color: #1dace8;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
-        }
-        .industry-card img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 12px;
-        }
-        .industry-card h5 {
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: #1a202c;
-            margin: 0;
-        }
-        .cta-section {
-            background: linear-gradient(135deg, #2d3748, #1a202c);
-            padding: 48px;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 32px;
-            margin-bottom: 40px;
-        }
-        @media (max-width: 768px) {
-            .cta-section {
-                flex-direction: column;
-                text-align: center;
-                padding: 32px;
-            }
-        }
-        .cta-section h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #fff;
-            margin: 0;
-        }
-        .cta-section p {
-            color: rgba(255,255,255,0.8);
-            margin: 8px 0 0;
-        }
-        .cta-btn {
-            display: inline-block;
-            background: #1dace8;
-            color: #fff;
-            padding: 14px 32px;
-            border-radius: 8px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            white-space: nowrap;
-        }
-        .cta-btn:hover {
-            background: #0d8bc4;
-            color: #fff;
-            transform: translateY(-2px);
-        }
-    </style>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <div class="container box_shadow">
+    <!-- Apple-Style Navigation -->
+    <nav class="nav-apple" id="nav-main">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/megatec-logo.jpg" alt="Megatec Advanced Technologies" width="120" height="24">
+            </a>
 
-        <!-- Header -->
-        <div class="header">
-            <div class="wrap">
-                <div class="container">
-                    <div class="fleft logo">
-                        <a href="index.html">
-                            <img src="images/megatec-logo.jpg" alt="Megatec Advanced Technologies" />
-                        </a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link">Solutions</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="primavera_main.html">Primavera P6 Professional</a>
+                        <a href="primavera_cloud.html">Primavera Cloud</a>
+                        <a href="aconex.html">Oracle Aconex</a>
                     </div>
-                    <div class="navbar fright desktop-nav">
-                        <nav id="main_menu">
-                            <div class="menu_wrap">
-                                <ul class="nav sf-menu">
-                                    <li class="current"><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li class="sub-menu"><a href="javascript:{}">Solutions</a>
-                                        <ul>
-                                            <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
-                                            <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
-                                            <li><a href="aconex.html">Oracle Aconex</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub-menu"><a href="javascript:{}">Industries</a>
-                                        <ul>
-                                            <li><a href="primavera_construction.html">Construction</a></li>
-                                            <li><a href="primavera_hitech.html">High-Tech</a></li>
-                                            <li><a href="primavera_it.html">IT</a></li>
-                                            <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
-                                            <li><a href="primavera_oil.html">Oil & Gas</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="trainings.html">Training</a></li>
-                                    <li><a href="contacts.html">Contact Us</a></li>
-                                    <li><a href="he/index.html">Hebrew</a></li>
-                                </ul>
-                            </div>
-                        </nav>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link">Industries</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="primavera_construction.html">Construction</a>
+                        <a href="primavera_aero.html">Aerospace & Defense</a>
+                        <a href="primavera_oil.html">Oil & Gas</a>
                     </div>
-                    <!-- Mobile Menu Toggle -->
-                    <button class="mobile-menu-toggle fright" aria-label="Open menu" onclick="toggleMobileMenu()">
-                        <span class="hamburger"></span>
-                    </button>
-                    <div class="clear"></div>
+                </div>
+                <a href="trainings.html" class="nav-link">Training</a>
+                <a href="contacts.html" class="nav-link">Contact Us</a>
+                <a href="he/index.html" class="nav-lang">Hebrew</a>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleMobileMenu()">
+                <span class="nav-toggle-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-apple" id="mobile-menu">
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(this)">Solutions</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
+                        <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+                        <li><a href="aconex.html">Oracle Aconex</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(this)">Industries</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="primavera_construction.html">Construction</a></li>
+                        <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
+                        <li><a href="primavera_oil.html">Oil & Gas</a></li>
+                    </ul>
+                </li>
+                <li><a href="trainings.html">Training</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="he/index.html">Hebrew</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section with Scroll-Driven Illustration -->
+        <section class="hero-with-illustration">
+            <!-- Floating background elements -->
+            <div class="floating-element floating-element--circle" style="top:10%;left:5%;"></div>
+            <div class="floating-element floating-element--dot" style="top:20%;right:10%;"></div>
+            <div class="floating-element floating-element--square" style="bottom:30%;left:8%;width:60px;height:60px;"></div>
+            <div class="floating-element floating-element--dot" style="bottom:20%;right:15%;"></div>
+
+            <div class="hero-content reveal">
+                <span class="hero-eyebrow">Oracle Primavera Partner</span>
+                <h2 class="hero-title" style="font-size:var(--text-4xl);">Advanced Tools for Project Management</h2>
+                <p class="hero-subtitle">Enterprise solutions for Construction, Aerospace & Defense, and Oil & Gas industries</p>
+                <div class="hero-cta">
+                    <a href="contacts.html" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="primavera_main.html" class="link-arrow">Explore Solutions</a>
                 </div>
             </div>
-        </div>
-        <!-- //Header -->
 
-        <!-- Mobile Menu -->
-        <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
-        <div class="mobile-menu">
-            <div class="mobile-menu-header">
-                <img src="images/megatec-logo.jpg" alt="Megatec" class="mobile-menu-logo">
-                <button class="mobile-menu-close" onclick="closeMobileMenu()">&times;</button>
+            <!-- Hero Illustration Container -->
+            <div class="hero-illustration-container reveal" id="hero-illustration">
+                <!-- SVG illustration injected by JavaScript -->
             </div>
-            <nav class="mobile-menu-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="has-submenu">
-                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Solutions</a>
-                        <ul class="mobile-submenu">
-                            <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
-                            <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
-                            <li><a href="aconex.html">Oracle Aconex</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Industries</a>
-                        <ul class="mobile-submenu">
-                            <li><a href="primavera_construction.html">Construction</a></li>
-                            <li><a href="primavera_hitech.html">High-Tech</a></li>
-                            <li><a href="primavera_it.html">IT</a></li>
-                            <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
-                            <li><a href="primavera_oil.html">Oil & Gas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="trainings.html">Training</a></li>
-                    <li><a href="contacts.html">Contact Us</a></li>
-                    <li><a href="he/index.html">Hebrew</a></li>
-                </ul>
-            </nav>
-        </div>
+        </section>
 
-        <!-- Page Container -->
-        <div class="page_container">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress"></div>
+
+        <!-- Our Solutions Section -->
+        <section class="section section-light">
             <div class="container">
-                <!-- Slider -->
-                <div id="main_slider" class="slider-margin">
-                    <div class="camera_wrap" id="camera_wrap_1">
-                        <div data-src="images/slider/main_page/slide1.jpg">
-                            <div class="camera_caption fadeIn">
-                                <div class="slide_descr">Megatec – Advanced Tools for Project Management</div>
-                            </div>
-                        </div>
-                        <div data-src="images/slider/main_page/3.jpg">
-                            <div class="camera_caption fadeIn">
-                                <div class="slide_descr">Reduce risk and speed<br/>time of your project</div>
-                            </div>
-                        </div>
-                        <div data-src="images/slider/main_page/slide4.jpg">
-                            <div class="camera_caption fadeIn">
-                                <div class="slide_descr">Enterprise Project Portfolio Management</div>
-                            </div>
-                        </div>
-                        <div data-src="images/slider/main_page/14.jpg">
-                            <div class="camera_caption fadeIn">
-                                <div class="slide_descr">Oracle Primavera Solutions Partner</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Solutions</span>
+                    <h2 class="section-title">Our Solutions</h2>
+                    <p class="section-subtitle">Industry-leading project management tools to help you plan, execute, and deliver projects on time and within budget.</p>
                 </div>
-                <!-- //Slider -->
-            </div>
 
-            <!-- Our Solutions -->
-            <div class="wrap">
-                <h2 class="title section-title">Our Solutions</h2>
-                <div class="products-grid">
+                <div class="card-grid card-grid-3 reveal-stagger">
                     <!-- Primavera P6 -->
-                    <a href="primavera_main.html" class="product-card-home">
-                        <img src="images/featured_solutions/3.png" alt="Oracle Primavera P6" />
-                        <h3>Oracle Primavera P6</h3>
-                        <span class="vendor">By Oracle</span>
-                        <p>Enterprise project portfolio management for globally prioritizing, planning, managing, and executing projects of any size.</p>
-                        <span class="btn-link">Learn More &rarr;</span>
+                    <a href="primavera_main.html" class="tile tile-product reveal">
+                        <div class="tile-icon">
+                            <img src="images/featured_solutions/3.png" alt="Oracle Primavera P6" width="80" height="80" loading="lazy">
+                        </div>
+                        <div class="tile-body">
+                            <span class="tile-eyebrow">By Oracle</span>
+                            <h3 class="tile-title">Oracle Primavera P6</h3>
+                            <p class="tile-text">Enterprise project portfolio management for globally prioritizing, planning, managing, and executing projects of any size.</p>
+                            <span class="tile-link">Learn More</span>
+                        </div>
                     </a>
+
                     <!-- Primavera Cloud -->
-                    <a href="primavera_cloud.html" class="product-card-home">
-                        <img src="images/featured_solutions/3.png" alt="Oracle Primavera Cloud" />
-                        <h3>Oracle Primavera Cloud</h3>
-                        <span class="vendor">By Oracle</span>
-                        <p>Unified cloud-based project controls platform for managing schedules, costs, risks, and resources across the project lifecycle.</p>
-                        <span class="btn-link">Learn More &rarr;</span>
+                    <a href="primavera_cloud.html" class="tile tile-product reveal">
+                        <div class="tile-icon">
+                            <img src="images/featured_solutions/3.png" alt="Oracle Primavera Cloud" width="80" height="80" loading="lazy">
+                        </div>
+                        <div class="tile-body">
+                            <span class="tile-eyebrow">By Oracle</span>
+                            <h3 class="tile-title">Oracle Primavera Cloud</h3>
+                            <p class="tile-text">Unified cloud-based project controls platform for managing schedules, costs, risks, and resources across the project lifecycle.</p>
+                            <span class="tile-link">Learn More</span>
+                        </div>
                     </a>
+
                     <!-- Aconex -->
-                    <a href="aconex.html" class="product-card-home">
-                        <img src="images/featured_solutions/3.png" alt="Oracle Aconex" />
-                        <h3>Oracle Aconex</h3>
-                        <span class="vendor">By Oracle</span>
-                        <p>Connect teams and processes across the entire construction project lifecycle with complete document management and collaboration.</p>
-                        <span class="btn-link">Learn More &rarr;</span>
+                    <a href="aconex.html" class="tile tile-product reveal">
+                        <div class="tile-icon">
+                            <img src="images/featured_solutions/3.png" alt="Oracle Aconex" width="80" height="80" loading="lazy">
+                        </div>
+                        <div class="tile-body">
+                            <span class="tile-eyebrow">By Oracle</span>
+                            <h3 class="tile-title">Oracle Aconex</h3>
+                            <p class="tile-text">Connect teams and processes across the entire construction project lifecycle with complete document management and collaboration.</p>
+                            <span class="tile-link">Learn More</span>
+                        </div>
                     </a>
                 </div>
             </div>
-            <!-- //Our Solutions -->
+        </section>
 
-            <!-- Industries -->
-            <div class="wrap">
-                <h2 class="title section-title">Industries We Serve</h2>
-                <div class="industries-grid">
-                    <a href="primavera_construction.html" class="industry-card">
-                        <img src="images/slider/project_management/cons1_thumb.jpg" alt="Construction" />
-                        <h5>Construction</h5>
+        <!-- Industries Section with Scroll-Driven Animations -->
+        <section class="section section-alt industry-illustration-wrapper">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Industries</span>
+                    <h2 class="section-title">Industries We Serve</h2>
+                    <p class="section-subtitle">Tailored project management solutions for the most demanding industries.</p>
+                </div>
+
+                <!-- Industry Cards with Animated Icons -->
+                <div class="industry-cards-scroll scroll-stagger">
+                    <!-- Construction -->
+                    <a href="primavera_construction.html" class="industry-card stagger-item">
+                        <div class="industry-icon" id="icon-construction">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Building -->
+                                <rect x="20" y="35" width="35" height="50" fill="#9CA3AF" rx="2"/>
+                                <rect x="25" y="40" width="8" height="8" fill="#93C5FD" rx="1"/>
+                                <rect x="37" y="40" width="8" height="8" fill="#93C5FD" rx="1"/>
+                                <rect x="25" y="52" width="8" height="8" fill="#93C5FD" rx="1"/>
+                                <rect x="37" y="52" width="8" height="8" fill="#93C5FD" rx="1"/>
+                                <rect x="25" y="64" width="8" height="8" fill="#93C5FD" rx="1"/>
+                                <rect x="37" y="64" width="8" height="8" fill="#93C5FD" rx="1"/>
+                                <!-- Crane -->
+                                <rect x="60" y="20" width="6" height="65" fill="#FF8C42"/>
+                                <rect x="60" y="18" width="30" height="4" fill="#FF8C42"/>
+                                <line x1="88" y1="22" x2="88" y2="50" stroke="#374151" stroke-width="2"/>
+                                <rect x="82" y="50" width="12" height="8" fill="#6B7280"/>
+                                <!-- Ground -->
+                                <rect x="10" y="85" width="80" height="8" fill="#D4A574" rx="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="industry-card-title">Construction</h3>
+                        <p class="industry-card-desc">Enterprise project management for engineering and construction projects of any scale.</p>
                     </a>
-                    <a href="primavera_hitech.html" class="industry-card">
-                        <img src="images/slider/project_management/tech5_thumb.jpg" alt="High-Tech" />
-                        <h5>High-Tech</h5>
+
+                    <!-- Aerospace & Defense -->
+                    <a href="primavera_aero.html" class="industry-card stagger-item">
+                        <div class="industry-icon" id="icon-aerospace">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Aircraft -->
+                                <ellipse cx="50" cy="45" rx="30" ry="8" fill="#9CA3AF"/>
+                                <ellipse cx="72" cy="45" rx="8" ry="6" fill="#60A5FA" opacity="0.8"/>
+                                <path d="M35 45 L20 65 L45 55" fill="#6B7280"/>
+                                <path d="M35 45 L20 25 L45 35" fill="#6B7280"/>
+                                <path d="M22 45 L15 35 L25 45" fill="#4B5563"/>
+                                <!-- Satellite -->
+                                <g transform="translate(70, 20)">
+                                    <rect x="-6" y="-4" width="12" height="8" fill="#9CA3AF" rx="2"/>
+                                    <rect x="-18" y="-2" width="10" height="4" fill="#3B82F6"/>
+                                    <rect x="8" y="-2" width="10" height="4" fill="#3B82F6"/>
+                                </g>
+                                <!-- Orbit path -->
+                                <ellipse cx="50" cy="50" rx="40" ry="25" fill="none" stroke="#60A5FA" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+                                <!-- Radar -->
+                                <g transform="translate(75, 80)">
+                                    <rect x="-5" y="-15" width="10" height="15" fill="#1E3A5F"/>
+                                    <circle cx="0" cy="-18" r="6" fill="none" stroke="#10B981" stroke-width="2" opacity="0.6"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3 class="industry-card-title">Aerospace & Defense</h3>
+                        <p class="industry-card-desc">Mission-critical project controls for aerospace programs and defense systems.</p>
                     </a>
-                    <a href="primavera_it.html" class="industry-card">
-                        <img src="images/slider/project_management/tech3_thumb.jpg" alt="IT" />
-                        <h5>IT</h5>
-                    </a>
-                    <a href="primavera_aero.html" class="industry-card">
-                        <img src="images/slider/project_management/aero1_thumb.jpg" alt="Aerospace & Defense" />
-                        <h5>Aerospace & Defense</h5>
-                    </a>
-                    <a href="primavera_oil.html" class="industry-card">
-                        <img src="images/slider/project_management/oil3_thumb.jpg" alt="Oil & Gas" />
-                        <h5>Oil & Gas</h5>
+
+                    <!-- Oil & Gas -->
+                    <a href="primavera_oil.html" class="industry-card stagger-item">
+                        <div class="industry-icon" id="icon-oilgas">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Refinery tower -->
+                                <rect x="15" y="30" width="18" height="55" fill="#6B7280"/>
+                                <ellipse cx="24" cy="40" rx="6" ry="3" fill="#4B5563"/>
+                                <ellipse cx="24" cy="55" rx="6" ry="3" fill="#4B5563"/>
+                                <ellipse cx="24" cy="70" rx="6" ry="3" fill="#4B5563"/>
+                                <!-- Flare stack -->
+                                <rect x="38" y="25" width="5" height="60" fill="#4B5563"/>
+                                <path d="M40.5 25 Q48 12 40.5 5 Q33 12 40.5 25" fill="#F59E0B"/>
+                                <path d="M40.5 22 Q45 14 40.5 8 Q36 14 40.5 22" fill="#FCD34D"/>
+                                <!-- Storage tank -->
+                                <g transform="translate(55, 45)">
+                                    <ellipse cx="17" cy="0" rx="17" ry="5" fill="#9CA3AF"/>
+                                    <rect x="0" y="0" width="34" height="35" fill="#6B7280"/>
+                                    <ellipse cx="17" cy="35" rx="17" ry="5" fill="#4B5563"/>
+                                    <rect x="4" y="12" width="26" height="18" fill="#F59E0B" opacity="0.5"/>
+                                </g>
+                                <!-- Pipeline -->
+                                <path d="M33 70 Q45 75 55 65" stroke="#4B5563" stroke-width="4" fill="none" stroke-linecap="round"/>
+                                <!-- Ground/water -->
+                                <rect x="5" y="85" width="90" height="10" fill="#60A5FA" opacity="0.5" rx="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="industry-card-title">Oil & Gas</h3>
+                        <p class="industry-card-desc">Complete project lifecycle management for upstream, midstream, and downstream operations.</p>
                     </a>
                 </div>
-            </div>
-            <!-- //Industries -->
 
-            <!-- News Section -->
-            <div class="wrap">
-                <h2 class="title section-title">Latest News</h2>
-                <div class="news-section">
-                    <div class="news-card">
-                        <h4>Partners News</h4>
+                <!-- Industry Illustration Scene (scroll-animated) -->
+                <div class="industry-illustration reveal" id="industries-scene">
+                    <!-- Scene will be populated by JavaScript based on scroll position -->
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Updates</span>
+                    <h2 class="section-title">Latest News</h2>
+                </div>
+
+                <div class="card-grid card-grid-2 reveal-stagger">
+                    <div class="tile reveal" style="padding:var(--space-6);">
+                        <h4 style="font-size:var(--text-base);font-weight:var(--weight-semibold);margin-bottom:var(--space-4);padding-bottom:var(--space-3);border-bottom:1px solid var(--border-light);">Partners News</h4>
                         <a class="twitter-timeline" data-dnt="true" data-width="100%" data-height="300" data-chrome="noheader nofooter noscrollbar noborders" href="https://twitter.com/MegatecIL/lists/MegatecList">Tweets by @OracleEPPM OR @MegatecIL</a>
                     </div>
-                    <div class="news-card">
-                        <h4>Megatec News</h4>
+                    <div class="tile reveal" style="padding:var(--space-6);">
+                        <h4 style="font-size:var(--text-base);font-weight:var(--weight-semibold);margin-bottom:var(--space-4);padding-bottom:var(--space-3);border-bottom:1px solid var(--border-light);">Megatec News</h4>
                         <a class="twitter-timeline" data-dnt="true" data-width="100%" data-height="300" data-chrome="noheader nofooter noscrollbar noborders" href="https://twitter.com/MegatecIL">Tweets by @MegatecIL</a>
                     </div>
                 </div>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
-            <!-- //News Section -->
+        </section>
 
-            <!-- CTA Banner -->
-            <div class="wrap">
-                <div class="cta-section">
-                    <div>
+        <!-- CTA Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="cta-banner reveal">
+                    <div class="cta-banner-content">
                         <h3>Our Team of Specialists Drive Business Results</h3>
                         <p>Expert training and implementation services for Oracle Primavera solutions</p>
                     </div>
-                    <a href="trainings.html" class="cta-btn">Explore Training</a>
+                    <a href="trainings.html" class="btn btn-primary btn-lg">Explore Training</a>
                 </div>
             </div>
-            <!-- //CTA Banner -->
+        </section>
 
+    </main>
 
-        </div>
-        <!-- //Page Container -->
-
-        <!-- Footer -->
-        <div id="footer">
-            <div class="wrap">
-                <div>
-                    <div class="row">
-                        <div class="span4">
-                            <div class="tags">
-                                <h2 class="title">Our Solutions</h2>
-                                <a href="primavera_main.html">Primavera P6</a>
-                                <a href="primavera_cloud.html">Primavera Cloud</a>
-                                <a href="aconex.html">Oracle Aconex</a>
-                                <a href="primavera_main.html">Project Management</a>
-                                <a href="primavera_main.html">EPPM</a>
-                                <a href="primavera_construction.html">Construction</a>
-                                <a href="primavera_oil.html">Oil & Gas</a>
-                            </div>
-                        </div>
-                        <div class="span3">
-                            <div class="tags">
-                                <h2 class="title">Industries</h2>
-                                <a href="primavera_construction.html">Construction</a>
-                                <a href="primavera_hitech.html">High-Tech</a>
-                                <a href="primavera_it.html">IT</a>
-                                <a href="primavera_aero.html">Aerospace & Defense</a>
-                                <a href="primavera_oil.html">Oil & Gas</a>
-                            </div>
-                        </div>
-                        <div class="span5">
-                            <h2 class="title">Contact Us</h2>
-                            <form id="footer-contact-form">
-                                <input type="text" name="name" id="footer-name" placeholder="Name" required />
-                                <input type="email" name="email" id="footer-email" placeholder="Email" required />
-                                <textarea name="message" id="footer-message" placeholder="Message" required></textarea>
-                                <div class="clear"></div>
-                                <button type="submit" class="contact_btn" id="footer-submit-btn">Send</button>
-                                <div class="clear"></div>
-                                <div id="footer-form-status" class="form-status"></div>
-                                <div class="clear"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+    <!-- Apple-Style Footer -->
+    <footer class="footer-apple">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h4>Our Solutions</h4>
+                <ul>
+                    <li><a href="primavera_main.html">Primavera P6</a></li>
+                    <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+                    <li><a href="aconex.html">Oracle Aconex</a></li>
+                    <li><a href="primavera_main.html">Project Management</a></li>
+                    <li><a href="primavera_main.html">EPPM</a></li>
+                </ul>
             </div>
-
-            <div class="footer_bottom">
-                <div class="wrap">
-                    <div class="container">
-                        <div class="fleft copyright">Megatec Advanced Technologies Ltd. &copy; <script>document.write(new Date().getFullYear())</script> | <a href="javascript:void(0);">Privacy Policy</a></div>
-                        <div class="fright follow_us">
-                            <ul>
-                                <li><a href="https://www.facebook.com/megatecadvancedtechnologies" class="soc2"></a></li>
-                                <li><a href="#" class="soc3"></a></li>
-                                <div class="clear"></div>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
+            <div class="footer-column">
+                <h4>Industries</h4>
+                <ul>
+                    <li><a href="primavera_construction.html">Construction</a></li>
+                    <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
+                    <li><a href="primavera_oil.html">Oil & Gas</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trainings.html">Training</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="contacts.html">Get in Touch</a></li>
+                    <li><a href="https://www.facebook.com/megatecadvancedtechnologies">Facebook</a></li>
+                </ul>
             </div>
         </div>
-        <!-- //Footer -->
-    </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">Megatec Advanced Technologies Ltd. &copy; <script>document.write(new Date().getFullYear())</script></p>
+            <div class="footer-links">
+                <a href="javascript:void(0);">Privacy Policy</a>
+                <a href="javascript:void(0);">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
 
+    <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
-    <script type="text/javascript" src="js/camera.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/superfish.js"></script>
-    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/htweet.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
 
-    <!-- Mobile Menu JavaScript -->
+    <!-- Mobile Menu & Navigation -->
     <script>
+    // Mobile Menu Toggle
     function toggleMobileMenu() {
-        document.querySelector('.mobile-menu').classList.toggle('active');
-        document.querySelector('.mobile-nav-overlay').classList.toggle('active');
-        document.querySelector('.mobile-menu-toggle').classList.toggle('active');
-        document.body.style.overflow = document.querySelector('.mobile-menu').classList.contains('active') ? 'hidden' : '';
-    }
-
-    function closeMobileMenu() {
-        document.querySelector('.mobile-menu').classList.remove('active');
-        document.querySelector('.mobile-nav-overlay').classList.remove('active');
-        document.querySelector('.mobile-menu-toggle').classList.remove('active');
-        document.body.style.overflow = '';
+        const toggle = document.getElementById('nav-toggle');
+        const menu = document.getElementById('mobile-menu');
+        toggle.classList.toggle('active');
+        menu.classList.toggle('active');
+        document.body.style.overflow = menu.classList.contains('active') ? 'hidden' : '';
     }
 
     function toggleSubmenu(element) {
-        var parent = element.parentElement;
+        const parent = element.parentElement;
         parent.classList.toggle('open');
-        var submenu = parent.querySelector('.mobile-submenu');
+        const submenu = parent.querySelector('.mobile-submenu');
         submenu.classList.toggle('active');
     }
 
-    // Close menu on window resize if larger than mobile breakpoint
+    // Close menu on resize
     window.addEventListener('resize', function() {
         if (window.innerWidth > 768) {
-            closeMobileMenu();
+            const toggle = document.getElementById('nav-toggle');
+            const menu = document.getElementById('mobile-menu');
+            toggle.classList.remove('active');
+            menu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const nav = document.getElementById('nav-main');
+        if (window.scrollY > 10) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
         }
     });
     </script>
-<!-- Footer Contact Form Handler -->
-<script>
-(function() {
-    var footerForm = document.getElementById('footer-contact-form');
-    if (footerForm) {
-        footerForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            var name = document.getElementById('footer-name').value.trim();
-            var email = document.getElementById('footer-email').value.trim();
-            var message = document.getElementById('footer-message').value.trim();
-            var statusEl = document.getElementById('footer-form-status');
-            var submitBtn = document.getElementById('footer-submit-btn');
-            
-            if (!name || !email || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                statusEl.textContent = 'Please fill in all fields with valid data.';
-                statusEl.style.display = 'block';
-                statusEl.style.background = '#fee2e2';
-                statusEl.style.color = '#991b1b';
-                return;
-            }
-            
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Sending...';
-            
-            var formData = new FormData();
-            formData.append('name', name);
-            formData.append('email', email);
-            formData.append('subject', 'Quick Contact');
-            formData.append('message', message);
-            formData.append('category', 'general');
-            
-            fetch('api/contact.php', { method: 'POST', body: formData })
-            .then(function(r) { return r.json(); })
-            .then(function(data) {
-                statusEl.style.display = 'block';
-                if (data.success) {
-                    statusEl.textContent = 'Message sent!';
-                    statusEl.style.background = '#d1fae5';
-                    statusEl.style.color = '#065f46';
-                    footerForm.reset();
-                } else {
-                    statusEl.textContent = data.error || 'Failed to send.';
-                    statusEl.style.background = '#fee2e2';
-                    statusEl.style.color = '#991b1b';
+
+    <!-- Industry Illustrations -->
+    <script src="js/industry-illustrations.js"></script>
+    <script src="js/scroll-illustrations.js"></script>
+
+    <!-- Initialize Scroll-Driven Illustrations -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Inject hero illustration
+        if (typeof MegatecIllustrations !== 'undefined') {
+            MegatecIllustrations.inject('hero-illustration', 'hero');
+        }
+
+        // Initialize scroll animations when GSAP is ready
+        function initAnimations() {
+            if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+                // Initialize the scroll illustration system
+                if (typeof MegatecScrollIllustrations !== 'undefined') {
+                    MegatecScrollIllustrations.init();
                 }
-            })
-            .catch(function() {
-                statusEl.textContent = 'An error occurred.';
-                statusEl.style.display = 'block';
-                statusEl.style.background = '#fee2e2';
-                statusEl.style.color = '#991b1b';
-            })
-            .finally(function() {
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Send';
+            } else {
+                // GSAP not loaded yet, add fallback class
+                document.body.classList.add('no-gsap');
+            }
+        }
+
+        // Check if GSAP is loaded, retry if not
+        if (typeof gsap !== 'undefined') {
+            initAnimations();
+        } else {
+            window.addEventListener('load', initAnimations);
+        }
+    });
+    </script>
+
+    <!-- Scroll Reveal Animation -->
+    <script>
+    (function() {
+        // Check for reduced motion preference
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReducedMotion) {
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
             });
-        });
-    }
-})();
-</script>
-    <!-- Modern Animations (scroll reveal, sticky header) -->
-    <script src="js/modern-animations.js"></script>
+
+            revealElements.forEach(el => revealObserver.observe(el));
+        } else {
+            // Show all elements immediately for reduced motion
+            document.querySelectorAll('.reveal').forEach(el => el.classList.add('revealed'));
+        }
+    })();
+    </script>
 </body>
 </html>

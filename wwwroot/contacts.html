@@ -7,20 +7,15 @@
     <meta name="description" content="Contact Megatec Advanced Technologies - Oracle Primavera Solutions Partner in Israel">
     <meta name="author" content="Megatec Advanced Technologies">
 
-    <!-- Stylesheets -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/site.css" rel="stylesheet">
-    <link href="css/site-modern.css" rel="stylesheet">
-
-    <!-- Font -->
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Muli:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="css/site-apple.css" rel="stylesheet">
 
     <!-- Google Analytics -->
     <script>
@@ -31,371 +26,435 @@
         ga('create', 'UA-39375429-3', 'auto');
         ga('send', 'pageview');
     </script>
+
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: var(--space-10);
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .contact-info-card {
+            background: var(--bg-alt);
+            padding: var(--space-8);
+            border-radius: var(--radius-2xl);
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-4);
+            padding: var(--space-4) 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+        .contact-item svg {
+            flex-shrink: 0;
+            color: var(--accent);
+            margin-top: 2px;
+        }
+        .contact-item strong {
+            display: block;
+            font-size: var(--text-sm);
+            font-weight: var(--weight-semibold);
+            color: var(--text-primary);
+            margin-bottom: var(--space-1);
+        }
+        .contact-item span, .contact-item a {
+            font-size: var(--text-sm);
+            color: var(--text-secondary);
+        }
+        .contact-item a:hover {
+            color: var(--accent);
+        }
+        .contact-form {
+            background: var(--bg-white);
+            padding: var(--space-8);
+            border-radius: var(--radius-2xl);
+            box-shadow: var(--shadow-card);
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-4);
+        }
+        @media (max-width: 480px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+        .form-group {
+            margin-bottom: var(--space-5);
+        }
+        .form-group label {
+            display: block;
+            font-size: var(--text-sm);
+            font-weight: var(--weight-medium);
+            color: var(--text-primary);
+            margin-bottom: var(--space-2);
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: var(--space-3) var(--space-4);
+            font-family: var(--font-family);
+            font-size: var(--text-base);
+            color: var(--text-primary);
+            background: var(--bg-white);
+            border: 1px solid var(--border-medium);
+            border-radius: var(--radius-md);
+            transition: border-color var(--duration-fast) var(--ease-apple),
+                        box-shadow var(--duration-fast) var(--ease-apple);
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 4px rgba(29, 172, 232, 0.15);
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .form-group .error {
+            border-color: #ef4444;
+        }
+        .field-error {
+            font-size: var(--text-xs);
+            color: #ef4444;
+            margin-top: var(--space-1);
+        }
+        #form-status {
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--space-4);
+            font-size: var(--text-sm);
+        }
+        .map-container {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            margin-bottom: var(--space-6);
+        }
+        .map-container iframe {
+            display: block;
+            width: 100%;
+            height: 220px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="container box_shadow">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-        <!-- Header -->
-        <div class="header">
-            <div class="wrap">
-                <div class="container">
-                    <div class="fleft logo">
-                        <a href="index.html">
-                            <img src="images/megatec-logo.jpg" alt="Megatec Advanced Technologies" />
-                        </a>
+    <!-- Navigation -->
+    <nav class="nav-apple" id="nav-main">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/megatec-logo.jpg" alt="Megatec Advanced Technologies" width="120" height="24">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link">Solutions</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="primavera_main.html">Primavera P6 Professional</a>
+                        <a href="primavera_cloud.html">Primavera Cloud</a>
+                        <a href="aconex.html">Oracle Aconex</a>
                     </div>
-                    <div class="navbar fright desktop-nav">
-                        <nav id="main_menu">
-                            <div class="menu_wrap">
-                                <ul class="nav sf-menu">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li class="sub-menu"><a href="javascript:{}">Solutions</a>
-                                        <ul>
-                                            <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
-                                            <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
-                                            <li><a href="aconex.html">Oracle Aconex</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="sub-menu"><a href="javascript:{}">Industries</a>
-                                        <ul>
-                                            <li><a href="primavera_construction.html">Construction</a></li>
-                                            <li><a href="primavera_hitech.html">High-Tech</a></li>
-                                            <li><a href="primavera_it.html">IT</a></li>
-                                            <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
-                                            <li><a href="primavera_oil.html">Oil & Gas</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="trainings.html">Training</a></li>
-                                    <li class="current"><a href="contacts.html">Contact Us</a></li>
-                                    <li><a href="he/contacts.html">Hebrew</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                    <button class="mobile-menu-toggle fright" aria-label="Open menu" onclick="toggleMobileMenu()">
-                        <span class="hamburger"></span>
-                    </button>
-                    <div class="clear"></div>
                 </div>
+                <div class="nav-dropdown">
+                    <a href="javascript:void(0)" class="nav-link">Industries</a>
+                    <div class="nav-dropdown-menu">
+                        <a href="primavera_construction.html">Construction</a>
+                        <a href="primavera_aero.html">Aerospace & Defense</a>
+                        <a href="primavera_oil.html">Oil & Gas</a>
+                    </div>
+                </div>
+                <a href="trainings.html" class="nav-link">Training</a>
+                <a href="contacts.html" class="nav-link active">Contact Us</a>
+                <a href="he/contacts.html" class="nav-lang">Hebrew</a>
             </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleMobileMenu()">
+                <span class="nav-toggle-icon"></span>
+            </button>
         </div>
-        <!-- //Header -->
+    </nav>
 
-        <!-- Mobile Menu -->
-        <div class="mobile-nav-overlay" onclick="closeMobileMenu()"></div>
-        <div class="mobile-menu">
-            <div class="mobile-menu-header">
-                <img src="images/megatec-logo.jpg" alt="Megatec" class="mobile-menu-logo">
-                <button class="mobile-menu-close" onclick="closeMobileMenu()">&times;</button>
-            </div>
-            <nav class="mobile-menu-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="has-submenu">
-                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Solutions</a>
-                        <ul class="mobile-submenu">
-                            <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
-                            <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
-                            <li><a href="aconex.html">Oracle Aconex</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="javascript:{}" onclick="toggleSubmenu(this)">Industries</a>
-                        <ul class="mobile-submenu">
-                            <li><a href="primavera_construction.html">Construction</a></li>
-                            <li><a href="primavera_hitech.html">High-Tech</a></li>
-                            <li><a href="primavera_it.html">IT</a></li>
-                            <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
-                            <li><a href="primavera_oil.html">Oil & Gas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="trainings.html">Training</a></li>
-                    <li><a href="contacts.html">Contact Us</a></li>
-                    <li><a href="he/contacts.html">Hebrew</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Page Container -->
-        <div class="page_container">
-            <div class="wrap">
-                <!-- Breadcrumb -->
-                <div class="breadcrumb">
-                    <div>
-                        <a href="index.html">Home</a><span>/</span>Contact Us
-                    </div>
-                </div>
-
-                <div class="container">
-                    <section>
-                        <div class="row">
-                            <div class="span4">
-                                <h2 class="title">Contact Info</h2>
-                                <div id="map" style="margin-bottom: 20px; border-radius: 8px; overflow: hidden;">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.8!2d34.98!3d32.79!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDQ3JzI0LjAiTiAzNMKwNTgnNDguMCJF!5e0!3m2!1sen!2sil!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                </div>
-
-                                <div style="background: #f7fafc; padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0;">
-                                    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px;">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1dace8" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg>
-                                        <div>
-                                            <strong style="color: #1a202c;">Address</strong><br>
-                                            <span style="color: #4a5568;">Yohanan HaSandlar St. 2<br>Haifa, Israel 3296202</span>
-                                        </div>
-                                    </div>
-
-                                    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px;">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1dace8" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
-                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                        </svg>
-                                        <div>
-                                            <strong style="color: #1a202c;">Phone</strong><br>
-                                            <a href="tel:+97246644555" style="color: #1dace8;">+972-4-6644555</a>
-                                        </div>
-                                    </div>
-
-                                    <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 16px;">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1dace8" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
-                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                            <polyline points="22,6 12,13 2,6"></polyline>
-                                        </svg>
-                                        <div>
-                                            <strong style="color: #1a202c;">Email</strong><br>
-                                            <a href="mailto:info@megatec.co.il" style="color: #1dace8;">info@megatec.co.il</a>
-                                        </div>
-                                    </div>
-
-                                    <div style="display: flex; align-items: flex-start; gap: 12px;">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1dace8" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                                        </svg>
-                                        <div>
-                                            <strong style="color: #1a202c;">Website</strong><br>
-                                            <a href="https://www.megatec.co.il" style="color: #1dace8;">www.megatec.co.il</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="span8">
-                                <h2 class="title">Get In Touch</h2>
-                                <p style="color: #4a5568; margin-bottom: 24px;">Have a question about our Oracle Primavera solutions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
-
-                                <div class="contact_form">
-                                    <div id="form-status" style="display: none; padding: 16px; border-radius: 8px; margin-bottom: 16px;"></div>
-                                    <div id="fields">
-                                        <form id="contact-form" novalidate>
-                                            <input class="span7" type="text" name="name" id="contact-name" placeholder="Your Name *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
-                                            <div class="field-error" id="name-error" style="display: none; color: #ef4444; font-size: 14px; margin-top: -12px; margin-bottom: 12px;"></div>
-
-                                            <input class="span7" type="email" name="email" id="contact-email" placeholder="Your Email *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
-                                            <div class="field-error" id="email-error" style="display: none; color: #ef4444; font-size: 14px; margin-top: -12px; margin-bottom: 12px;"></div>
-
-                                            <select name="category" id="contact-category" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px; background: #fff; font-size: 16px;">
-                                                <option value="general">General Inquiry</option>
-                                                <option value="sales">Sales / Pricing</option>
-                                                <option value="training">Training Information</option>
-                                            </select>
-
-                                            <input class="span7" type="text" name="subject" id="contact-subject" placeholder="Subject" style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; margin-bottom: 16px;" />
-
-                                            <textarea name="message" id="contact-message" class="span8" placeholder="Your Message *" required style="padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0; min-height: 180px; margin-bottom: 16px;"></textarea>
-                                            <div class="field-error" id="message-error" style="display: none; color: #ef4444; font-size: 14px; margin-top: -12px; margin-bottom: 12px;"></div>
-
-                                            <div class="clear"></div>
-                                            <button type="reset" class="contact_btn" style="margin-right: 8px;">Clear</button>
-                                            <button type="submit" class="contact_btn" id="submit-btn" style="background: #1dace8;">
-                                                <span id="submit-text">Send Message</span>
-                                                <span id="submit-loading" style="display: none;">Sending...</span>
-                                            </button>
-                                            <div class="clear"></div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <!-- //Page Container -->
-
-        <!-- Footer -->
-        <div id="footer">
-            <div class="wrap">
-                <div>
-                    <div class="row">
-                        <div class="span4">
-                            <div class="tags">
-                                <h2 class="title">Our Solutions</h2>
-                                <a href="primavera_main.html">Primavera P6</a>
-                                <a href="primavera_cloud.html">Primavera Cloud</a>
-                                <a href="aconex.html">Oracle Aconex</a>
-                                <a href="primavera_main.html">Project Management</a>
-                                <a href="primavera_main.html">EPPM</a>
-                            </div>
-                        </div>
-                        <div class="span3">
-                            <div class="tags">
-                                <h2 class="title">Industries</h2>
-                                <a href="primavera_construction.html">Construction</a>
-                                <a href="primavera_hitech.html">High-Tech</a>
-                                <a href="primavera_it.html">IT</a>
-                                <a href="primavera_aero.html">Aerospace & Defense</a>
-                                <a href="primavera_oil.html">Oil & Gas</a>
-                            </div>
-                        </div>
-                        <div class="span5">
-                            <h2 class="title">Quick Contact</h2>
-                            <form id="footer-contact-form">
-                                <input type="text" name="name" id="footer-name" placeholder="Name" required />
-                                <input type="email" name="email" id="footer-email" placeholder="Email" required />
-                                <textarea name="message" id="footer-message" placeholder="Message" required></textarea>
-                                <div class="clear"></div>
-                                <button type="submit" class="contact_btn" id="footer-submit-btn">Send</button>
-                                <div class="clear"></div>
-                                <div id="footer-form-status" class="form-status"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer_bottom">
-                <div class="wrap">
-                    <div class="container">
-                        <div class="fleft copyright">Megatec Advanced Technologies Ltd. &copy; <script>document.write(new Date().getFullYear())</script> | <a href="javascript:void(0);">Privacy Policy</a></div>
-                        <div class="fright follow_us">
-                            <ul>
-                                <li><a href="https://www.facebook.com/megatecadvancedtechnologies" class="soc2"></a></li>
-                                <li><a href="#" class="soc3"></a></li>
-                                <div class="clear"></div>
-                            </ul>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- //Footer -->
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-apple" id="mobile-menu">
+        <nav class="mobile-menu-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(this)">Solutions</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="primavera_main.html">Primavera P6 Professional</a></li>
+                        <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+                        <li><a href="aconex.html">Oracle Aconex</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="javascript:void(0)" onclick="toggleSubmenu(this)">Industries</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="primavera_construction.html">Construction</a></li>
+                        <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
+                        <li><a href="primavera_oil.html">Oil & Gas</a></li>
+                    </ul>
+                </li>
+                <li><a href="trainings.html">Training</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="he/contacts.html">Hebrew</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/superfish.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero -->
+        <section class="hero-section hero-light" style="min-height:40vh;padding-top:calc(var(--nav-height) + var(--space-12));padding-bottom:var(--space-12);">
+            <div class="hero-content reveal">
+                <nav style="margin-bottom:var(--space-4);font-size:var(--text-sm);color:var(--text-tertiary);">
+                    <a href="index.html" style="color:var(--text-secondary);">Home</a>
+                    <span style="margin:0 var(--space-2);">/</span>
+                    <span>Contact Us</span>
+                </nav>
+                <h1 class="hero-title" style="font-size:var(--text-4xl);">Get in Touch</h1>
+                <p class="hero-subtitle">Have a question about our Oracle Primavera solutions? We'd love to hear from you.</p>
+            </div>
+        </section>
 
-    <!-- Mobile Menu JavaScript -->
+        <!-- Contact Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="reveal">
+                        <div class="contact-info-card">
+                            <h3 style="font-size:var(--text-xl);font-weight:var(--weight-semibold);margin-bottom:var(--space-6);">Contact Information</h3>
+
+                            <div class="map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.8!2d34.98!3d32.79!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDQ3JzI0LjAiTiAzNMKwNTgnNDguMCJF!5e0!3m2!1sen!2sil!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <strong>Address</strong>
+                                    <span>Yohanan HaSandlar St. 2<br>Haifa, Israel 3296202</span>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <a href="tel:+97246644555">+972-4-6644555</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <div>
+                                    <strong>Email</strong>
+                                    <a href="mailto:info@megatec.co.il">info@megatec.co.il</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                                <div>
+                                    <strong>Website</strong>
+                                    <a href="https://www.megatec.co.il">www.megatec.co.il</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form reveal">
+                        <h3 style="font-size:var(--text-xl);font-weight:var(--weight-semibold);margin-bottom:var(--space-2);">Send us a Message</h3>
+                        <p style="color:var(--text-secondary);font-size:var(--text-sm);margin-bottom:var(--space-6);">Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                        <div id="form-status" style="display:none;"></div>
+
+                        <form id="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Name *</label>
+                                    <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
+                                    <div class="field-error" id="name-error" style="display:none;"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email *</label>
+                                    <input type="email" name="email" id="contact-email" placeholder="your@email.com" required>
+                                    <div class="field-error" id="email-error" style="display:none;"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-category">Category</label>
+                                    <select name="category" id="contact-category">
+                                        <option value="general">General Inquiry</option>
+                                        <option value="sales">Sales / Pricing</option>
+                                        <option value="training">Training Information</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-subject">Subject</label>
+                                    <input type="text" name="subject" id="contact-subject" placeholder="Subject">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Message *</label>
+                                <textarea name="message" id="contact-message" placeholder="How can we help you?" required></textarea>
+                                <div class="field-error" id="message-error" style="display:none;"></div>
+                            </div>
+
+                            <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;">
+                                <button type="reset" class="btn btn-ghost">Clear</button>
+                                <button type="submit" class="btn btn-primary" id="submit-btn">
+                                    <span id="submit-text">Send Message</span>
+                                    <span id="submit-loading" style="display:none;">Sending...</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-apple">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h4>Our Solutions</h4>
+                <ul>
+                    <li><a href="primavera_main.html">Primavera P6</a></li>
+                    <li><a href="primavera_cloud.html">Primavera Cloud</a></li>
+                    <li><a href="aconex.html">Oracle Aconex</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Industries</h4>
+                <ul>
+                    <li><a href="primavera_construction.html">Construction</a></li>
+                    <li><a href="primavera_aero.html">Aerospace & Defense</a></li>
+                    <li><a href="primavera_oil.html">Oil & Gas</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trainings.html">Training</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="contacts.html">Get in Touch</a></li>
+                    <li><a href="https://www.facebook.com/megatecadvancedtechnologies">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">Megatec Advanced Technologies Ltd. &copy; <script>document.write(new Date().getFullYear())</script></p>
+            <div class="footer-links">
+                <a href="javascript:void(0);">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+
     <script>
+    // Mobile Menu
     function toggleMobileMenu() {
-        document.querySelector('.mobile-menu').classList.toggle('active');
-        document.querySelector('.mobile-nav-overlay').classList.toggle('active');
-        document.querySelector('.mobile-menu-toggle').classList.toggle('active');
-        document.body.style.overflow = document.querySelector('.mobile-menu').classList.contains('active') ? 'hidden' : '';
+        document.getElementById('nav-toggle').classList.toggle('active');
+        document.getElementById('mobile-menu').classList.toggle('active');
+        document.body.style.overflow = document.getElementById('mobile-menu').classList.contains('active') ? 'hidden' : '';
     }
-    function closeMobileMenu() {
-        document.querySelector('.mobile-menu').classList.remove('active');
-        document.querySelector('.mobile-nav-overlay').classList.remove('active');
-        document.querySelector('.mobile-menu-toggle').classList.remove('active');
-        document.body.style.overflow = '';
-    }
-    function toggleSubmenu(element) {
-        var parent = element.parentElement;
-        parent.classList.toggle('open');
-        var submenu = parent.querySelector('.mobile-submenu');
-        submenu.classList.toggle('active');
+    function toggleSubmenu(el) {
+        el.parentElement.classList.toggle('open');
+        el.parentElement.querySelector('.mobile-submenu').classList.toggle('active');
     }
     window.addEventListener('resize', function() {
-        if (window.innerWidth > 768) { closeMobileMenu(); }
+        if (window.innerWidth > 768) {
+            document.getElementById('nav-toggle').classList.remove('active');
+            document.getElementById('mobile-menu').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+    window.addEventListener('scroll', function() {
+        document.getElementById('nav-main').classList.toggle('scrolled', window.scrollY > 10);
     });
     </script>
 
     <!-- Contact Form Handler -->
     <script>
     (function() {
-        // Clear field errors
         function clearErrors() {
-            var errors = document.querySelectorAll('.field-error');
-            errors.forEach(function(el) { el.style.display = 'none'; });
-            var inputs = document.querySelectorAll('input, textarea, select');
-            inputs.forEach(function(el) { el.style.borderColor = '#e2e8f0'; });
+            document.querySelectorAll('.field-error').forEach(function(el) { el.style.display = 'none'; });
+            document.querySelectorAll('input, textarea, select').forEach(function(el) { el.classList.remove('error'); });
         }
-
-        // Show field error
         function showError(fieldId, message) {
             var errorEl = document.getElementById(fieldId + '-error');
             var inputEl = document.getElementById('contact-' + fieldId);
-            if (errorEl) {
-                errorEl.textContent = message;
-                errorEl.style.display = 'block';
-            }
-            if (inputEl) inputEl.style.borderColor = '#ef4444';
+            if (errorEl) { errorEl.textContent = message; errorEl.style.display = 'block'; }
+            if (inputEl) inputEl.classList.add('error');
         }
-
-        // Show form status
-        function showStatus(elementId, message, isSuccess) {
-            var statusEl = document.getElementById(elementId);
-            if (statusEl) {
-                statusEl.textContent = message;
-                statusEl.style.display = 'block';
-                statusEl.style.background = isSuccess ? '#d1fae5' : '#fee2e2';
-                statusEl.style.color = isSuccess ? '#065f46' : '#991b1b';
-            }
+        function showStatus(message, isSuccess) {
+            var el = document.getElementById('form-status');
+            el.textContent = message;
+            el.style.display = 'block';
+            el.style.background = isSuccess ? '#d1fae5' : '#fee2e2';
+            el.style.color = isSuccess ? '#065f46' : '#991b1b';
         }
+        function validateEmail(email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
 
-        // Client-side email validation
-        function validateEmail(email) {
-            var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
-
-        // Main contact form submission
-        var contactForm = document.getElementById('contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
+        var form = document.getElementById('contact-form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
                 e.preventDefault();
                 clearErrors();
-
                 var name = document.getElementById('contact-name').value.trim();
                 var email = document.getElementById('contact-email').value.trim();
                 var subject = document.getElementById('contact-subject').value.trim();
                 var message = document.getElementById('contact-message').value.trim();
                 var category = document.getElementById('contact-category').value;
-
-                // Client-side validation
                 var hasErrors = false;
-                if (name.length < 2) {
-                    showError('name', 'Please enter your name (at least 2 characters)');
-                    hasErrors = true;
-                }
-                if (!email || !validateEmail(email)) {
-                    showError('email', 'Please enter a valid email address');
-                    hasErrors = true;
-                }
-                if (message.length < 10) {
-                    showError('message', 'Please enter a message (at least 10 characters)');
-                    hasErrors = true;
-                }
 
+                if (name.length < 2) { showError('name', 'Please enter your name'); hasErrors = true; }
+                if (!validateEmail(email)) { showError('email', 'Please enter a valid email'); hasErrors = true; }
+                if (message.length < 10) { showError('message', 'Please enter a message (min 10 chars)'); hasErrors = true; }
                 if (hasErrors) return;
 
-                // Show loading state
-                var submitBtn = document.getElementById('submit-btn');
-                var submitText = document.getElementById('submit-text');
-                var submitLoading = document.getElementById('submit-loading');
-                submitBtn.disabled = true;
-                submitText.style.display = 'none';
-                submitLoading.style.display = 'inline';
+                var btn = document.getElementById('submit-btn');
+                btn.disabled = true;
+                document.getElementById('submit-text').style.display = 'none';
+                document.getElementById('submit-loading').style.display = 'inline';
 
-                // Prepare form data
                 var formData = new FormData();
                 formData.append('name', name);
                 formData.append('email', email);
@@ -403,93 +462,41 @@
                 formData.append('message', message);
                 formData.append('category', category);
 
-                // Submit to API
-                fetch('api/contact.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(function(response) {
-                    return response.json().then(function(data) {
-                        return { status: response.status, data: data };
-                    });
-                })
-                .then(function(result) {
-                    if (result.data.success) {
-                        showStatus('form-status', result.data.message || 'Thank you! Your message has been sent.', true);
-                        contactForm.reset();
-                    } else {
-                        // Handle field-specific errors
-                        if (result.data.errors) {
-                            for (var field in result.data.errors) {
-                                showError(field, result.data.errors[field]);
-                            }
-                        }
-                        showStatus('form-status', result.data.error || 'Failed to send message. Please try again.', false);
-                    }
-                })
-                .catch(function(error) {
-                    showStatus('form-status', 'An error occurred. Please try again later.', false);
-                })
-                .finally(function() {
-                    submitBtn.disabled = false;
-                    submitText.style.display = 'inline';
-                    submitLoading.style.display = 'none';
-                });
-            });
-        }
-
-        // Footer quick contact form (simpler, no Turnstile)
-        var footerForm = document.getElementById('footer-contact-form');
-        if (footerForm) {
-            footerForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-
-                var name = document.getElementById('footer-name').value.trim();
-                var email = document.getElementById('footer-email').value.trim();
-                var message = document.getElementById('footer-message').value.trim();
-
-                if (!name || !validateEmail(email) || !message) {
-                    showStatus('footer-form-status', 'Please fill in all fields with valid data.', false);
-                    return;
-                }
-
-                var submitBtn = document.getElementById('footer-submit-btn');
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Sending...';
-
-                var formData = new FormData();
-                formData.append('name', name);
-                formData.append('email', email);
-                formData.append('subject', 'Quick Contact');
-                formData.append('message', message);
-                formData.append('category', 'general');
-
-                fetch('api/contact.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(function(response) {
-                    return response.json();
-                })
+                fetch('api/contact.php', { method: 'POST', body: formData })
+                .then(function(r) { return r.json(); })
                 .then(function(data) {
                     if (data.success) {
-                        showStatus('footer-form-status', 'Message sent!', true);
-                        footerForm.reset();
+                        showStatus(data.message || 'Thank you! Your message has been sent.', true);
+                        form.reset();
                     } else {
-                        showStatus('footer-form-status', data.error || 'Failed to send.', false);
+                        if (data.errors) { for (var f in data.errors) showError(f, data.errors[f]); }
+                        showStatus(data.error || 'Failed to send. Please try again.', false);
                     }
                 })
-                .catch(function() {
-                    showStatus('footer-form-status', 'An error occurred.', false);
-                })
+                .catch(function() { showStatus('An error occurred. Please try again.', false); })
                 .finally(function() {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Send';
+                    btn.disabled = false;
+                    document.getElementById('submit-text').style.display = 'inline';
+                    document.getElementById('submit-loading').style.display = 'none';
                 });
             });
         }
     })();
     </script>
-<script src="js/modern-animations.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script>
+    (function() {
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            var els = document.querySelectorAll('.reveal');
+            var obs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); }});
+            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+            els.forEach(function(el) { obs.observe(el); });
+        } else {
+            document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('revealed'); });
+        }
+    })();
+    </script>
 </body>
 </html>

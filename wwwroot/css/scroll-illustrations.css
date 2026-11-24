@@ -1,0 +1,709 @@
+/* ============================================
+   MEGATEC SCROLL-DRIVEN ILLUSTRATIONS
+   monday.com-inspired scroll animations
+   ============================================ */
+
+/* ============================================
+   BASE ILLUSTRATION STYLES
+   ============================================ */
+
+/* Scroll progress bar */
+.scroll-progress {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: calc(var(--z-nav) - 1);
+    pointer-events: none;
+}
+
+/* Main illustration container */
+.illustration-scene {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-illustration {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+}
+
+.industry-scene {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-8);
+}
+
+.industry-scene svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Scene elements base styles - visible by default, GSAP will animate */
+.scene-element,
+.hero-element {
+    opacity: 1;
+    will-change: transform, opacity;
+}
+
+/* When animations need to start hidden (GSAP sets initial state) */
+.gsap-animate .scene-element,
+.gsap-animate .hero-element {
+    opacity: 0;
+}
+
+/* When animations are disabled or complete */
+.scene-element.visible,
+.hero-element.visible {
+    opacity: 1;
+}
+
+/* SVG Connection lines */
+.connection-line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2;
+    stroke-linecap: round;
+    opacity: 0.6;
+}
+
+/* ============================================
+   HERO SECTION WITH ILLUSTRATION
+   ============================================ */
+
+.hero-with-illustration {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--nav-height) + var(--space-12)) var(--container-padding) var(--space-12);
+    background: var(--bg-cream);
+    overflow: hidden;
+}
+
+.hero-with-illustration .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: var(--container-content);
+    margin-bottom: var(--space-10);
+}
+
+.hero-illustration-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 400px;
+}
+
+.hero-illustration-container svg,
+.hero-svg {
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+    display: block;
+}
+
+/* Floating background elements */
+.floating-element {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.15;
+    will-change: transform;
+}
+
+.floating-element--circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.floating-element--square {
+    width: 100px;
+    height: 100px;
+    background: var(--accent);
+    transform: rotate(45deg);
+}
+
+.floating-element--dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+/* ============================================
+   INDUSTRY ILLUSTRATION CONTAINERS
+   ============================================ */
+
+.industry-illustration-wrapper {
+    position: relative;
+    background: linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-white) 100%);
+    padding: var(--space-16) var(--container-padding);
+    overflow: hidden;
+}
+
+.industry-illustration {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 350px;
+}
+
+.industry-illustration svg,
+.industry-svg {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    max-height: 500px;
+    display: block;
+}
+
+/* SVG Illustration Styles */
+.industry-svg {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+/* ============================================
+   CONSTRUCTION ILLUSTRATION STYLES
+   ============================================ */
+
+.construction-scene {
+    --construction-primary: #FF8C42;
+    --construction-secondary: #FFD166;
+    --construction-metal: #6B7280;
+    --construction-concrete: #9CA3AF;
+    --construction-glass: #93C5FD;
+}
+
+.construction-scene .building {
+    fill: var(--construction-concrete);
+}
+
+.construction-scene .building-outline {
+    fill: none;
+    stroke: var(--text-primary);
+    stroke-width: 1.5;
+}
+
+.construction-scene .floor {
+    fill: var(--construction-glass);
+    stroke: var(--construction-metal);
+    stroke-width: 1;
+}
+
+.construction-scene .crane {
+    fill: var(--construction-primary);
+}
+
+.construction-scene .crane-arm {
+    fill: var(--construction-primary);
+    transform-origin: left center;
+}
+
+.construction-scene .beam {
+    fill: var(--construction-metal);
+    stroke: var(--text-primary);
+    stroke-width: 0.5;
+}
+
+.construction-scene .worker {
+    fill: var(--construction-secondary);
+}
+
+.construction-scene .ground {
+    fill: #D4A574;
+}
+
+.construction-scene .blueprint-line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 1;
+    stroke-dasharray: 5, 5;
+    opacity: 0.5;
+}
+
+/* ============================================
+   AEROSPACE ILLUSTRATION STYLES
+   ============================================ */
+
+.aerospace-scene {
+    --aerospace-primary: #3B82F6;
+    --aerospace-secondary: #60A5FA;
+    --aerospace-accent: #10B981;
+    --aerospace-metal: #9CA3AF;
+    --aerospace-dark: #1E3A5F;
+}
+
+.aerospace-scene .aircraft {
+    fill: var(--aerospace-metal);
+    stroke: var(--aerospace-dark);
+    stroke-width: 1;
+}
+
+.aerospace-scene .aircraft-wing {
+    fill: var(--aerospace-secondary);
+}
+
+.aerospace-scene .satellite {
+    fill: var(--aerospace-metal);
+}
+
+.aerospace-scene .solar-panel {
+    fill: var(--aerospace-primary);
+}
+
+.aerospace-scene .orbit-path {
+    fill: none;
+    stroke: var(--aerospace-secondary);
+    stroke-width: 1;
+    stroke-dasharray: 10, 5;
+    opacity: 0.4;
+}
+
+.aerospace-scene .radar-sweep {
+    fill: var(--aerospace-accent);
+    opacity: 0.3;
+    transform-origin: bottom center;
+}
+
+.aerospace-scene .radar-base {
+    fill: var(--aerospace-dark);
+}
+
+.aerospace-scene .control-panel {
+    fill: var(--bg-white);
+    stroke: var(--border-medium);
+    stroke-width: 1;
+    rx: 8;
+}
+
+.aerospace-scene .signal-wave {
+    fill: none;
+    stroke: var(--aerospace-accent);
+    stroke-width: 2;
+    opacity: 0.6;
+}
+
+.aerospace-scene .sky {
+    fill: linear-gradient(180deg, #1E3A5F 0%, #3B82F6 100%);
+}
+
+/* ============================================
+   OIL & GAS ILLUSTRATION STYLES
+   ============================================ */
+
+.oil-gas-scene {
+    --oil-primary: #F59E0B;
+    --oil-secondary: #FBBF24;
+    --oil-metal: #6B7280;
+    --oil-dark: #374151;
+    --oil-flame: #EF4444;
+    --oil-pipe: #4B5563;
+}
+
+.oil-gas-scene .refinery {
+    fill: var(--oil-metal);
+    stroke: var(--oil-dark);
+    stroke-width: 1;
+}
+
+.oil-gas-scene .refinery-tower {
+    fill: var(--oil-metal);
+}
+
+.oil-gas-scene .pipeline {
+    fill: none;
+    stroke: var(--oil-pipe);
+    stroke-width: 8;
+    stroke-linecap: round;
+}
+
+.oil-gas-scene .pipeline-inner {
+    fill: none;
+    stroke: var(--oil-primary);
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.oil-gas-scene .storage-tank {
+    fill: var(--oil-metal);
+    stroke: var(--oil-dark);
+    stroke-width: 1;
+}
+
+.oil-gas-scene .drilling-platform {
+    fill: var(--oil-dark);
+}
+
+.oil-gas-scene .platform-leg {
+    fill: var(--oil-pipe);
+}
+
+.oil-gas-scene .flame {
+    fill: var(--oil-flame);
+    transform-origin: bottom center;
+}
+
+.oil-gas-scene .flame-inner {
+    fill: var(--oil-secondary);
+}
+
+.oil-gas-scene .water {
+    fill: #60A5FA;
+    opacity: 0.6;
+}
+
+.oil-gas-scene .oil-flow {
+    fill: var(--oil-dark);
+    opacity: 0.8;
+}
+
+/* ============================================
+   SCROLL STAGGER ANIMATIONS
+   ============================================ */
+
+.scroll-stagger {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-5);
+}
+
+.stagger-item {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.stagger-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ============================================
+   INDUSTRY CARDS WITH ICONS
+   ============================================ */
+
+.industry-cards-scroll {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+    padding: var(--space-12) 0;
+}
+
+.industry-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-8);
+    background: var(--bg-white);
+    border-radius: var(--radius-2xl);
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform var(--duration-normal) var(--ease-apple),
+                box-shadow var(--duration-normal) var(--ease-apple);
+    overflow: hidden;
+}
+
+.industry-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transition: transform var(--duration-normal) var(--ease-apple);
+}
+
+.industry-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.industry-card:hover::before {
+    transform: scaleX(1);
+}
+
+.industry-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: var(--space-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.industry-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.industry-card-title {
+    font-size: var(--text-xl);
+    font-weight: var(--weight-semibold);
+    color: var(--text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.industry-card-desc {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: var(--leading-relaxed);
+    margin: 0;
+}
+
+/* ============================================
+   PARALLAX LAYERS
+   ============================================ */
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    position: absolute;
+    width: 100%;
+    will-change: transform;
+}
+
+.parallax-layer--back {
+    z-index: 1;
+}
+
+.parallax-layer--mid {
+    z-index: 2;
+}
+
+.parallax-layer--front {
+    z-index: 3;
+}
+
+/* ============================================
+   PINNED SCROLL SECTION
+   ============================================ */
+
+.pinned-section {
+    position: relative;
+    min-height: 200vh;
+}
+
+.pinned-content {
+    position: sticky;
+    top: var(--nav-height);
+    height: calc(100vh - var(--nav-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .hero-illustration {
+        max-width: 800px;
+        aspect-ratio: 4 / 3;
+    }
+
+    .industry-cards-scroll {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .industry-illustration {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-with-illustration {
+        min-height: 70vh;
+        padding-top: calc(var(--nav-height) + var(--space-8));
+    }
+
+    .hero-illustration {
+        max-width: 100%;
+    }
+
+    .industry-cards-scroll {
+        grid-template-columns: 1fr;
+        gap: var(--space-4);
+    }
+
+    .industry-card {
+        padding: var(--space-6);
+    }
+
+    .industry-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .industry-illustration-wrapper {
+        padding: var(--space-8) var(--container-padding);
+    }
+
+    .floating-element {
+        display: none;
+    }
+
+    /* Simplify animations on mobile */
+    .pinned-section {
+        min-height: auto;
+    }
+
+    .pinned-content {
+        position: relative;
+        top: 0;
+        height: auto;
+        min-height: 60vh;
+    }
+}
+
+@media (max-width: 430px) {
+    .industry-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .industry-card-title {
+        font-size: var(--text-lg);
+    }
+
+    .industry-svg {
+        max-height: 300px;
+    }
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    .scroll-progress,
+    .floating-element {
+        display: none;
+    }
+
+    .scene-element,
+    .hero-element,
+    .stagger-item {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .industry-card:hover {
+        transform: none;
+    }
+
+    .pinned-section {
+        min-height: auto;
+    }
+
+    .pinned-content {
+        position: relative;
+        top: 0;
+        height: auto;
+    }
+}
+
+/* ============================================
+   RTL SUPPORT
+   ============================================ */
+
+[dir="rtl"] .industry-cards-scroll {
+    direction: rtl;
+}
+
+[dir="rtl"] .industry-card {
+    text-align: center;
+}
+
+/* Keep illustrations LTR as they're graphical */
+[dir="rtl"] .industry-scene,
+[dir="rtl"] .hero-illustration {
+    direction: ltr;
+}
+
+[dir="rtl"] .connection-line {
+    transform: scaleX(-1);
+}
+
+/* ============================================
+   ANIMATION KEYFRAMES (Fallback for non-GSAP)
+   ============================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes drawLine {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Fallback animations when GSAP not loaded */
+.no-gsap .scene-element,
+.no-gsap .hero-element {
+    animation: fadeInUp 0.8s var(--ease-apple) forwards;
+}
+
+.no-gsap .floating-element {
+    animation: float 4s ease-in-out infinite;
+}
+
+.no-gsap .connection-line {
+    animation: drawLine 2s var(--ease-apple) forwards;
+}
