@@ -6,8 +6,8 @@
 const MegatecIllustrations = {
 
     /**
-     * Hero Construction Planning Illustration
-     * Features project planning elements: Gantt charts, blueprints, infrastructure
+     * Hero Project Management Illustration
+     * Features: Aconex document management, Gantt charts, construction site
      */
     heroScene: `
         <svg class="hero-svg" viewBox="0 0 1000 450" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Construction Project Planning Illustration">
@@ -324,16 +324,10 @@ const MegatecIllustrations = {
                     <stop offset="0%" stop-color="#D1D5DB"/>
                     <stop offset="100%" stop-color="#9CA3AF"/>
                 </linearGradient>
-                <pattern id="blueprintGrid" patternUnits="userSpaceOnUse" width="20" height="20">
-                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1dace8" stroke-width="0.5" opacity="0.2"/>
-                </pattern>
             </defs>
 
             <!-- Background -->
             <rect width="800" height="450" fill="url(#constSkyGradient)"/>
-
-            <!-- Blueprint grid overlay -->
-            <rect width="800" height="450" fill="url(#blueprintGrid)" class="scene-element" opacity="0.3"/>
 
             <!-- Ground -->
             <rect x="0" y="380" width="800" height="70" fill="#D4A574" class="scene-element ground"/>
