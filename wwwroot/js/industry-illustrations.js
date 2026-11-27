@@ -25,13 +25,10 @@ const MegatecIllustrations = {
                     <stop offset="0%" stop-color="#1dace8"/>
                     <stop offset="100%" stop-color="#0a7399"/>
                 </linearGradient>
-                <linearGradient id="blueprintGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#1E40AF"/>
-                    <stop offset="100%" stop-color="#1E3A8A"/>
+                <linearGradient id="aconexGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#FEF2F2"/>
+                    <stop offset="100%" stop-color="#FECACA"/>
                 </linearGradient>
-                <pattern id="blueprintGrid" patternUnits="userSpaceOnUse" width="15" height="15">
-                    <path d="M 15 0 L 0 0 0 15" fill="none" stroke="#3B82F6" stroke-width="0.5" opacity="0.4"/>
-                </pattern>
                 <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                     <stop offset="0%" stop-color="#10B981"/>
                     <stop offset="100%" stop-color="#34D399"/>
@@ -44,75 +41,99 @@ const MegatecIllustrations = {
             <!-- Ground plane -->
             <path d="M0 400 Q250 380 500 400 Q750 420 1000 400 L1000 450 L0 450 Z" fill="#E5D9C5" class="hero-element ground"/>
 
-            <!-- BLUEPRINT/PLANNING SECTION (Left) -->
-            <g class="planning-group" transform="translate(30, 60)">
-                <!-- Large Blueprint Document -->
-                <g class="blueprint hero-element">
-                    <rect x="0" y="0" width="280" height="200" fill="url(#blueprintGradient)" rx="4" stroke="#1E3A8A" stroke-width="2"/>
-                    <rect x="0" y="0" width="280" height="200" fill="url(#blueprintGrid)" rx="4"/>
-
-                    <!-- Building floor plan -->
-                    <g transform="translate(20, 20)" stroke="#60A5FA" stroke-width="1.5" fill="none">
-                        <!-- Outer walls -->
-                        <rect x="0" y="0" width="120" height="80" stroke-width="2"/>
-                        <!-- Interior walls -->
-                        <line x1="40" y1="0" x2="40" y2="50"/>
-                        <line x1="80" y1="30" x2="80" y2="80"/>
-                        <line x1="0" y1="50" x2="60" y2="50"/>
-                        <!-- Doors -->
-                        <path d="M40 50 Q50 45 50 55" stroke="#93C5FD"/>
-                        <path d="M80 70 Q90 65 90 75" stroke="#93C5FD"/>
-                        <!-- Dimension lines -->
-                        <g stroke="#93C5FD" stroke-width="0.5" stroke-dasharray="3,2">
-                            <line x1="0" y1="90" x2="120" y2="90"/>
-                            <line x1="0" y1="88" x2="0" y2="92"/>
-                            <line x1="120" y1="88" x2="120" y2="92"/>
-                        </g>
-                        <text x="60" y="100" text-anchor="middle" font-size="8" fill="#93C5FD" font-family="var(--font-family)">24m</text>
-                    </g>
-
-                    <!-- Infrastructure diagram -->
-                    <g transform="translate(160, 25)" stroke="#60A5FA" stroke-width="1" fill="none">
-                        <!-- Road/bridge section -->
-                        <path d="M0 20 L80 20" stroke-width="3"/>
-                        <path d="M20 20 L20 50" stroke-width="2"/>
-                        <path d="M60 20 L60 50" stroke-width="2"/>
-                        <rect x="15" y="50" width="10" height="20" fill="#3B82F6" opacity="0.3"/>
-                        <rect x="55" y="50" width="10" height="20" fill="#3B82F6" opacity="0.3"/>
-                        <!-- Support cables -->
-                        <path d="M20 20 Q40 5 60 20" stroke="#93C5FD" stroke-dasharray="2,2"/>
-                    </g>
-
-                    <!-- Title block -->
-                    <rect x="160" y="130" width="110" height="60" fill="#1E3A8A" stroke="#3B82F6"/>
-                    <text x="215" y="148" text-anchor="middle" font-size="8" fill="#93C5FD" font-family="var(--font-family)">PROJECT PLAN</text>
-                    <text x="215" y="162" text-anchor="middle" font-size="10" fill="white" font-weight="600" font-family="var(--font-family)">Infrastructure</text>
-                    <text x="215" y="175" text-anchor="middle" font-size="10" fill="white" font-weight="600" font-family="var(--font-family)">Development</text>
-                    <text x="215" y="185" text-anchor="middle" font-size="6" fill="#60A5FA" font-family="var(--font-family)">Rev. 2.4 | Phase 3</text>
+            <!-- ACONEX DOCUMENT MANAGEMENT SECTION (Left) -->
+            <g class="aconex-group" transform="translate(20, 40)">
+                <!-- Main Document Hub -->
+                <g class="document-hub hero-element">
+                    <!-- Central cloud/hub -->
+                    <ellipse cx="140" cy="60" rx="70" ry="40" fill="white" stroke="#C74634" stroke-width="2"/>
+                    <ellipse cx="140" cy="60" rx="55" ry="30" fill="#FEF2F2"/>
+                    <!-- Aconex logo area -->
+                    <text x="140" y="55" text-anchor="middle" font-size="12" fill="#C74634" font-weight="700" font-family="var(--font-family)">ACONEX</text>
+                    <text x="140" y="70" text-anchor="middle" font-size="8" fill="#6B7280" font-family="var(--font-family)">Document Hub</text>
                 </g>
 
-                <!-- Planning tools -->
-                <g class="tools hero-element" transform="translate(10, 210)">
-                    <!-- Ruler -->
-                    <rect x="0" y="0" width="100" height="12" fill="#F59E0B" rx="1"/>
-                    <g fill="#92400E">
-                        <rect x="10" y="0" width="1" height="6"/>
-                        <rect x="20" y="0" width="1" height="8"/>
-                        <rect x="30" y="0" width="1" height="6"/>
-                        <rect x="40" y="0" width="1" height="8"/>
-                        <rect x="50" y="0" width="1" height="6"/>
-                        <rect x="60" y="0" width="1" height="8"/>
-                        <rect x="70" y="0" width="1" height="6"/>
-                        <rect x="80" y="0" width="1" height="8"/>
-                        <rect x="90" y="0" width="1" height="6"/>
-                    </g>
-                    <!-- Pencil -->
-                    <g transform="translate(110, -5)">
-                        <rect x="0" y="5" width="60" height="8" fill="#FFD166"/>
-                        <polygon points="60,5 70,9 60,13" fill="#F8B4B4"/>
-                        <polygon points="70,9 75,9 70,9" fill="#374151"/>
-                        <rect x="-5" y="5" width="5" height="8" fill="#F8B4B4"/>
-                    </g>
+                <!-- Document Stack 1 (Top Left) -->
+                <g class="doc-stack hero-element" transform="translate(20, 20)">
+                    <rect x="4" y="4" width="50" height="65" rx="3" fill="#E5E7EB"/>
+                    <rect x="2" y="2" width="50" height="65" rx="3" fill="#F3F4F6"/>
+                    <rect x="0" y="0" width="50" height="65" rx="3" fill="white" stroke="#D1D5DB"/>
+                    <rect x="8" y="10" width="34" height="3" fill="#C74634" rx="1"/>
+                    <rect x="8" y="18" width="30" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="8" y="24" width="34" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="8" y="30" width="25" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="8" y="40" width="34" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="8" y="46" width="28" height="2" fill="#E5E7EB" rx="1"/>
+                    <!-- Checkmark -->
+                    <circle cx="42" cy="55" r="8" fill="#10B981"/>
+                    <path d="M38 55 L41 58 L46 52" stroke="white" stroke-width="2" fill="none"/>
+                </g>
+
+                <!-- Document Stack 2 (Top Right) -->
+                <g class="doc-stack hero-element" transform="translate(220, 15)">
+                    <rect x="4" y="4" width="55" height="70" rx="3" fill="#E5E7EB"/>
+                    <rect x="2" y="2" width="55" height="70" rx="3" fill="#F3F4F6"/>
+                    <rect x="0" y="0" width="55" height="70" rx="3" fill="white" stroke="#D1D5DB"/>
+                    <rect x="8" y="10" width="40" height="3" fill="#3B82F6" rx="1"/>
+                    <rect x="8" y="18" width="35" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="8" y="24" width="40" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="8" y="30" width="30" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="8" y="40" width="40" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="8" y="46" width="32" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="8" y="52" width="38" height="2" fill="#E5E7EB" rx="1"/>
+                    <!-- Pending icon -->
+                    <circle cx="47" cy="62" r="8" fill="#F59E0B"/>
+                    <rect x="45" y="56" width="4" height="8" fill="white" rx="1"/>
+                    <circle cx="47" cy="67" r="1.5" fill="white"/>
+                </g>
+
+                <!-- Connection lines to hub -->
+                <g stroke="#C74634" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.6">
+                    <path d="M55 70 Q90 65 100 60" fill="none"/>
+                    <path d="M230 55 Q200 55 190 60" fill="none"/>
+                    <path d="M70 180 Q100 150 120 100" fill="none"/>
+                    <path d="M210 180 Q180 150 160 100" fill="none"/>
+                </g>
+
+                <!-- Team Members / Collaboration -->
+                <g class="team hero-element" transform="translate(30, 140)">
+                    <!-- Person 1 -->
+                    <circle cx="20" cy="20" r="15" fill="#DBEAFE"/>
+                    <circle cx="20" cy="15" r="8" fill="#3B82F6"/>
+                    <ellipse cx="20" cy="30" rx="10" ry="6" fill="#3B82F6"/>
+                    <!-- Speech bubble -->
+                    <rect x="40" y="5" width="45" height="25" rx="5" fill="white" stroke="#E5E7EB"/>
+                    <polygon points="40,15 35,20 40,22" fill="white" stroke="#E5E7EB"/>
+                    <rect x="45" y="12" width="30" height="2" fill="#C74634" rx="1"/>
+                    <rect x="45" y="18" width="25" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="45" y="24" width="20" height="2" fill="#E5E7EB" rx="1"/>
+                </g>
+
+                <g class="team hero-element" transform="translate(170, 140)">
+                    <!-- Person 2 -->
+                    <circle cx="20" cy="20" r="15" fill="#FEF3C7"/>
+                    <circle cx="20" cy="15" r="8" fill="#F59E0B"/>
+                    <ellipse cx="20" cy="30" rx="10" ry="6" fill="#F59E0B"/>
+                    <!-- Document icon -->
+                    <rect x="40" y="8" width="30" height="35" rx="3" fill="white" stroke="#E5E7EB"/>
+                    <rect x="45" y="15" width="20" height="2" fill="#10B981" rx="1"/>
+                    <rect x="45" y="20" width="18" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="45" y="25" width="20" height="2" fill="#E5E7EB" rx="1"/>
+                    <rect x="45" y="30" width="15" height="2" fill="#E5E7EB" rx="1"/>
+                </g>
+
+                <!-- Workflow arrows -->
+                <g fill="#C74634" opacity="0.8">
+                    <polygon points="95,110 105,115 95,120 98,115" transform="rotate(-30 100 115)"/>
+                    <polygon points="175,110 185,115 175,120 178,115" transform="rotate(30 180 115)"/>
+                </g>
+
+                <!-- Cloud sync icon -->
+                <g transform="translate(120, 95)">
+                    <ellipse cx="20" cy="12" rx="18" ry="10" fill="white" stroke="#C74634" stroke-width="1.5"/>
+                    <ellipse cx="12" cy="14" rx="8" ry="6" fill="white"/>
+                    <ellipse cx="28" cy="14" rx="8" ry="6" fill="white"/>
+                    <path d="M15 12 L20 8 L25 12 M20 8 L20 18" stroke="#C74634" stroke-width="1.5" fill="none"/>
                 </g>
             </g>
 
